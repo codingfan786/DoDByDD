@@ -1,0 +1,5 @@
+owner = C06
+controller = C06
+add_core = C06
+trade_goods = cattle
+life_rating = 35

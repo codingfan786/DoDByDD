@@ -1,0 +1,5 @@
+owner = C20
+controller = C20
+add_core = C20
+trade_goods = fruit
+life_rating = 35

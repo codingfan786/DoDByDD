@@ -1,0 +1,5 @@
+owner = C52
+controller = C52
+add_core = C52
+trade_goods = coal
+life_rating = 35

@@ -1,0 +1,5 @@
+owner = C44
+controller = C44
+add_core = C44
+trade_goods = grain
+life_rating = 35

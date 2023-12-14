@@ -1,0 +1,6 @@
+owner = C59
+controller = C59
+add_core = C59
+add_core = C60
+trade_goods = tea
+life_rating = 38

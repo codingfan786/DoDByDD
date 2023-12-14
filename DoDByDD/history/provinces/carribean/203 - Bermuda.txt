@@ -1,0 +1,5 @@
+owner = C09
+controller = C09
+add_core = C09
+life_rating = 35
+trade_goods = timber

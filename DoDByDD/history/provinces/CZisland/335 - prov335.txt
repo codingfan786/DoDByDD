@@ -1,0 +1,5 @@
+owner = C21
+controller = C21
+add_core = C21
+trade_goods = coal
+life_rating = 35

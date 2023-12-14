@@ -1,0 +1,5 @@
+owner = C38
+controller = C38
+add_core = C38
+trade_goods = cotton
+life_rating = 38

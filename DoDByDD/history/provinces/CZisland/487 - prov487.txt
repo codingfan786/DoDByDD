@@ -1,0 +1,5 @@
+owner = C43
+controller = C43
+add_core = C43
+trade_goods = iron
+life_rating = 33

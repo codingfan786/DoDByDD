@@ -1,0 +1,5 @@
+owner = C33
+controller = C33
+add_core = C33
+trade_goods = timber
+life_rating = 33

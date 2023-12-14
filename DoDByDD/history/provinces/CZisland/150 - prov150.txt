@@ -1,0 +1,5 @@
+owner = C05
+controller = C05
+add_core = C05
+trade_goods = iron
+life_rating = 35

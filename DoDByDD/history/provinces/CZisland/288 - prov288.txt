@@ -1,0 +1,6 @@
+owner = C58
+controller = C58
+add_core = C58
+add_core = C57
+trade_goods = opium
+life_rating = 35

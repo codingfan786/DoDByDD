@@ -1,0 +1,5 @@
+owner = C09
+controller = C09
+add_core = C09
+trade_goods = fish
+life_rating = 35

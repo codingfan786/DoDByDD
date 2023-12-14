@@ -1,0 +1,5 @@
+owner = C56
+controller = C56
+add_core = C56
+trade_goods = wool
+life_rating = 35

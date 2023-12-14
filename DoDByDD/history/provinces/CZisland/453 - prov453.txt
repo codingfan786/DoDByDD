@@ -1,0 +1,5 @@
+owner = C39
+controller = C39
+add_core = C39
+trade_goods = sulphur
+life_rating = 40
