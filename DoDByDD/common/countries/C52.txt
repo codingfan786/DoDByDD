@@ -2,7 +2,7 @@
 
 #========================= H E A D E R =========================
 
-color = { 255  255  255 }
+color = { 207 170 22 }
 graphical_culture = EuropeanGC
 
 

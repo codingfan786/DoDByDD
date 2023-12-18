@@ -1,5 +1,5 @@
 owner = C07
 controller = C07
 add_core = C07
-trade_goods = fish
+trade_goods = wool
 life_rating = 35

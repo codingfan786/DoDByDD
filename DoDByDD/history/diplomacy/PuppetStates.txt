@@ -1,0 +1,30 @@
+substate = {
+	first = C50
+	second = C56
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+substate = {
+	first = C50
+	second = C54
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+substate = {
+	first = C50
+	second = C55
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+substate = {
+	first = C50
+	second = C52
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+substate = {
+	first = C50
+	second = C51
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}

@@ -1,5 +1,5 @@
 owner = C09
 controller = C09
 add_core = C09
-trade_goods = fish
+trade_goods = cattle
 life_rating = 35
