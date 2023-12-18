@@ -1,0 +1,63 @@
+army = {
+	name = "Army" #done
+	location = 351
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 351
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 351
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 351
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 359
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 359
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 359
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 359
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 367
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 367
+	}
+
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 367
+	}
+}

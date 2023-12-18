@@ -3,3 +3,8 @@ controller = C42
 add_core = C42
 trade_goods = fruit
 life_rating = 33
+state_building = {
+	level = 1
+	building = winery
+	upgrade = yes
+}

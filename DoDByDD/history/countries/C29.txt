@@ -3,7 +3,8 @@
 #========================= H E A D E R =========================
 
 capital = 79
-primary_culture = saqui
+primary_culture = docen
+culture = ertan
 religion = catholic
 government = hms_government
 plurality = 10

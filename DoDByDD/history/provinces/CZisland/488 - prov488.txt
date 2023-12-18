@@ -3,3 +3,8 @@ controller = C43
 add_core = C43
 trade_goods = wool
 life_rating = 33
+state_building = {
+	level = 2
+	building = wool_fabric_factory
+	upgrade = yes
+}

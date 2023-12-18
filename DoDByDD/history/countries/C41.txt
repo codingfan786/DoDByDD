@@ -3,7 +3,7 @@
 #========================= H E A D E R =========================
 
 capital = 79
-primary_culture = saqui
+primary_culture = north_bosnark
 religion = catholic
 government = absolute_monarchy
 plurality = 10

@@ -3,7 +3,7 @@
 #========================= H E A D E R =========================
 
 capital = 79
-primary_culture = sami
+primary_culture = saqui
 religion = catholic
 government = absolute_monarchy
 plurality = 10

@@ -3,7 +3,8 @@
 #========================= H E A D E R =========================
 
 capital = 79
-primary_culture = saqui
+primary_culture = darren
+culture = dirven
 religion = catholic
 government = absolute_monarchy
 plurality = 10

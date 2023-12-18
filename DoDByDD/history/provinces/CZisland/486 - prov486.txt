@@ -3,3 +3,13 @@ controller = C43
 add_core = C43
 trade_goods = grain
 life_rating = 33
+state_building = {
+	level = 3
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 4
+	building = canned_food_factory
+	upgrade = yes
+}

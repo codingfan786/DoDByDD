@@ -1328,6 +1328,19 @@ vacuum_tube = {
 	}
 }
 
+wool_factory = {
+	limit = { water_wheel_power = 1 }
+	chance = {
+		base = 100
+	}
+	effect = {
+		activate_building =  wool_fabric_factory
+	}
+	
+	
+	
+}
+
 tulls_seed_drill = {
 	limit = { water_wheel_power = 1 }
 	chance = {

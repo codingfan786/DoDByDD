@@ -3,7 +3,7 @@
 #========================= H E A D E R =========================
 
 capital = 79
-primary_culture = sami
+primary_culture = sillesian
 religion = catholic
 government = bourgeois_dictatorship
 plurality = 10

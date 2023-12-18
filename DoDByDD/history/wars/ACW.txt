@@ -1,6 +1,6 @@
 #name = "War of Northern Aggression"
 
-1861.6.30 = {
+2061.6.30 = {
 	add_attacker = USA
 	add_defender = CSA
 	
@@ -20,9 +20,4 @@
 		receiver = USA
 	}
 
-}
-
-1870.1.1 = {
-	rem_attacker = TPG
-	rem_defender = CHI
 }

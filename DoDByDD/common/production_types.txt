@@ -123,28 +123,28 @@ world_bank_factory = {
 	value = 100
 }
 
-#wool_fabric_factory = {       
-#	template = factory_template
-#	input_goods = {     
-#		wool = 20
-#		#dye = 2
-#	}
-#	output_goods = fabric
-#	value = 22
-#	bonus = {
-#		trigger = { trade_goods_in_state = wool }
-#		value = 0.125
-#	}
-#	bonus = {
-#		trigger = {
-#			OR = {
-#				has_building = dye_factory 
+wool_fabric_factory = {       
+	template = factory_template
+	input_goods = {     
+		wool = 20
+		#dye = 2
+	}
+	output_goods = fabric
+	value = 22
+	bonus = {
+		trigger = { trade_goods_in_state = wool }
+		value = 0.125
+	}
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = dye_factory 
 #				trade_goods_in_state = dye
-#				}
-#			}
-#		value = 0.125
-#	}
-#}
+				}
+			}
+		value = 0.125
+	}
+}
 
 #leather_factory = {       
 #	template = factory_template

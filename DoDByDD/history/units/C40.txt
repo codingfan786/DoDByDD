@@ -1,0 +1,318 @@
+army = {
+	name = "Army" #done
+	location = 470
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 470
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 470
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 479
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 479
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 479
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 479
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 476
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 476
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 476
+	}
+
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 476
+	}
+}
+
+army = {
+	name = "Army" #done
+	location = 474
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 474
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 474
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 474
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 474
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 471
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 471
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 471
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 471
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 470
+	}
+
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 470
+	}
+}
+army = {
+	name = "Army" #done
+	location = 463
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 463
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 463
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 463
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 463
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 464
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 464
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 464
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 464
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 464
+	}
+
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 464
+	}
+}
+
+army = {
+	name = "Army" #done
+	location = 473
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 473
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 473
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 473
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 473
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 473
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 467
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 467
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 467
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 467
+	}
+
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 467
+	}
+}
+
+army = {
+	name = "Army" #done
+	location = 477
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 474
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 477
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 477
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 477
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 477
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 469
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 469
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 469
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 469
+	}
+
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 469
+	}
+}

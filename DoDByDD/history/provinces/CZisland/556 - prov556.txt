@@ -3,3 +3,8 @@ controller = C47
 add_core = C47
 trade_goods = fish
 life_rating = 33
+state_building = {
+	level = 3
+	building = canned_food_factory
+	upgrade = yes
+}

@@ -3,7 +3,8 @@
 #========================= H E A D E R =========================
 
 capital = 79
-primary_culture = saqui
+primary_culture = antlanin
+culture = sakirn
 religion = catholic
 government = presidential_dictatorship
 plurality = 10

@@ -3,7 +3,7 @@
 #========================= H E A D E R =========================
 
 capital = 79
-primary_culture = saqui
+primary_culture = south_arden
 religion = catholic
 government = hms_government
 plurality = 10

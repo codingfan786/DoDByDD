@@ -360,20 +360,20 @@ River_CG = {
 	leader = european
 	unit = EuropeanGC
 	
-	odparshing = {
-		color = {180 40 40}
-		first_names = { Albín Alexander András Andrej Augustín Basil Cyprián Dalibor Dezider Dominik
-		Eugen Fedor Ferdinand Frantisek Frico Gabriel Gustáv Imrich Jáchym Ján
-		Janko Jozef Juraj Karol Ladislav Levoslav Marián Marko Martin Matej
-		Michal Mikulás Milan Milos Miloslav Miroslav Pavel Pavol Peter Ratislav
-		Rudolf Samuel Sergej Stefan Svtozár Tibor Tomás Viliam Vladimír Vojtech }
-
-		last_names = { Áchim Bázlic Bella Benes Blaho Catlos Cikker Clementis Daxner Dubcek
-		Figus-Bystrý Freso Gojdic Golian Hlinka Hodza Hopko Hurban Hurban-Vajanský Husák
-		Ivanka Kafenda Kardos Kocak Kupkovic Mach Macudzinski Malár Malovec Markovic
-		Masaryk Móry Moyses Rázus Rohácek Rudnay Selepcéni Sidor Skultéty-Gábris Smik
-		Sokol Stefánik Suchon Sverma Tiso Trcka Tuka Turanec Viest Zoch }
-	}
+	#odparshing = {
+	#	color = {180 40 40}
+	#	first_names = { Albín Alexander András Andrej Augustín Basil Cyprián Dalibor Dezider Dominik
+	#	Eugen Fedor Ferdinand Frantisek Frico Gabriel Gustáv Imrich Jáchym Ján
+	#	Janko Jozef Juraj Karol Ladislav Levoslav Marián Marko Martin Matej
+	#	Michal Mikulás Milan Milos Miloslav Miroslav Pavel Pavol Peter Ratislav
+	#	Rudolf Samuel Sergej Stefan Svtozár Tibor Tomás Viliam Vladimír Vojtech }
+	#
+	#	last_names = { Áchim Bázlic Bella Benes Blaho Catlos Cikker Clementis Daxner Dubcek
+	#	Figus-Bystrý Freso Gojdic Golian Hlinka Hodza Hopko Hurban Hurban-Vajanský Husák
+	#	Ivanka Kafenda Kardos Kocak Kupkovic Mach Macudzinski Malár Malovec Markovic
+	#	Masaryk Móry Moyses Rázus Rohácek Rudnay Selepcéni Sidor Skultéty-Gábris Smik
+	#	Sokol Stefánik Suchon Sverma Tiso Trcka Tuka Turanec Viest Zoch }
+	#}
 
 	memphin = {
 		color = {73 92 226}
@@ -405,35 +405,35 @@ River_CG = {
 		Sokol Stefánik Suchon Sverma Tiso Trcka Tuka Turanec Viest Zoch }
 	}
 
-	ethior = {
-		color = {51 117 62}
-		first_names = { Abraham Alexander Alfred Alois Antonín August Bedrich Benedikt Borivoj
-		Cenek Dávid Drahoslav Edvard Emanuel Emil Evzen Frantisek "Frantisek Josef" "Frantisek Xaver"
-		Hermenegild Ján "Ján Krtitel" "Ján Nepomuk" Jaroslav Jindrich Jirí Josef Kajetan Karel
-		Konstantin Ladislav Luvík Matyas Maxmilián Mikulás Olbram Otakar Pavel Petr
-		Radola Rafael Tomás Václav Vincenc Vitezslav Vlastimil Vojtech Vratislav Zdenek }
+	#ethior = {
+	#	color = {51 117 62}
+	#	first_names = { Abraham Alexander Alfred Alois Antonín August Bedrich Benedikt Borivoj
+	#	Cenek Dávid Drahoslav Edvard Emanuel Emil Evzen Frantisek "Frantisek Josef" "Frantisek Xaver"
+	#	Hermenegild Ján "Ján Krtitel" "Ján Nepomuk" Jaroslav Jindrich Jirí Josef Kajetan Karel
+	#	Konstantin Ladislav Luvík Matyas Maxmilián Mikulás Olbram Otakar Pavel Petr
+	#	Radola Rafael Tomás Václav Vincenc Vitezslav Vlastimil Vojtech Vratislav Zdenek }
+	#
+	#	last_names = { Albert Balaban Basch Breisky Celovský Dvorák Fibich Gajda Gellner Hálek
+	#	Hrdlicka Jirecek Kadlec Kafka Koller Krízkovský Kucera Kuchar Lederer Makosky
+	#	Mik Morávec Nemecek Neruda Novácek Novotný Popper Radecký Rokytanský Safárik
+	#	Safránek Schack Schubert Skoda Skuherský Smetana Snejdárek Suk Svoboda Syrový
+	#	Tomásek Tyl Vitásek "von Mittrowitz-Nettolitzky" Vorisek Wankel Weber Zíbrt Zívr Zoubek }
+	#}
 
-		last_names = { Albert Balaban Basch Breisky Celovský Dvorák Fibich Gajda Gellner Hálek
-		Hrdlicka Jirecek Kadlec Kafka Koller Krízkovský Kucera Kuchar Lederer Makosky
-		Mik Morávec Nemecek Neruda Novácek Novotný Popper Radecký Rokytanský Safárik
-		Safránek Schack Schubert Skoda Skuherský Smetana Snejdárek Suk Svoboda Syrový
-		Tomásek Tyl Vitásek "von Mittrowitz-Nettolitzky" Vorisek Wankel Weber Zíbrt Zívr Zoubek }
-	}
-
-	sudparshing = {
-		color = {220 170 30}
-		first_names = { Albín Alexander András Andrej Augustín Basil Cyprián Dalibor Dezider Dominik
-		Eugen Fedor Ferdinand Frantisek Frico Gabriel Gustáv Imrich Jáchym Ján
-		Janko Jozef Juraj Karol Ladislav Levoslav Marián Marko Martin Matej
-		Michal Mikulás Milan Milos Miloslav Miroslav Pavel Pavol Peter Ratislav
-		Rudolf Samuel Sergej Stefan Svtozár Tibor Tomás Viliam Vladimír Vojtech }
-
-		last_names = { Áchim Bázlic Bella Benes Blaho Catlos Cikker Clementis Daxner Dubcek
-		Figus-Bystrý Freso Gojdic Golian Hlinka Hodza Hopko Hurban Hurban-Vajanský Husák
-		Ivanka Kafenda Kardos Kocak Kupkovic Mach Macudzinski Malár Malovec Markovic
-		Masaryk Móry Moyses Rázus Rohácek Rudnay Selepcéni Sidor Skultéty-Gábris Smik
-		Sokol Stefánik Suchon Sverma Tiso Trcka Tuka Turanec Viest Zoch }
-	}
+	#sudparshing = {
+	#	color = {220 170 30}
+	#	first_names = { Albín Alexander András Andrej Augustín Basil Cyprián Dalibor Dezider Dominik
+	#	Eugen Fedor Ferdinand Frantisek Frico Gabriel Gustáv Imrich Jáchym Ján
+	#	Janko Jozef Juraj Karol Ladislav Levoslav Marián Marko Martin Matej
+	#	Michal Mikulás Milan Milos Miloslav Miroslav Pavel Pavol Peter Ratislav
+	#	Rudolf Samuel Sergej Stefan Svtozár Tibor Tomás Viliam Vladimír Vojtech }
+	#
+	#	last_names = { Áchim Bázlic Bella Benes Blaho Catlos Cikker Clementis Daxner Dubcek
+	#	Figus-Bystrý Freso Gojdic Golian Hlinka Hodza Hopko Hurban Hurban-Vajanský Husák
+	#	Ivanka Kafenda Kardos Kocak Kupkovic Mach Macudzinski Malár Malovec Markovic
+	#	Masaryk Móry Moyses Rázus Rohácek Rudnay Selepcéni Sidor Skultéty-Gábris Smik
+	#	Sokol Stefánik Suchon Sverma Tiso Trcka Tuka Turanec Viest Zoch }
+	#}
 }
 
 Forest_CG = {
@@ -485,21 +485,6 @@ Forest_CG = {
 		Sokol Stefánik Suchon Sverma Tiso Trcka Tuka Turanec Viest Zoch }
 	}
 
-	sudirk = {
-		color = {40 150 90}
-		first_names = { Abraham Alexander Alfred Alois Antonín August Bedrich Benedikt Borivoj
-		Cenek Dávid Drahoslav Edvard Emanuel Emil Evzen Frantisek "Frantisek Josef" "Frantisek Xaver"
-		Hermenegild Ján "Ján Krtitel" "Ján Nepomuk" Jaroslav Jindrich Jirí Josef Kajetan Karel
-		Konstantin Ladislav Luvík Matyas Maxmilián Mikulás Olbram Otakar Pavel Petr
-		Radola Rafael Tomás Václav Vincenc Vitezslav Vlastimil Vojtech Vratislav Zdenek }
-
-		last_names = { Albert Balaban Basch Breisky Celovský Dvorák Fibich Gajda Gellner Hálek
-		Hrdlicka Jirecek Kadlec Kafka Koller Krízkovský Kucera Kuchar Lederer Makosky
-		Mik Morávec Nemecek Neruda Novácek Novotný Popper Radecký Rokytanský Safárik
-		Safránek Schack Schubert Skoda Skuherský Smetana Snejdárek Suk Svoboda Syrový
-		Tomásek Tyl Vitásek "von Mittrowitz-Nettolitzky" Vorisek Wankel Weber Zíbrt Zívr Zoubek }
-	}
-
 	warf = {
 		color = {193 253 53}
 		first_names = { Albín Alexander András Andrej Augustín Basil Cyprián Dalibor Dezider Dominik
@@ -531,7 +516,8 @@ Forest_CG = {
 	}
 
 	sakirn = {
-		color = {168 195 255}
+		#color = {168 195 255}
+		color = {40 150 90}
 		first_names = { Albín Alexander András Andrej Augustín Basil Cyprián Dalibor Dezider Dominik
 		Eugen Fedor Ferdinand Frantisek Frico Gabriel Gustáv Imrich Jáchym Ján
 		Janko Jozef Juraj Karol Ladislav Levoslav Marián Marko Martin Matej
@@ -593,6 +579,24 @@ Sand_CG = {
 		Ivanka Kafenda Kardos Kocak Kupkovic Mach Macudzinski Malár Malovec Markovic
 		Masaryk Móry Moyses Rázus Rohácek Rudnay Selepcéni Sidor Skultéty-Gábris Smik
 		Sokol Stefánik Suchon Sverma Tiso Trcka Tuka Turanec Viest Zoch }
+	}
+
+	#the one in region 1
+	sudirk = {
+		#color = {40 150 90}
+		#color = {193 198 102}
+		color = {89 98 60}
+		first_names = { Abraham Alexander Alfred Alois Antonín August Bedrich Benedikt Borivoj
+		Cenek Dávid Drahoslav Edvard Emanuel Emil Evzen Frantisek "Frantisek Josef" "Frantisek Xaver"
+		Hermenegild Ján "Ján Krtitel" "Ján Nepomuk" Jaroslav Jindrich Jirí Josef Kajetan Karel
+		Konstantin Ladislav Luvík Matyas Maxmilián Mikulás Olbram Otakar Pavel Petr
+		Radola Rafael Tomás Václav Vincenc Vitezslav Vlastimil Vojtech Vratislav Zdenek }
+
+		last_names = { Albert Balaban Basch Breisky Celovský Dvorák Fibich Gajda Gellner Hálek
+		Hrdlicka Jirecek Kadlec Kafka Koller Krízkovský Kucera Kuchar Lederer Makosky
+		Mik Morávec Nemecek Neruda Novácek Novotný Popper Radecký Rokytanský Safárik
+		Safránek Schack Schubert Skoda Skuherský Smetana Snejdárek Suk Svoboda Syrový
+		Tomásek Tyl Vitásek "von Mittrowitz-Nettolitzky" Vorisek Wankel Weber Zíbrt Zívr Zoubek }
 	}
 }
 

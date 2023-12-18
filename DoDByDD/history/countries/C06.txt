@@ -3,7 +3,8 @@
 #========================= H E A D E R =========================
 
 capital = 79
-primary_culture = saqui
+primary_culture = walnf
+culture = wif
 religion = catholic
 government = democracy
 plurality = 10

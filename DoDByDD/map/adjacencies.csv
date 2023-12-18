@@ -1,0 +1,260 @@
+#From;To;Type;Through;Data;Comment
+#river entrances
+68;606;sea;80;0;x
+8;609;sea;291;0;x
+8;619;sea;323;0;x
+13;618;sea;342;0;x
+15;633;sea;359;0;x
+15;632;sea;343;0;x
+15;631;sea;327;0;x
+72;593;sea;145;0;x
+
+#regular straits
+485;494;sea;37;0;x
+431;437;sea;26;0;x
+430;439;sea;26;0;x
+429;402;sea;25;0;x
+435;402;sea;25;0;x
+381;402;sea;19;0;x
+370;381;sea;19;0;x
+358;381;sea;19;0;x
+370;358;sea;19;0;x
+330;338;sea;10;0;x
+338;356;sea;18;0;x
+330;344;sea;9;0;x
+238;267;sea;78;0;x
+252;267;sea;78;0;x
+270;267;sea;78;0;x
+270;254;sea;7;0;x
+254;288;sea;7;0;x
+288;301;sea;7;0;x
+133;157;sea;72;0;x
+
+#sailable river crossings (region 1)
+83;84;sea;0;0;x
+83;90;sea;0;0;x
+85;90;sea;0;0;x
+93;90;sea;0;0;x
+96;90;sea;0;0;x
+96;98;sea;0;0;x
+96;114;sea;0;0;x
+108;114;sea;0;0;x
+130;132;sea;0;0;x
+144;132;sea;0;0;x
+144;156;sea;0;0;x
+151;156;sea;0;0;x
+151;166;sea;0;0;x
+158;166;sea;0;0;x
+158;168;sea;0;0;x
+172;168;sea;0;0;x
+172;190;sea;0;0;x
+202;190;sea;0;0;x
+202;197;sea;0;0;x
+213;197;sea;0;0;x
+213;212;sea;0;0;x
+213;224;sea;0;0;x
+213;243;sea;0;0;x
+213;232;sea;0;0;x
+207;232;sea;0;0;x
+207;231;sea;0;0;x
+207;208;sea;0;0;x
+172;178;sea;0;0;x
+153;178;sea;0;0;x
+143;178;sea;0;0;x
+143;169;sea;0;0;x
+154;169;sea;0;0;x
+154;170;sea;0;0;x
+212;224;sea;0;0;x
+212;222;sea;0;0;x
+210;222;sea;0;0;x
+210;219;sea;0;0;x
+203;219;sea;0;0;x
+185;191;sea;0;0;x
+177;191;sea;0;0;x
+177;176;sea;0;0;x
+162;161;sea;0;0;x
+162;176;sea;0;0;x
+137;161;sea;0;0;x
+137;160;sea;0;0;x
+137;139;sea;0;0;x
+127;139;sea;0;0;x
+135;139;sea;0;0;x
+135;148;sea;0;0;x
+125;148;sea;0;0;x
+125;147;sea;0;0;x
+125;150;sea;0;0;x
+122;150;sea;0;0;x
+222;219;sea;0;0;x
+240;234;sea;0;0;x
+240;227;sea;0;0;x
+240;247;sea;0;0;x
+255;247;sea;0;0;x
+266;247;sea;0;0;x
+266;271;sea;0;0;x
+266;276;sea;0;0;x
+264;276;sea;0;0;x
+274;276;sea;0;0;x
+274;290;sea;0;0;x
+274;287;sea;0;0;x
+284;287;sea;0;0;x
+284;296;sea;0;0;x
+285;296;sea;0;0;x
+286;296;sea;0;0;x
+296;287;sea;0;0;x
+303;287;sea;0;0;x
+303;299;sea;0;0;x
+312;307;sea;0;0;x
+312;308;sea;0;0;x
+307;308;sea;0;0;x
+302;308;sea;0;0;x
+280;277;sea;0;0;x
+269;277;sea;0;0;x
+269;279;sea;0;0;x
+250;279;sea;0;0;x
+262;279;sea;0;0;x
+265;279;sea;0;0;x
+265;283;sea;0;0;x
+268;283;sea;0;0;x
+272;283;sea;0;0;x
+272;292;sea;0;0;x
+278;292;sea;0;0;x
+
+#sailable river crossings (region 2)
+324;327;sea;0;0;x
+325;327;sea;0;0;x
+325;336;sea;0;0;x
+333;336;sea;0;0;x
+333;343;sea;0;0;x
+334;343;sea;0;0;x
+334;345;sea;0;0;x
+334;341;sea;0;0;x
+334;335;sea;0;0;x
+320;335;sea;0;0;x
+320;328;sea;0;0;x
+321;328;sea;0;0;x
+321;318;sea;0;0;x
+311;318;sea;0;0;x
+308;318;sea;0;0;x
+309;323;sea;0;0;x
+313;323;sea;0;0;x
+317;323;sea;0;0;x
+317;332;sea;0;0;x
+331;332;sea;0;0;x
+331;342;sea;0;0;x
+340;342;sea;0;0;x
+340;353;sea;0;0;x
+340;352;sea;0;0;x
+340;350;sea;0;0;x
+337;348;sea;0;0;x
+337;339;sea;0;0;x
+328;339;sea;0;0;x
+328;335;sea;0;0;x
+339;335;sea;0;0;x
+346;335;sea;0;0;x
+346;341;sea;0;0;x
+346;345;sea;0;0;x
+354;345;sea;0;0;x
+354;347;sea;0;0;x
+355;347;sea;0;0;x
+355;351;sea;0;0;x
+355;360;sea;0;0;x
+363;360;sea;0;0;x
+363;368;sea;0;0;x
+363;369;sea;0;0;x
+357;369;sea;0;0;x
+357;366;sea;0;0;x
+357;361;sea;0;0;x
+349;361;sea;0;0;x
+348;361;sea;0;0;x
+350;361;sea;0;0;x
+350;366;sea;0;0;x
+350;362;sea;0;0;x
+352;362;sea;0;0;x
+352;365;sea;0;0;x
+353;365;sea;0;0;x
+351;360;sea;0;0;x
+343;347;sea;0;0;x
+371;373;sea;0;0;x
+366;373;sea;0;0;x
+366;374;sea;0;0;x
+366;369;sea;0;0;x
+351;359;sea;0;0;x
+360;359;sea;0;0;x
+360;367;sea;0;0;x
+
+#forest path aids
+104;124;impassable;0;0;scary mountain
+104;127;impassable;0;0;scary mountain
+104;97;impassable;0;0;scary mountain
+137;127;impassable;0;0;scary mountain
+193;187;impassable;0;0;scary mountain
+211;187;impassable;0;0;scary mountain
+211;230;impassable;0;0;scary mountain
+211;250;impassable;0;0;scary mountain
+185;189;impassable;0;0;scary mountain
+185;203;impassable;0;0;scary mountain
+191;214;impassable;0;0;scary mountain
+191;186;impassable;0;0;scary mountain
+146;159;impassable;0;0;scary mountain
+146;162;impassable;0;0;scary mountain
+146;141;impassable;0;0;scary mountain
+146;155;impassable;0;0;scary mountain
+132;134;impassable;0;0;scary mountain
+132;149;impassable;0;0;scary mountain
+132;163;impassable;0;0;scary mountain
+86;87;impassable;0;0;scary mountain
+86;102;impassable;0;0;scary mountain
+101;102;impassable;0;0;scary mountain
+101;111;impassable;0;0;scary mountain
+120;123;impassable;0;0;scary mountain
+112;123;impassable;0;0;scary mountain
+112;119;impassable;0;0;scary mountain
+112;105;impassable;0;0;scary mountain
+102;105;impassable;0;0;scary mountain
+102;89;impassable;0;0;scary mountain
+89;108;impassable;0;0;scary mountain
+105;108;impassable;0;0;scary mountain
+105;130;impassable;0;0;scary mountain
+119;130;impassable;0;0;scary mountain
+169;179;impassable;0;0;scary mountain
+200;179;impassable;0;0;scary mountain
+200;198;impassable;0;0;scary mountain
+233;198;impassable;0;0;scary mountain
+233;235;impassable;0;0;scary mountain
+233;253;impassable;0;0;scary mountain
+275;286;impassable;0;0;scary mountain
+275;285;impassable;0;0;scary mountain
+275;284;impassable;0;0;scary mountain
+251;274;impassable;0;0;scary mountain
+251;264;impassable;0;0;scary mountain
+251;259;impassable;0;0;scary mountain
+251;246;impassable;0;0;scary mountain
+251;231;impassable;0;0;scary mountain
+251;245;impassable;0;0;scary mountain
+224;243;impassable;0;0;scary mountain
+224;255;impassable;0;0;scary mountain
+224;240;impassable;0;0;scary mountain
+215;221;impassable;0;0;scary mountain
+215;208;impassable;0;0;scary mountain
+215;245;impassable;0;0;scary mountain
+156;166;impassable;0;0;scary mountain
+139;160;impassable;0;0;scary mountain
+171;174;impassable;0;0;scary mountain
+171;160;impassable;0;0;scary mountain
+296;303;impassable;0;0;scary mountain
+227;230;impassable;0;0;scary mountain
+227;214;impassable;0;0;scary mountain
+242;241;impassable;0;0;scary mountain
+237;256;impassable;0;0;scary mountain
+244;257;impassable;0;0;scary mountain
+244;256;impassable;0;0;scary mountain
+268;257;impassable;0;0;scary mountain
+272;257;impassable;0;0;scary mountain
+197;210;impassable;0;0;scary mountain
+276;290;impassable;0;0;scary mountain
+276;302;impassable;0;0;scary mountain
+100;122;impassable;0;0;scary mountain
+123;142;impassable;0;0;scary mountain
+123;152;impassable;0;0;scary mountain
+153;152;impassable;0;0;scary mountain
+153;158;impassable;0;0;scary mountain

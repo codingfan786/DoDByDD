@@ -3,7 +3,7 @@
 #========================= H E A D E R =========================
 
 capital = 79
-primary_culture = sami
+primary_culture = ollin
 religion = catholic
 government = prussian_constitutionalism
 plurality = 10
