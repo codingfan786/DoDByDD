@@ -78,15 +78,7 @@ country_migration_target =
 		factor = 0.1
 		unemployment = 0.5
 	}
-	modifier = {
-		factor = -10000.0
-		NOT = { has_country_flag = new_world_nation }
-	}
-	modifier = {
-		factor = 4.0
-		THIS = { religion = jewish }
-		any_owned_province = { is_core = ISR }
-	}
+
 #	modifier = {
 #		factor = 10.0
 #		has_country_flag = new_world_nation
@@ -672,61 +664,61 @@ promote_to =
 		group = {
 			modifier = {
 				factor = 1
-					nationalvalue = nv_order
+					nationalvalue = nv_fanatacism
 					NOT = { soldiers = 0.045 }
 					military_spending = 0.10
 			}
 			modifier = {
 				factor = 1
-					nationalvalue = nv_order
+					nationalvalue = nv_fanatacism
 					NOT = { soldiers = 0.045 }
 					military_spending = 0.20
 			}
 			modifier = {
 				factor = 1
-					nationalvalue = nv_order
+					nationalvalue = nv_fanatacism
 					NOT = { soldiers = 0.045 }
 					military_spending = 0.30
 			}
 			modifier = {
 				factor = 1
-					nationalvalue = nv_order
+					nationalvalue = nv_fanatacism
 					NOT = { soldiers = 0.045 }
 					military_spending = 0.40
 			}
 			modifier = {
 				factor = 1
-					nationalvalue = nv_order
+					nationalvalue = nv_fanatacism
 					NOT = { soldiers = 0.045 }
 					military_spending = 0.50
 			}
 			modifier = {
 				factor = 1
-					nationalvalue = nv_order
+					nationalvalue = nv_fanatacism
 					NOT = { soldiers = 0.045 }
 					military_spending = 0.60
 			}
 			modifier = {
 				factor = 1
-					nationalvalue = nv_order
+					nationalvalue = nv_fanatacism
 					NOT = { soldiers = 0.045 }
 					military_spending = 0.70
 			}
 			modifier = {
 				factor = 1
-					nationalvalue = nv_order
+					nationalvalue = nv_fanatacism
 					NOT = { soldiers = 0.045 }
 					military_spending = 0.80
 			}
 			modifier = {
 				factor = 1
-					nationalvalue = nv_order
+					nationalvalue = nv_fanatacism
 					NOT = { soldiers = 0.045 }
 					military_spending = 0.90
 			}
 			modifier = {
 				factor = 1
-					nationalvalue = nv_order
+					nationalvalue = nv_fanatacism
 					NOT = { soldiers = 0.045 }
 					military_spending = 0.99
 			}
@@ -1312,7 +1304,7 @@ ideologies = {
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_statism
 		}
 		modifier = {
 			factor = 0.9
@@ -1340,7 +1332,7 @@ ideologies = {
 		factor = 1
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_tribalism
 			NOT = { ruling_party_ideology = communist }
 		}
 		modifier = {
@@ -2270,27 +2262,27 @@ issues =
 		}		
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_fanatacism
 			consciousness = 5
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_fanatacism
 			consciousness = 6
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_fanatacism
 			consciousness = 7
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_fanatacism
 			consciousness = 8
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_fanatacism
 			consciousness = 9
 		}
 		modifier = {
@@ -2315,27 +2307,27 @@ issues =
 		}		
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_regionalism
 			consciousness = 5
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_regionalism
 			consciousness = 6
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_regionalism
 			consciousness = 7
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_regionalism
 			consciousness = 8
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_regionalism
 			consciousness = 9
 		}
 		modifier = {

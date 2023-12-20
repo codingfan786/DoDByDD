@@ -3,3 +3,5 @@ controller = C45
 add_core = C45
 trade_goods = fruit
 life_rating = 33
+fort = 1
+

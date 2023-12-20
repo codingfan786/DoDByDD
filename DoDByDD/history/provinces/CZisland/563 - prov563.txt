@@ -3,3 +3,5 @@ controller = C47
 add_core = C47
 trade_goods = coal
 life_rating = 33
+naval_base = 1
+

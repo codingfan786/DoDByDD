@@ -3,3 +3,5 @@ controller = C63
 add_core = C63
 trade_goods = grain
 life_rating = 40
+naval_base = 1
+

@@ -92,15 +92,7 @@ country_migration_target =
 		factor = 0.1
 		unemployment = 0.5
 	}
-	modifier = {
-		factor = -10000.0
-		NOT = { has_country_flag = new_world_nation }
-	}
-	modifier = {
-		factor = 4.0
-		THIS = { religion = jewish }
-		any_owned_province = { is_core = ISR }
-	}
+
 #	modifier = {
 #		factor = 10.0
 #		has_country_flag = new_world_nation
@@ -1184,7 +1176,7 @@ ideologies = {
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_statism
 		}
 		modifier = {
 			factor = 0.9
@@ -1212,7 +1204,7 @@ ideologies = {
 		factor = 1
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_tribalism
 			NOT = { ruling_party_ideology = communist }
 		}
 		modifier = {
@@ -2136,27 +2128,27 @@ issues =
 		}		
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_fanatacism
 			consciousness = 5
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_fanatacism
 			consciousness = 6
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_fanatacism
 			consciousness = 7
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_fanatacism
 			consciousness = 8
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_order
+			nationalvalue = nv_fanatacism
 			consciousness = 9
 		}
 		modifier = {
@@ -2181,27 +2173,27 @@ issues =
 		}		
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_regionalism
 			consciousness = 5
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_regionalism
 			consciousness = 6
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_regionalism
 			consciousness = 7
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_regionalism
 			consciousness = 8
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality
+			nationalvalue = nv_regionalism
 			consciousness = 9
 		}
 		modifier = {

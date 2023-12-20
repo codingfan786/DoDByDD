@@ -41,3 +41,18 @@ wool_factory;Wool Fabric;x
 wool_fabric_factory;Wool Fabric Factory;x
 C53;Sillysia;x
 C53_ADJ;Sill;x
+world_bank_rp_nerf;World Bank Nerf;x
+BAN;World Bank;x
+BAN_ADJ;World Bank;x
+nv_mercantilism;Mercantilism;x
+nv_fanatacism;Fanatacism;x
+nv_statism;Statism;x
+nv_tribalism;Tribalism;x
+nv_regionalism;Regionalism;x
+land_reform_two;Extensive land reform;x
+admin_reform_two;Extensive admin reform;x
+education_reform_two;Extensive school reform;x
+transport_improv_two;Advanced;x
+no_western_science;Reject foreign investment;x
+yes_western_science;Accept foreign investment;x
+western_science_two;Promote foreign investment;x

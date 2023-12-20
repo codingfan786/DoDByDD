@@ -3,3 +3,5 @@ controller = C32
 add_core = C32
 trade_goods = coal
 life_rating = 33
+fort = 1
+

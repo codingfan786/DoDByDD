@@ -2,6 +2,13 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+world_bank_rp_nerf = {
+	global_pop_militancy_modifier = -100.0
+	research_points_modifier = -1
+	prestige = -10
+	icon = 10
+}
+
 ##### POLITICAL EVENTS ######
 government_sanitarium = {
 	population_growth = 0.005

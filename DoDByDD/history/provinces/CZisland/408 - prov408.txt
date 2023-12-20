@@ -3,3 +3,5 @@ controller = C30
 add_core = C30
 trade_goods = cattle
 life_rating = 35
+naval_base = 1
+

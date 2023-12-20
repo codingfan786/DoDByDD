@@ -3,3 +3,4 @@ controller = C26
 add_core = C26
 trade_goods = grain
 life_rating = 35
+fort = 1

@@ -6,7 +6,7 @@ multitude_of_financial_instruments = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_liberty
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 2
@@ -180,7 +180,7 @@ private_bank_monitoring = {
 		}
 		modifier = {
 			factor = 1
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -194,7 +194,7 @@ market_behaviour_monitoring = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 1
@@ -217,7 +217,7 @@ buying_on_margin = {
 		}
 		modifier = {
 			factor = 1
-			nationalvalue = nv_liberty
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -232,7 +232,7 @@ silver_standard = {
 		base = 2
 		modifier = {
 			factor = 1
-			nationalvalue = nv_equality
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 1
@@ -250,7 +250,7 @@ decimal_monetary_system = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 1
@@ -351,7 +351,7 @@ state_bond_monetary_mechanism = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 1
@@ -448,7 +448,7 @@ james_mill = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_equality
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 1
@@ -467,7 +467,7 @@ john_elliot_cairnes = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_liberty
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 1
@@ -503,7 +503,7 @@ john_stuart_mill = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_equality
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 1
@@ -522,7 +522,7 @@ pierre_joseph_proudhon = {
 		base = 2
 		modifier = {
 			factor = 3
-			nationalvalue = nv_equality
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 2
@@ -544,7 +544,7 @@ karl_marx = {
 		}
 		modifier = {
 			factor = 2
-			nationalvalue = nv_equality
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 1
@@ -592,7 +592,7 @@ eduard_bernstein = {
 		}
 		modifier = {
 			factor = 1
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -634,7 +634,7 @@ karl_kautsky = {
 		}
 		modifier = {
 			factor = 1
-			nationalvalue = nv_equality
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 2
@@ -671,7 +671,7 @@ friedrich_list = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 1
@@ -693,7 +693,7 @@ wilhelm_roscher = {
 		}
 		modifier = {
 			factor = 1
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -725,7 +725,7 @@ karl_knies = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 2
@@ -765,7 +765,7 @@ adolph_wagner = {
 		}
 		modifier = {
 			factor = 2
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -783,7 +783,7 @@ william_cunningham = {
 		}
 		modifier = {
 			factor = 2
-			nationalvalue = nv_liberty
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -820,7 +820,7 @@ léon_walras = {
 		}
 		modifier = {
 			factor = 1
-			nationalvalue = nv_equality
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -838,7 +838,7 @@ stanley_jevons = {
 		}
 		modifier = {
 			factor = 1
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -856,7 +856,7 @@ carl_menger = {
 		}
 		modifier = {
 			factor = 2
-			nationalvalue = nv_liberty
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -892,7 +892,7 @@ alfred_marshall = {
 		}
 		modifier = {	
 			factor = 2
-			nationalvalue = nv_liberty
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -910,7 +910,7 @@ augustin_cournot = {
 		}
 		modifier = {
 			factor = 2
-			nationalvalue = nv_equality
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -964,7 +964,7 @@ knut_wicksell = {
 		}
 		modifier = {
 			factor = 3
-			nationalvalue = nv_liberty
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -1124,7 +1124,7 @@ polypoly_structure = {
 		}
 		modifier = {
 			factor = 2
-			nationalvalue = nv_liberty
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {
@@ -1146,7 +1146,7 @@ oligopoly_structure = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 2
@@ -1172,7 +1172,7 @@ monopoly_structure = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_equality
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 2
@@ -1227,7 +1227,7 @@ patent = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_order
+			nationalvalue = nv_mercantilism
 		}
 		modifier = {
 			factor = 2
@@ -1280,7 +1280,7 @@ anti_trust_laws = {
 		}
 		modifier = {
 			factor = 2
-			nationalvalue = nv_equality
+			nationalvalue = nv_mercantilism
 		}
 	}
 	effect = {

@@ -71,6 +71,8 @@ C65="countries/C65.txt"
 C66="countries/C66.txt"
 C67="countries/C67.txt"
 
+BAN = "countries/BAN.txt"
+
 dynamic_tags  = yes # any tags after this is considered dynamic dominions
 D01		= "countries/D01.txt"
 D02		= "countries/D02.txt"

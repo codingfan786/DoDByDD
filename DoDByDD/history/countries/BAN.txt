@@ -1,0 +1,7 @@
+capital = 100
+primary_culture = saqui
+ruling_party = GHO_exclusive
+civilized = no
+
+
+set_country_flag = ghostland

@@ -49,11 +49,31 @@ everyday_needs = {
 #	clipper_convoy = 1000000
 }
 
+
 life_needs = {
 }
 
 
-luxury_needs = {
+luxury_needs = { #renos method is retarded (massive price inflations!)
+	iron = 1000000
+	coal = 1000000
+	cotton = 1000000
+	dye = 1000000
+	wool = 1000000
+	silk = 1000000
+	sulphur = 1000000
+	timber = 1000000
+	tropical_wood = 1000000
+	rubber = 1000000
+	oil = 1000000
+	cattle = 1000000
+	fish = 1000000
+	fruit = 1000000
+	grain = 1000000
+	tobacco = 1000000
+	tea = 1000000
+	coffee = 1000000
+	opium = 1000000
 }
 
 

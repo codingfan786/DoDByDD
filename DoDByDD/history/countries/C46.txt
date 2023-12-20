@@ -7,13 +7,15 @@ primary_culture = buldashi
 religion = catholic
 government = democracy
 plurality = 10
-nationalvalue = nv_liberty
-literacy = 0.3
+nationalvalue = nv_regionalism
+
 civilized = yes 
-prestige = 1
+prestige = 80
 schools = traditional_academic
 oob = "C46.txt"
 
+literacy = 0.4
+non_state_culture_literacy = 0.3
 
 #========================= H O U S E - O F - L O R D S =========================
 
@@ -74,5 +76,8 @@ publishing_industry = 1
 mechanized_mining = 1
 basic_chemistry = 1
 
-
+ideological_thought = 1
 mechanical_production = 1
+positivism = 1
+military_plans = 1
+

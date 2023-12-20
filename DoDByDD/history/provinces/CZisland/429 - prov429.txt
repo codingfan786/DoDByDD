@@ -3,3 +3,5 @@ controller = C61
 add_core = C61
 trade_goods = fish
 life_rating = 35
+naval_base = 1
+

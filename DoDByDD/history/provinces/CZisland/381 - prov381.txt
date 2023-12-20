@@ -3,3 +3,5 @@ controller = C60
 add_core = C60
 trade_goods = opium
 life_rating = 35
+naval_base = 1
+

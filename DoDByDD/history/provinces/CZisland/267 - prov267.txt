@@ -4,3 +4,5 @@ add_core = C57
 add_core = C58
 trade_goods = fish
 life_rating = 38
+naval_base = 1
+

@@ -1,636 +1,5165 @@
-1   =   { text_scale = 3}
-2   =   { text_scale = 3}
-3   =   { text_scale = 3}
-4   =   { text_scale = 3}
-5   =   { text_scale = 3}
-6   =   { text_scale = 3}
-7   =   { text_scale = 3}
-8   =   { text_scale = 3}
-9   =   { text_scale = 3}
-10  =   { text_scale = 3}
-11  =   { text_scale = 3}
-12  =   { text_scale = 3}
-13  =   { text_scale = 3}
-14  =   { text_scale = 3}
-15  =   { text_scale = 3}
-16  =   { text_scale = 3}
-17  =   { text_scale = 3}
-18  =   { text_scale = 3}
-19  =   { text_scale = 3}
-20  =   { text_scale = 3}
-21  =   { text_scale = 3}
-22  =   { text_scale = 3}
-23  =   { text_scale = 3}
-24  =   { text_scale = 3}
-25  =   { text_scale = 3}
-26  =   { text_scale = 3}
-27  =   { text_scale = 3}
-28  =   { text_scale = 3}
-29  =   { text_scale = 3}
-30  =   { text_scale = 3}
-31  =   { text_scale = 3}
-32  =   { text_scale = 3}
-33  =   { text_scale = 3}
-34  =   { text_scale = 3}
-35  =   { text_scale = 3}
-36  =   { text_scale = 3}
-37  =   { text_scale = 3}
-38  =   { text_scale = 3}
-39  =   { text_scale = 3}
-40  =   { text_scale = 3}
-41  =   { text_scale = 3}
-42  =   { text_scale = 3}
-43  =   { text_scale = 3}
-44  =   { text_scale = 3}
-45  =   { text_scale = 3}
-46  =   { text_scale = 3}
-47  =   { text_scale = 3}
-48  =   { text_scale = 3}
-49  =   { text_scale = 3}
-50  =   { text_scale = 3}
-51  =   { text_scale = 3}
-52  =   { text_scale = 3}
-53  =   { text_scale = 3}
-54  =   { text_scale = 3}
-55  =   { text_scale = 3}
-56  =   { text_scale = 3}
-57  =   { text_scale = 3}
-58  =   { text_scale = 3}
-59  =   { text_scale = 3}
-60  =   { text_scale = 3}
-61  =   { text_scale = 3}
-62  =   { text_scale = 3}
-63  =   { text_scale = 3}
-64  =   { text_scale = 3}
-65  =   { text_scale = 3}
-66  =   { text_scale = 3}
-67  =   { text_scale = 3}
-68  =   { text_scale = 3}
-69  =   { text_scale = 3}
-70  =   { text_scale = 3}
-71  =   { text_scale = 3}
-72  =   { text_scale = 3}
-73  =   { text_scale = 3}
-74  =   { text_scale = 3}
-75  =   { text_scale = 3}
-76  =   { text_scale = 3}
-77  =   { text_scale = 3}
-78  =   { text_scale = 3}
-79  =   { text_scale = 3}
-80  =   { text_scale = 3}
-81  =   { text_scale = 3}
-82  =   { text_scale = 3}
-83  =   { text_scale = 3}
-84  =   { text_scale = 3}
-85  =   { text_scale = 3}
-86  =   { text_scale = 3}
-87  =   { text_scale = 3}
-88  =   { text_scale = 3}
-89  =   { text_scale = 3}
-90  =   { text_scale = 3}
-91  =   { text_scale = 3}
-92  =   { text_scale = 3}
-93  =   { text_scale = 3}
-94  =   { text_scale = 3}
-95  =   { text_scale = 3}
-96  =   { text_scale = 3}
-97  =   { text_scale = 3}
-98  =   { text_scale = 3}
-99  =   { text_scale = 3}
-100 =   { text_scale = 3}
-101 =   { text_scale = 3}
-102 =   { text_scale = 3}
-103 =   { text_scale = 3}
-104 =   { text_scale = 3}
-105 =   { text_scale = 3}
-106 =   { text_scale = 3}
-107 =   { text_scale = 3}
-108 =   { text_scale = 3}
-109 =   { text_scale = 3}
-110 =   { text_scale = 3}
-111 =   { text_scale = 3}
-112 =   { text_scale = 3}
-113 =   { text_scale = 3}
-114 =   { text_scale = 3}
-115 =   { text_scale = 3}
-116 =   { text_scale = 3}
-117 =   { text_scale = 3}
-118 =   { text_scale = 3}
-119 =   { text_scale = 3}
-120 =   { text_scale = 3}
-121 =   { text_scale = 3}
-122 =   { text_scale = 3}
-123 =   { text_scale = 3}
-124 =   { text_scale = 3}
-125 =   { text_scale = 3}
-126 =   { text_scale = 3}
-127 =   { text_scale = 3}
-128 =   { text_scale = 3}
-129 =   { text_scale = 3}
-130 =   { text_scale = 3}
-131 =   { text_scale = 3}
-132 =   { text_scale = 3}
-133 =   { text_scale = 3}
-134 =   { text_scale = 3}
-135 =   { text_scale = 3}
-136 =   { text_scale = 3}
-137 =   { text_scale = 3}
-138 =   { text_scale = 3}
-139 =   { text_scale = 3}
-140 =   { text_scale = 3}
-141 =   { text_scale = 3}
-142 =   { text_scale = 3}
-143 =   { text_scale = 3}
-144 =   { text_scale = 3}
-145 =   { text_scale = 3}
-146 =   { text_scale = 3}
-147 =   { text_scale = 3}
-148 =   { text_scale = 3}
-149 =   { text_scale = 3}
-150 =   { text_scale = 3}
-151 =   { text_scale = 3}
-152 =   { text_scale = 3}
-153 =   { text_scale = 3}
-154 =   { text_scale = 3}
-155 =   { text_scale = 3}
-156 =   { text_scale = 3}
-157 =   { text_scale = 3}
-158 =   { text_scale = 3}
-159 =   { text_scale = 3}
-160 =   { text_scale = 3}
-161 =   { text_scale = 3}
-162 =   { text_scale = 3}
-163 =   { text_scale = 3}
-164 =   { text_scale = 3}
-165 =   { text_scale = 3}
-166 =   { text_scale = 3}
-167 =   { text_scale = 3}
-168 =   { text_scale = 3}
-169 =   { text_scale = 3}
-170 =   { text_scale = 3}
-171 =   { text_scale = 3}
-172 =   { text_scale = 3}
-173 =   { text_scale = 3}
-174 =   { text_scale = 3}
-175 =   { text_scale = 3}
-176 =   { text_scale = 3}
-177 =   { text_scale = 3}
-178 =   { text_scale = 3}
-179 =   { text_scale = 3}
-180 =   { text_scale = 3}
-181 =   { text_scale = 3}
-182 =   { text_scale = 3}
-183 =   { text_scale = 3}
-184 =   { text_scale = 3}
-185 =   { text_scale = 3}
-186 =   { text_scale = 3}
-187 =   { text_scale = 3}
-188 =   { text_scale = 3}
-189 =   { text_scale = 3}
-190 =   { text_scale = 3}
-191 =   { text_scale = 3}
-192 =   { text_scale = 3}
-193 =   { text_scale = 3}
-194 =   { text_scale = 3}
-195 =   { text_scale = 3}
-196 =   { text_scale = 3}
-197 =   { text_scale = 3}
-198 =   { text_scale = 3}
-199 =   { text_scale = 3}
-200 =   { text_scale = 3}
-201 =   { text_scale = 3}
-202 =   { text_scale = 3}
-203 =   { text_scale = 3}
-204 =   { text_scale = 3}
-205 =   { text_scale = 3}
-206 =   { text_scale = 3}
-207 =   { text_scale = 3}
-208 =   { text_scale = 3}
-209 =   { text_scale = 3}
-210 =   { text_scale = 3}
-211 =   { text_scale = 3}
-212 =   { text_scale = 3}
-213 =   { text_scale = 3}
-214 =   { text_scale = 3}
-215 =   { text_scale = 3}
-216 =   { text_scale = 3}
-217 =   { text_scale = 3}
-218 =   { text_scale = 3}
-219 =   { text_scale = 3}
-220 =   { text_scale = 3}
-221 =   { text_scale = 3}
-222 =   { text_scale = 3}
-223 =   { text_scale = 3}
-224 =   { text_scale = 3}
-225 =   { text_scale = 3}
-226 =   { text_scale = 3}
-227 =   { text_scale = 3}
-228 =   { text_scale = 3}
-229 =   { text_scale = 3}
-230 =   { text_scale = 3}
-231 =   { text_scale = 3}
-232 =   { text_scale = 3}
-233 =   { text_scale = 3}
-234 =   { text_scale = 3}
-235 =   { text_scale = 3}
-236 =   { text_scale = 3}
-237 =   { text_scale = 3}
-238 =   { text_scale = 3}
-239 =   { text_scale = 3}
-240 =   { text_scale = 3}
-241 =   { text_scale = 3}
-242 =   { text_scale = 3}
-243 =   { text_scale = 3}
-244 =   { text_scale = 3}
-245 =   { text_scale = 3}
-246 =   { text_scale = 3}
-247 =   { text_scale = 3}
-248 =   { text_scale = 3}
-249 =   { text_scale = 3}
-250 =   { text_scale = 3}
-251 =   { text_scale = 3}
-252 =   { text_scale = 3}
-253 =   { text_scale = 3}
-254 =   { text_scale = 3}
-255 =   { text_scale = 3}
-256 =   { text_scale = 3}
-257 =   { text_scale = 3}
-258 =   { text_scale = 3}
-259 =   { text_scale = 3}
-260 =   { text_scale = 3}
-261 =   { text_scale = 3}
-262 =   { text_scale = 3}
-263 =   { text_scale = 3}
-264 =   { text_scale = 3}
-265 =   { text_scale = 3}
-266 =   { text_scale = 3}
-267 =   { text_scale = 3}
-268 =   { text_scale = 3}
-269 =   { text_scale = 3}
-270 =   { text_scale = 3}
-271 =   { text_scale = 3}
-272 =   { text_scale = 3}
-273 =   { text_scale = 3}
-274 =   { text_scale = 3}
-275 =   { text_scale = 3}
-276 =   { text_scale = 3}
-277 =   { text_scale = 3}
-278 =   { text_scale = 3}
-279 =   { text_scale = 3}
-280 =   { text_scale = 3}
-281 =   { text_scale = 3}
-282 =   { text_scale = 3}
-283 =   { text_scale = 3}
-284 =   { text_scale = 3}
-285 =   { text_scale = 3}
-286 =   { text_scale = 3}
-287 =   { text_scale = 3}
-288 =   { text_scale = 3}
-289 =   { text_scale = 3}
-290 =   { text_scale = 3}
-291 =   { text_scale = 3}
-292 =   { text_scale = 3}
-293 =   { text_scale = 3}
-294 =   { text_scale = 3}
-295 =   { text_scale = 3}
-296 =   { text_scale = 3}
-297 =   { text_scale = 3}
-298 =   { text_scale = 3}
-299 =   { text_scale = 3}
-300 =   { text_scale = 3}
-301 =   { text_scale = 3}
-302 =   { text_scale = 3}
-303 =   { text_scale = 3}
-304 =   { text_scale = 3}
-305 =   { text_scale = 3}
-306 =   { text_scale = 3}
-307 =   { text_scale = 3}
-308 =   { text_scale = 3}
-309 =   { text_scale = 3}
-310 =   { text_scale = 3}
-311 =   { text_scale = 3}
-312 =   { text_scale = 3}
-313 =   { text_scale = 3}
-314 =   { text_scale = 3}
-315 =   { text_scale = 3}
-316 =   { text_scale = 3}
-317 =   { text_scale = 3}
-318 =   { text_scale = 3}
-319 =   { text_scale = 3}
-320 =   { text_scale = 3}
-321 =   { text_scale = 3}
-322 =   { text_scale = 3}
-323 =   { text_scale = 3}
-324 =   { text_scale = 3}
-325 =   { text_scale = 3}
-326 =   { text_scale = 3}
-327 =   { text_scale = 3}
-328 =   { text_scale = 3}
-329 =   { text_scale = 3}
-330 =   { text_scale = 3}
-331 =   { text_scale = 3}
-332 =   { text_scale = 3}
-333 =   { text_scale = 3}
-334 =   { text_scale = 3}
-335 =   { text_scale = 3}
-336 =   { text_scale = 3}
-337 =   { text_scale = 3}
-338 =   { text_scale = 3}
-339 =   { text_scale = 3}
-340 =   { text_scale = 3}
-341 =   { text_scale = 3}
-342 =   { text_scale = 3}
-343 =   { text_scale = 3}
-344 =   { text_scale = 3}
-345 =   { text_scale = 3}
-346 =   { text_scale = 3}
-347 =   { text_scale = 3}
-348 =   { text_scale = 3}
-349 =   { text_scale = 3}
-350 =   { text_scale = 3}
-351 =   { text_scale = 3}
-352 =   { text_scale = 3}
-353 =   { text_scale = 3}
-354 =   { text_scale = 3}
-355 =   { text_scale = 3}
-356 =   { text_scale = 3}
-357 =   { text_scale = 3}
-358 =   { text_scale = 3}
-359 =   { text_scale = 3}
-360 =   { text_scale = 3}
-361 =   { text_scale = 3}
-362 =   { text_scale = 3}
-363 =   { text_scale = 3}
-364 =   { text_scale = 3}
-365 =   { text_scale = 3}
-366 =   { text_scale = 3}
-367 =   { text_scale = 3}
-368 =   { text_scale = 3}
-369 =   { text_scale = 3}
-370 =   { text_scale = 3}
-371 =   { text_scale = 3}
-372 =   { text_scale = 3}
-373 =   { text_scale = 3}
-374 =   { text_scale = 3}
-375 =   { text_scale = 3}
-376 =   { text_scale = 3}
-377 =   { text_scale = 3}
-378 =   { text_scale = 3}
-379 =   { text_scale = 3}
-380 =   { text_scale = 3}
-381 =   { text_scale = 3}
-382 =   { text_scale = 3}
-383 =   { text_scale = 3}
-384 =   { text_scale = 3}
-385 =   { text_scale = 3}
-386 =   { text_scale = 3}
-387 =   { text_scale = 3}
-388 =   { text_scale = 3}
-389 =   { text_scale = 3}
-390 =   { text_scale = 3}
-391 =   { text_scale = 3}
-392 =   { text_scale = 3}
-393 =   { text_scale = 3}
-394 =   { text_scale = 3}
-395 =   { text_scale = 3}
-396 =   { text_scale = 3}
-397 =   { text_scale = 3}
-398 =   { text_scale = 3}
-399 =   { text_scale = 3}
-400 =   { text_scale = 3}
-401 =   { text_scale = 3}
-402 =   { text_scale = 3}
-403 =   { text_scale = 3}
-404 =   { text_scale = 3}
-405 =   { text_scale = 3}
-406 =   { text_scale = 3}
-407 =   { text_scale = 3}
-408 =   { text_scale = 3}
-409 =   { text_scale = 3}
-410 =   { text_scale = 3}
-411 =   { text_scale = 3}
-412 =   { text_scale = 3}
-413 =   { text_scale = 3}
-414 =   { text_scale = 3}
-415 =   { text_scale = 3}
-416 =   { text_scale = 3}
-417 =   { text_scale = 3}
-418 =   { text_scale = 3}
-419 =   { text_scale = 3}
-420 =   { text_scale = 3}
-421 =   { text_scale = 3}
-422 =   { text_scale = 3}
-423 =   { text_scale = 3}
-424 =   { text_scale = 3}
-425 =   { text_scale = 3}
-426 =   { text_scale = 3}
-427 =   { text_scale = 3}
-428 =   { text_scale = 3}
-429 =   { text_scale = 3}
-430 =   { text_scale = 3}
-431 =   { text_scale = 3}
-432 =   { text_scale = 3}
-433 =   { text_scale = 3}
-434 =   { text_scale = 3}
-435 =   { text_scale = 3}
-436 =   { text_scale = 3}
-437 =   { text_scale = 3}
-438 =   { text_scale = 3}
-439 =   { text_scale = 3}
-440 =   { text_scale = 3}
-441 =   { text_scale = 3}
-442 =   { text_scale = 3}
-443 =   { text_scale = 3}
-444 =   { text_scale = 3}
-445 =   { text_scale = 3}
-446 =   { text_scale = 3}
-447 =   { text_scale = 3}
-448 =   { text_scale = 3}
-449 =   { text_scale = 3}
-450 =   { text_scale = 3}
-451 =   { text_scale = 3}
-452 =   { text_scale = 3}
-453 =   { text_scale = 3}
-454 =   { text_scale = 3}
-455 =   { text_scale = 3}
-456 =   { text_scale = 3}
-457 =   { text_scale = 3}
-458 =   { text_scale = 3}
-459 =   { text_scale = 3}
-460 =   { text_scale = 3}
-461 =   { text_scale = 3}
-462 =   { text_scale = 3}
-463 =   { text_scale = 3}
-464 =   { text_scale = 3}
-465 =   { text_scale = 3}
-466 =   { text_scale = 3}
-467 =   { text_scale = 3}
-468 =   { text_scale = 3}
-469 =   { text_scale = 3}
-470 =   { text_scale = 3}
-471 =   { text_scale = 3}
-472 =   { text_scale = 3}
-473 =   { text_scale = 3}
-474 =   { text_scale = 3}
-475 =   { text_scale = 3}
-476 =   { text_scale = 3}
-477 =   { text_scale = 3}
-478 =   { text_scale = 3}
-479 =   { text_scale = 3}
-480 =   { text_scale = 3}
-481 =   { text_scale = 3}
-482 =   { text_scale = 3}
-483 =   { text_scale = 3}
-484 =   { text_scale = 3}
-485 =   { text_scale = 3}
-486 =   { text_scale = 3}
-487 =   { text_scale = 3}
-488 =   { text_scale = 3}
-489 =   { text_scale = 3}
-490 =   { text_scale = 3}
-491 =   { text_scale = 3}
-492 =   { text_scale = 3}
-493 =   { text_scale = 3}
-494 =   { text_scale = 3}
-495 =   { text_scale = 3}
-496 =   { text_scale = 3}
-497 =   { text_scale = 3}
-498 =   { text_scale = 3}
-499 =   { text_scale = 3}
-500 =   { text_scale = 3}
-501 =   { text_scale = 3}
-502 =   { text_scale = 3}
-503 =   { text_scale = 3}
-504 =   { text_scale = 3}
-505 =   { text_scale = 3}
-506 =   { text_scale = 3}
-507 =   { text_scale = 3}
-508 =   { text_scale = 3}
-509 =   { text_scale = 3}
-510 =   { text_scale = 3}
-511 =   { text_scale = 3}
-512 =   { text_scale = 3}
-513 =   { text_scale = 3}
-514 =   { text_scale = 3}
-515 =   { text_scale = 3}
-516 =   { text_scale = 3}
-517 =   { text_scale = 3}
-518 =   { text_scale = 3}
-519 =   { text_scale = 3}
-520 =   { text_scale = 3}
-521 =   { text_scale = 3}
-522 =   { text_scale = 3}
-523 =   { text_scale = 3}
-524 =   { text_scale = 3}
-525 =   { text_scale = 3}
-526 =   { text_scale = 3}
-527 =   { text_scale = 3}
-528 =   { text_scale = 3}
-529 =   { text_scale = 3}
-530 =   { text_scale = 3}
-531 =   { text_scale = 3}
-532 =   { text_scale = 3}
-533 =   { text_scale = 3}
-534 =   { text_scale = 3}
-535 =   { text_scale = 3}
-536 =   { text_scale = 3}
-537 =   { text_scale = 3}
-538 =   { text_scale = 3}
-539 =   { text_scale = 3}
-540 =   { text_scale = 3}
-541 =   { text_scale = 3}
-542 =   { text_scale = 3}
-543 =   { text_scale = 3}
-544 =   { text_scale = 3}
-545 =   { text_scale = 3}
-546 =   { text_scale = 3}
-547 =   { text_scale = 3}
-548 =   { text_scale = 3}
-549 =   { text_scale = 3}
-550 =   { text_scale = 3}
-551 =   { text_scale = 3}
-552 =   { text_scale = 3}
-553 =   { text_scale = 3}
-554 =   { text_scale = 3}
-555 =   { text_scale = 3}
-556 =   { text_scale = 3}
-557 =   { text_scale = 3}
-558 =   { text_scale = 3}
-559 =   { text_scale = 3}
-560 =   { text_scale = 3}
-561 =   { text_scale = 3}
-562 =   { text_scale = 3}
-563 =   { text_scale = 3}
-564 =   { text_scale = 3}
-565 =   { text_scale = 3}
-566 =   { text_scale = 3}
-567 =   { text_scale = 3}
-568 =   { text_scale = 3}
-569 =   { text_scale = 3}
-570 =   { text_scale = 3}
-571 =   { text_scale = 3}
-572 =   { text_scale = 3}
-573 =   { text_scale = 3}
-574 =   { text_scale = 3}
-575 =   { text_scale = 3}
-576 =   { text_scale = 3}
-577 =   { text_scale = 3}
-578 =   { text_scale = 3}
-579 =   { text_scale = 3}
-580 =   { text_scale = 3}
-581 =   { text_scale = 3}
-582 =   { text_scale = 3}
-583 =   { text_scale = 3}
-584 =   { text_scale = 3}
-585 =   { text_scale = 3}
-586 =   { text_scale = 3}
-587 =   { text_scale = 3}
-588 =   { text_scale = 3}
-589 =   { text_scale = 3}
-590 =   { text_scale = 3}
-591 =   { text_scale = 3}
-592 =   { text_scale = 3}
-593 =   { text_scale = 3}
-594 =   { text_scale = 3}
-595 =   { text_scale = 3}
-596 =   { text_scale = 3}
-597 =   { text_scale = 3}
-598 =   { text_scale = 3}
-599 =   { text_scale = 3}
-600 =   { text_scale = 3}
-601 =   { text_scale = 3}
-602 =   { text_scale = 3}
-603 =   { text_scale = 3}
-604 =   { text_scale = 3}
-605 =   { text_scale = 3}
-606 =   { text_scale = 3}
-607 =   { text_scale = 3}
-608 =   { text_scale = 3}
-609 =   { text_scale = 3}
-610 =   { text_scale = 3}
-611 =   { text_scale = 3}
-612 =   { text_scale = 3}
-613 =   { text_scale = 3}
-614 =   { text_scale = 3}
-615 =   { text_scale = 3}
-616 =   { text_scale = 3}
-617 =   { text_scale = 3}
-618 =   { text_scale = 3}
-619 =   { text_scale = 3}
-620 =   { text_scale = 3}
-621 =   { text_scale = 3}
-622 =   { text_scale = 3}
-623 =   { text_scale = 3}
-624 =   { text_scale = 3}
-625 =   { text_scale = 3}
-626 =   { text_scale = 3}
-627 =   { text_scale = 3}
-628 =   { text_scale = 3}
-629 =   { text_scale = 3}
-630 =   { text_scale = 3}
-631 =   { text_scale = 3}
-632 =   { text_scale = 3}
-633 =   { text_scale = 3}
-634 =   { text_scale = 3}
-635 =   { text_scale = 3}
-636 =   { text_scale = 3}
+1 = {
+    text_scale = 3
+}
+
+2 = {
+    text_scale = 3
+}
+
+3 = {
+    text_scale = 3
+}
+
+4 = {
+    text_scale = 3
+}
+
+5 = {
+    text_scale = 3
+}
+
+6 = {
+    text_scale = 3
+}
+
+7 = {
+    text_scale = 3
+}
+
+8 = {
+    text_scale = 3
+}
+
+9 = {
+    text_scale = 3
+}
+
+10 = {
+    text_scale = 3
+}
+
+11 = {
+    text_scale = 3
+}
+
+12 = {
+    text_scale = 3
+}
+
+13 = {
+    text_scale = 3
+}
+
+14 = {
+    text_scale = 3
+}
+
+15 = {
+    text_scale = 3
+}
+
+16 = {
+    text_scale = 3
+}
+
+17 = {
+    text_scale = 3
+}
+
+18 = {
+    text_scale = 3
+}
+
+19 = {
+    text_scale = 3
+}
+
+20 = {
+    text_scale = 3
+}
+
+21 = {
+    text_scale = 3
+}
+
+22 = {
+    text_scale = 3
+}
+
+23 = {
+    text_scale = 3
+}
+
+24 = {
+    text_scale = 3
+}
+
+25 = {
+    text_scale = 3
+}
+
+26 = {
+    text_scale = 3
+}
+
+27 = {
+    text_scale = 3
+}
+
+28 = {
+    text_scale = 3
+}
+
+29 = {
+    text_scale = 3
+}
+
+30 = {
+    text_scale = 3
+}
+
+31 = {
+    text_scale = 3
+}
+
+32 = {
+    text_scale = 3
+}
+
+33 = {
+    text_scale = 3
+}
+
+34 = {
+    text_scale = 3
+}
+
+35 = {
+    text_scale = 3
+}
+
+36 = {
+    text_scale = 3
+}
+
+37 = {
+    text_scale = 3
+}
+
+38 = {
+    text_scale = 3
+}
+
+39 = {
+    text_scale = 3
+}
+
+40 = {
+    text_scale = 3
+}
+
+41 = {
+    text_scale = 3
+}
+
+42 = {
+    text_scale = 3
+}
+
+43 = {
+    text_scale = 3
+}
+
+44 = {
+    text_scale = 3
+}
+
+45 = {
+    text_scale = 3
+}
+
+46 = {
+    text_scale = 3
+}
+
+47 = {
+    text_scale = 3
+}
+
+48 = {
+    text_scale = 3
+}
+
+49 = {
+    text_scale = 3
+}
+
+50 = {
+    text_scale = 3
+}
+
+51 = {
+    text_scale = 3
+}
+
+52 = {
+    text_scale = 3
+}
+
+53 = {
+    text_scale = 3
+}
+
+54 = {
+    text_scale = 3
+}
+
+55 = {
+    text_scale = 3
+}
+
+56 = {
+    text_scale = 3
+}
+
+57 = {
+    text_scale = 3
+}
+
+58 = {
+    text_scale = 3
+}
+
+59 = {
+    text_scale = 3
+}
+
+60 = {
+    text_scale = 3
+}
+
+61 = {
+    text_scale = 3
+}
+
+62 = {
+    text_scale = 3
+}
+
+63 = {
+    text_scale = 3
+}
+
+64 = {
+    text_scale = 3
+}
+
+65 = {
+    text_scale = 3
+}
+
+66 = {
+    text_scale = 3
+}
+
+67 = {
+    text_scale = 3
+}
+
+68 = {
+    text_scale = 3
+}
+
+69 = {
+    text_scale = 3
+}
+
+70 = {
+    text_scale = 3
+}
+
+71 = {
+    text_scale = 3
+}
+
+72 = {
+    text_scale = 3
+}
+
+73 = {
+    text_scale = 3
+}
+
+74 = {
+    text_scale = 3
+}
+
+75 = {
+    text_scale = 3
+}
+
+76 = {
+    text_scale = 3
+}
+
+77 = {
+    text_scale = 3
+}
+
+78 = {
+    text_scale = 3
+}
+
+79 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 364.613333
+            y = 629.853333
+        }
+
+    }
+
+}
+
+80 = {
+    text_scale = 3
+    unit = {
+        x = 387.730000
+        y = 568.590000
+    }
+
+    building_position = {
+        naval_base = {
+            x = 385.165000
+            y = 581.795000
+        }
+
+    }
+
+}
+
+81 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 378.650000
+            y = 538.640000
+        }
+
+    }
+
+}
+
+82 = {
+    text_position = {
+        x = 389.866667
+        y = 658.240000
+    }
+
+    text_scale = 3
+    unit = {
+        x = 402.916667
+        y = 668.293333
+    }
+
+    building_position = {
+        naval_base = {
+            x = 387.063333
+            y = 663.846667
+        }
+
+    }
+
+}
+
+83 = {
+    text_position = {
+        x = 398.826667
+        y = 588.726667
+    }
+
+    text_scale = 3
+    unit = {
+        x = 395.233333
+        y = 590.413333
+    }
+
+    building_position = {
+        naval_base = {
+            x = 398.423684
+            y = 578.478070
+        }
+
+    }
+
+}
+
+84 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 402.615789
+            y = 576.475000
+        }
+
+    }
+
+}
+
+85 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 408.146930
+            y = 587.794737
+        }
+
+    }
+
+}
+
+86 = {
+    text_scale = 3
+}
+
+87 = {
+    text_scale = 3
+}
+
+88 = {
+    text_scale = 3
+    unit = {
+        x = 410.840000
+        y = 507.640000
+    }
+
+    building_position = {
+        naval_base = {
+            x = 407.113333
+            y = 500.273333
+        }
+
+    }
+
+}
+
+89 = {
+    text_scale = 3
+}
+
+90 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 423.850000
+            y = 582.568421
+        }
+
+    }
+
+}
+
+91 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 410.075000
+            y = 691.183333
+        }
+
+    }
+
+}
+
+92 = {
+    text_scale = 3
+}
+
+93 = {
+    text_scale = 3
+}
+
+94 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 421.385000
+            y = 415.451667
+        }
+
+    }
+
+}
+
+95 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 432.780000
+            y = 724.660000
+        }
+
+    }
+
+}
+
+96 = {
+    text_position = {
+        x = 440.846491
+        y = 597.758772
+    }
+
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 436.938158
+            y = 591.764035
+        }
+
+    }
+
+}
+
+97 = {
+    text_scale = 3
+}
+
+98 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 441.707018
+            y = 589.459649
+        }
+
+    }
+
+}
+
+99 = {
+    text_scale = 3
+}
+
+100 = {
+    text_scale = 3
+}
+
+101 = {
+    text_scale = 3
+}
+
+102 = {
+    text_scale = 3
+}
+
+103 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 447.066667
+            y = 388.380000
+        }
+
+    }
+
+}
+
+104 = {
+    text_scale = 3
+}
+
+105 = {
+    text_scale = 3
+}
+
+106 = {
+    text_scale = 3
+}
+
+107 = {
+    text_scale = 3
+}
+
+108 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 461.546930
+            y = 589.393421
+        }
+
+    }
+
+}
+
+109 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 457.655000
+            y = 739.640000
+        }
+
+    }
+
+}
+
+110 = {
+    text_scale = 3
+}
+
+111 = {
+    text_scale = 3
+}
+
+112 = {
+    text_scale = 3
+}
+
+113 = {
+    text_scale = 3
+}
+
+114 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 471.250000
+            y = 586.250000
+        }
+
+    }
+
+}
+
+115 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 469.550000
+            y = 364.080000
+        }
+
+    }
+
+}
+
+116 = {
+    text_scale = 3
+}
+
+117 = {
+    text_scale = 3
+}
+
+118 = {
+    text_scale = 3
+}
+
+119 = {
+    text_scale = 3
+}
+
+120 = {
+    text_scale = 3
+}
+
+121 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 482.296667
+            y = 767.560000
+        }
+
+    }
+
+}
+
+122 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 501.842105
+            y = 422.315789
+        }
+
+    }
+
+}
+
+123 = {
+    text_scale = 3
+}
+
+124 = {
+    text_scale = 3
+}
+
+125 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 500.723684
+            y = 442.631579
+        }
+
+    }
+
+}
+
+126 = {
+    text_scale = 3
+}
+
+127 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 493.069298
+            y = 497.497368
+        }
+
+    }
+
+}
+
+128 = {
+    text_scale = 3
+}
+
+129 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 522.080000
+            y = 345.320000
+        }
+
+    }
+
+}
+
+130 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 493.286842
+            y = 600.303947
+        }
+
+    }
+
+}
+
+131 = {
+    text_scale = 3
+}
+
+132 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 500.073684
+            y = 602.522368
+        }
+
+    }
+
+}
+
+133 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 507.345000
+            y = 383.185000
+        }
+
+    }
+
+}
+
+134 = {
+    text_scale = 3
+}
+
+135 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 497.463158
+            y = 478.557895
+        }
+
+    }
+
+}
+
+136 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 509.223333
+            y = 757.986667
+        }
+
+    }
+
+}
+
+137 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 508.926316
+            y = 510.575439
+        }
+
+    }
+
+}
+
+138 = {
+    text_scale = 3
+}
+
+139 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 515.916228
+            y = 511.646930
+        }
+
+    }
+
+}
+
+140 = {
+    text_scale = 3
+}
+
+141 = {
+    text_scale = 3
+}
+
+142 = {
+    text_scale = 3
+}
+
+143 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 538.517544
+            y = 715.167982
+        }
+
+    }
+
+}
+
+144 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 514.305263
+            y = 621.636842
+        }
+
+    }
+
+}
+
+145 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 521.186667
+            y = 388.026667
+        }
+
+    }
+
+}
+
+146 = {
+    text_scale = 3
+}
+
+147 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 506.695175
+            y = 436.677632
+        }
+
+    }
+
+}
+
+148 = {
+    text_scale = 3
+    building_position = {
+        railroad = {
+            x = 513.798684
+            y = 463.630702
+        }
+
+        naval_base = {
+            x = 502.422368
+            y = 460.757895
+        }
+
+    }
+
+}
+
+149 = {
+    text_scale = 3
+}
+
+150 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 505.587719
+            y = 424.510526
+        }
+
+    }
+
+}
+
+151 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 525.361404
+            y = 633.938596
+        }
+
+    }
+
+}
+
+152 = {
+    text_scale = 3
+}
+
+153 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 542.528509
+            y = 694.022368
+        }
+
+    }
+
+}
+
+154 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 536.361842
+            y = 740.592105
+        }
+
+    }
+
+}
+
+155 = {
+    text_scale = 3
+}
+
+156 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 519.491228
+            y = 623.387719
+        }
+
+    }
+
+}
+
+157 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 533.286667
+            y = 351.793333
+        }
+
+    }
+
+}
+
+158 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 529.691228
+            y = 642.989035
+        }
+
+    }
+
+}
+
+159 = {
+    text_scale = 3
+}
+
+160 = {
+    text_position = {
+        x = 531.636842
+        y = 510.378947
+    }
+
+    text_scale = 3
+    unit = {
+        x = 527.922807
+        y = 512.414035
+    }
+
+    building_position = {
+        naval_base = {
+            x = 524.564912
+            y = 522.742105
+        }
+
+    }
+
+}
+
+161 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 538.810526
+            y = 539.375439
+        }
+
+    }
+
+}
+
+162 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 533.215789
+            y = 542.532456
+        }
+
+    }
+
+}
+
+163 = {
+    text_scale = 3
+}
+
+164 = {
+    text_scale = 3
+}
+
+165 = {
+    text_scale = 3
+}
+
+166 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 528.686404
+            y = 637.291667
+        }
+
+    }
+
+}
+
+167 = {
+    text_scale = 3
+}
+
+168 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 543.995614
+            y = 646.528509
+        }
+
+    }
+
+}
+
+169 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 541.555702
+            y = 719.824561
+        }
+
+    }
+
+}
+
+170 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 543.605000
+            y = 761.391667
+        }
+
+    }
+
+}
+
+171 = {
+    text_scale = 3
+}
+
+172 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 563.553070
+            y = 681.656140
+        }
+
+    }
+
+}
+
+173 = {
+    text_scale = 3
+}
+
+174 = {
+    text_scale = 3
+}
+
+175 = {
+    text_scale = 3
+}
+
+176 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 549.263158
+            y = 544.970175
+        }
+
+    }
+
+}
+
+177 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 550.552632
+            y = 548.442982
+        }
+
+    }
+
+}
+
+178 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 551.412281
+            y = 686.874561
+        }
+
+    }
+
+}
+
+179 = {
+    text_scale = 3
+}
+
+180 = {
+    text_scale = 3
+}
+
+181 = {
+    text_scale = 3
+}
+
+182 = {
+    text_scale = 3
+}
+
+183 = {
+    text_scale = 3
+}
+
+184 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 568.956667
+            y = 372.091667
+        }
+
+    }
+
+}
+
+185 = {
+    text_position = {
+        x = 582.261404
+        y = 583.275439
+    }
+
+    text_scale = 3
+    unit = {
+        x = 566.100000
+        y = 563.933333
+    }
+
+    building_position = {
+        naval_base = {
+            x = 578.650877
+            y = 570.896491
+        }
+
+    }
+
+}
+
+186 = {
+    text_scale = 3
+}
+
+187 = {
+    text_scale = 3
+}
+
+188 = {
+    text_scale = 3
+}
+
+189 = {
+    text_scale = 3
+}
+
+190 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 581.456140
+            y = 644.280702
+        }
+
+    }
+
+}
+
+191 = {
+    text_position = {
+        x = 590.692105
+        y = 550.518421
+    }
+
+    text_rotation = 0.611544
+    text_scale = 3
+    unit = {
+        x = 566.088158
+        y = 539.805263
+    }
+
+    building_position = {
+        naval_base = {
+            x = 591.690789
+            y = 558.144737
+        }
+
+    }
+
+}
+
+192 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 581.383333
+            y = 780.953333
+        }
+
+    }
+
+}
+
+193 = {
+    text_scale = 3
+}
+
+194 = {
+    text_scale = 3
+}
+
+195 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 587.500000
+            y = 369.820000
+        }
+
+    }
+
+}
+
+196 = {
+    text_scale = 3
+}
+
+197 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 586.673684
+            y = 630.647368
+        }
+
+    }
+
+}
+
+198 = {
+    text_scale = 3
+}
+
+199 = {
+    text_scale = 3
+}
+
+200 = {
+    text_scale = 3
+}
+
+201 = {
+    text_scale = 3
+}
+
+202 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 587.473684
+            y = 642.573684
+        }
+
+    }
+
+}
+
+203 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 604.390351
+            y = 590.878947
+        }
+
+    }
+
+}
+
+204 = {
+    text_scale = 3
+}
+
+205 = {
+    text_scale = 3
+}
+
+206 = {
+    text_scale = 3
+}
+
+207 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 605.445614
+            y = 669.261404
+        }
+
+    }
+
+}
+
+208 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 594.364912
+            y = 676.722807
+        }
+
+    }
+
+}
+
+209 = {
+    text_scale = 3
+}
+
+210 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 610.552632
+            y = 600.439474
+        }
+
+    }
+
+}
+
+211 = {
+    text_scale = 3
+}
+
+212 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 601.919298
+            y = 621.570175
+        }
+
+    }
+
+}
+
+213 = {
+    text_position = {
+        x = 607.687719
+        y = 635.987719
+    }
+
+    text_scale = 3
+    unit = {
+        x = 608.648246
+        y = 640.085965
+    }
+
+    building_position = {
+        naval_base = {
+            x = 624.080702
+            y = 642.135088
+        }
+
+    }
+
+}
+
+214 = {
+    text_scale = 3
+}
+
+215 = {
+    text_scale = 3
+}
+
+216 = {
+    text_scale = 3
+}
+
+217 = {
+    text_scale = 3
+}
+
+218 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 616.020000
+            y = 785.326667
+        }
+
+    }
+
+}
+
+219 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 613.177193
+            y = 593.387719
+        }
+
+    }
+
+}
+
+220 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 619.331667
+            y = 378.055000
+        }
+
+    }
+
+}
+
+221 = {
+    text_scale = 3
+}
+
+222 = {
+    text_position = {
+        x = 621.845614
+        y = 601.967544
+    }
+
+    text_scale = 3
+    unit = {
+        x = 629.464912
+        y = 594.725439
+    }
+
+    building_position = {
+        naval_base = {
+            x = 624.108772
+            y = 596.460526
+        }
+
+    }
+
+}
+
+223 = {
+    text_scale = 3
+}
+
+224 = {
+    text_position = {
+        x = 641.069298
+        y = 617.244298
+    }
+
+    text_scale = 3
+    unit = {
+        x = 635.988596
+        y = 609.940789
+    }
+
+    building_position = {
+        naval_base = {
+            x = 632.575000
+            y = 626.929386
+        }
+
+    }
+
+}
+
+225 = {
+    text_scale = 3
+}
+
+226 = {
+    text_scale = 3
+}
+
+227 = {
+    text_scale = 3
+}
+
+228 = {
+    text_scale = 3
+}
+
+229 = {
+    text_scale = 3
+}
+
+230 = {
+    text_scale = 3
+}
+
+231 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 620.360526
+            y = 668.387281
+        }
+
+    }
+
+}
+
+232 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 628.789474
+            y = 654.614035
+        }
+
+    }
+
+}
+
+233 = {
+    text_scale = 3
+}
+
+234 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 630.585965
+            y = 583.260526
+        }
+
+    }
+
+}
+
+235 = {
+    text_scale = 3
+}
+
+236 = {
+    text_scale = 3
+}
+
+237 = {
+    text_scale = 3
+}
+
+238 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 655.420000
+            y = 373.100000
+        }
+
+    }
+
+}
+
+239 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 647.506667
+            y = 784.238333
+        }
+
+    }
+
+}
+
+240 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 639.693421
+            y = 585.656140
+        }
+
+    }
+
+}
+
+241 = {
+    text_scale = 3
+}
+
+242 = {
+    text_scale = 3
+}
+
+243 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 637.018860
+            y = 644.535088
+        }
+
+    }
+
+}
+
+244 = {
+    text_scale = 3
+}
+
+245 = {
+    text_scale = 3
+}
+
+246 = {
+    text_scale = 3
+}
+
+247 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 671.148246
+            y = 609.378070
+        }
+
+    }
+
+}
+
+248 = {
+    text_scale = 3
+}
+
+249 = {
+    text_scale = 3
+}
+
+250 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 683.265789
+            y = 523.326316
+        }
+
+    }
+
+}
+
+251 = {
+    text_scale = 3
+}
+
+252 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 682.590000
+            y = 399.975000
+        }
+
+    }
+
+}
+
+253 = {
+    text_scale = 3
+}
+
+254 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 673.368333
+            y = 271.125000
+        }
+
+    }
+
+}
+
+255 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 661.645175
+            y = 602.256579
+        }
+
+    }
+
+}
+
+256 = {
+    text_scale = 3
+}
+
+257 = {
+    text_scale = 3
+}
+
+258 = {
+    text_scale = 3
+}
+
+259 = {
+    text_scale = 3
+}
+
+260 = {
+    text_scale = 3
+}
+
+261 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 675.058333
+            y = 789.136667
+        }
+
+    }
+
+}
+
+262 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 684.381579
+            y = 516.414474
+        }
+
+    }
+
+}
+
+263 = {
+    text_scale = 3
+}
+
+264 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 685.423684
+            y = 627.500000
+        }
+
+    }
+
+}
+
+265 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 693.421053
+            y = 513.453947
+        }
+
+    }
+
+}
+
+266 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 677.718421
+            y = 613.727632
+        }
+
+    }
+
+}
+
+267 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 681.565000
+            y = 372.250000
+        }
+
+    }
+
+}
+
+268 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 696.509649
+            y = 485.844298
+        }
+
+    }
+
+}
+
+269 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 684.287719
+            y = 554.024561
+        }
+
+    }
+
+}
+
+270 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 703.433333
+            y = 326.100000
+        }
+
+    }
+
+}
+
+271 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 673.967105
+            y = 610.565789
+        }
+
+    }
+
+}
+
+272 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 713.277193
+            y = 460.484211
+        }
+
+    }
+
+}
+
+273 = {
+    text_scale = 3
+}
+
+274 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 709.052632
+            y = 647.473684
+        }
+
+    }
+
+}
+
+275 = {
+    text_scale = 3
+}
+
+276 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 696.358772
+            y = 639.335526
+        }
+
+    }
+
+}
+
+277 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 699.788158
+            y = 559.456579
+        }
+
+    }
+
+}
+
+278 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 712.066667
+            y = 412.725000
+        }
+
+    }
+
+}
+
+279 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 685.385965
+            y = 523.581140
+        }
+
+    }
+
+}
+
+280 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 708.467105
+            y = 565.546053
+        }
+
+    }
+
+}
+
+281 = {
+    text_scale = 3
+}
+
+282 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 726.800000
+            y = 787.750000
+        }
+
+    }
+
+}
+
+283 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 696.370175
+            y = 496.575439
+        }
+
+    }
+
+}
+
+284 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 716.241667
+            y = 671.353509
+        }
+
+    }
+
+}
+
+285 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 713.138158
+            y = 692.736842
+        }
+
+    }
+
+}
+
+286 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 714.335526
+            y = 716.486842
+        }
+
+    }
+
+}
+
+287 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 726.038596
+            y = 660.317544
+        }
+
+    }
+
+}
+
+288 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 716.375000
+            y = 275.958333
+        }
+
+    }
+
+}
+
+289 = {
+    text_position = {
+        x = 725.112281
+        y = 601.096491
+    }
+
+    text_scale = 3
+    unit = {
+        x = 725.771930
+        y = 606.456140
+    }
+
+    building_position = {
+        naval_base = {
+            x = 726.596491
+            y = 597.468421
+        }
+
+    }
+
+}
+
+290 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 711.798246
+            y = 650.321053
+        }
+
+    }
+
+}
+
+291 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 726.770000
+            y = 730.810000
+        }
+
+    }
+
+}
+
+292 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 731.993333
+            y = 434.860000
+        }
+
+    }
+
+}
+
+293 = {
+    text_scale = 3
+}
+
+294 = {
+    text_scale = 3
+}
+
+295 = {
+    text_scale = 3
+}
+
+296 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 715.458772
+            y = 700.151754
+        }
+
+    }
+
+}
+
+297 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 738.395000
+            y = 759.575000
+        }
+
+    }
+
+}
+
+298 = {
+    text_scale = 3
+}
+
+299 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 741.457895
+            y = 643.484649
+        }
+
+    }
+
+}
+
+300 = {
+    text_scale = 3
+}
+
+301 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 748.140000
+            y = 235.495000
+        }
+
+    }
+
+}
+
+302 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 743.421053
+            y = 601.526316
+        }
+
+    }
+
+}
+
+303 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 739.234211
+            y = 656.620614
+        }
+
+    }
+
+}
+
+304 = {
+    text_scale = 3
+}
+
+305 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 756.033333
+            y = 445.500000
+        }
+
+    }
+
+}
+
+306 = {
+    text_scale = 3
+}
+
+307 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 756.315789
+            y = 613.105263
+        }
+
+    }
+
+}
+
+308 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 763.536364
+            y = 589.418182
+        }
+
+    }
+
+}
+
+309 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 760.520000
+            y = 714.835000
+        }
+
+    }
+
+}
+
+310 = {
+    text_scale = 3
+}
+
+311 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 768.666667
+            y = 576.696970
+        }
+
+    }
+
+}
+
+312 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 756.187719
+            y = 622.287719
+        }
+
+    }
+
+}
+
+313 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 784.688636
+            y = 704.488636
+        }
+
+    }
+
+}
+
+314 = {
+    text_scale = 3
+}
+
+315 = {
+    text_scale = 3
+}
+
+316 = {
+    text_scale = 3
+}
+
+317 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 796.780303
+            y = 672.866667
+        }
+
+    }
+
+}
+
+318 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 765.451515
+            y = 584.442424
+        }
+
+    }
+
+}
+
+319 = {
+    text_scale = 3
+}
+
+320 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 796.700000
+            y = 544.645455
+        }
+
+    }
+
+}
+
+321 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 787.331818
+            y = 572.459091
+        }
+
+    }
+
+}
+
+322 = {
+    text_scale = 3
+}
+
+323 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 788.428333
+            y = 711.910000
+        }
+
+    }
+
+}
+
+324 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 798.300000
+            y = 450.700000
+        }
+
+    }
+
+}
+
+325 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 807.569697
+            y = 483.601515
+        }
+
+    }
+
+}
+
+326 = {
+    text_scale = 3
+}
+
+327 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 817.321667
+            y = 462.195000
+        }
+
+    }
+
+}
+
+328 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 802.945455
+            y = 567.931818
+        }
+
+    }
+
+}
+
+329 = {
+    text_scale = 3
+}
+
+330 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 805.496667
+            y = 369.528333
+        }
+
+    }
+
+}
+
+331 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 817.509091
+            y = 653.781818
+        }
+
+    }
+
+}
+
+332 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 827.366667
+            y = 682.300000
+        }
+
+    }
+
+}
+
+333 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 823.581818
+            y = 508.545455
+        }
+
+    }
+
+}
+
+334 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 824.639394
+            y = 551.753030
+        }
+
+    }
+
+}
+
+335 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 817.663636
+            y = 571.516667
+        }
+
+    }
+
+}
+
+336 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 836.436667
+            y = 484.693333
+        }
+
+    }
+
+}
+
+337 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 840.327273
+            y = 610.496970
+        }
+
+    }
+
+}
+
+338 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 859.340000
+            y = 330.960000
+        }
+
+    }
+
+}
+
+339 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 830.200000
+            y = 589.545455
+        }
+
+    }
+
+}
+
+340 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 851.280303
+            y = 630.578788
+        }
+
+    }
+
+}
+
+341 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 834.772727
+            y = 557.204545
+        }
+
+    }
+
+}
+
+342 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 849.400000
+            y = 666.800000
+        }
+
+    }
+
+}
+
+343 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 846.035000
+            y = 505.878333
+        }
+
+    }
+
+}
+
+344 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 850.250000
+            y = 429.460000
+        }
+
+    }
+
+}
+
+345 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 842.185606
+            y = 551.764394
+        }
+
+    }
+
+}
+
+346 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 841.581818
+            y = 558.746212
+        }
+
+    }
+
+}
+
+347 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 852.678788
+            y = 546.618182
+        }
+
+    }
+
+}
+
+348 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 846.347727
+            y = 598.476515
+        }
+
+    }
+
+}
+
+349 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 871.382576
+            y = 580.078788
+        }
+
+    }
+
+}
+
+350 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 873.871212
+            y = 599.625000
+        }
+
+    }
+
+}
+
+351 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 857.693333
+            y = 504.666667
+        }
+
+    }
+
+}
+
+352 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 877.457576
+            y = 618.582576
+        }
+
+    }
+
+}
+
+353 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 874.072727
+            y = 649.481818
+        }
+
+    }
+
+}
+
+354 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 859.909091
+            y = 545.496212
+        }
+
+    }
+
+}
+
+355 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 862.785606
+            y = 541.403030
+        }
+
+    }
+
+}
+
+356 = {
+    text_position = {
+        x = 873.675000
+        y = 417.980000
+    }
+
+    text_scale = 3
+    unit = {
+        x = 880.695000
+        y = 424.730000
+    }
+
+    building_position = {
+        naval_base = {
+            x = 876.780000
+            y = 401.915000
+        }
+
+    }
+
+}
+
+357 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 883.772727
+            y = 570.625000
+        }
+
+    }
+
+}
+
+358 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 916.033333
+            y = 300.700000
+        }
+
+    }
+
+}
+
+359 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 888.430000
+            y = 481.086667
+        }
+
+    }
+
+}
+
+360 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 879.810000
+            y = 519.405000
+        }
+
+    }
+
+}
+
+361 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 883.863636
+            y = 575.318182
+        }
+
+    }
+
+}
+
+362 = {
+    text_scale = 3
+    unit = {
+        x = 883.289394
+        y = 608.495455
+    }
+
+    building_position = {
+        naval_base = {
+            x = 883.289394
+            y = 608.495455
+        }
+
+    }
+
+}
+
+363 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 891.404545
+            y = 548.156061
+        }
+
+    }
+
+}
+
+364 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 899.300000
+            y = 450.600000
+        }
+
+    }
+
+}
+
+365 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 894.760000
+            y = 634.313333
+        }
+
+    }
+
+}
+
+366 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 900.507576
+            y = 582.420455
+        }
+
+    }
+
+}
+
+367 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 905.636667
+            y = 491.046667
+        }
+
+    }
+
+}
+
+368 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 892.562879
+            y = 543.677273
+        }
+
+    }
+
+}
+
+369 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 899.231061
+            y = 562.317424
+        }
+
+    }
+
+}
+
+370 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 908.833333
+            y = 255.313333
+        }
+
+    }
+
+}
+
+371 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 917.150000
+            y = 610.900000
+        }
+
+    }
+
+}
+
+372 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 907.955000
+            y = 511.151667
+        }
+
+    }
+
+}
+
+373 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 924.916667
+            y = 595.208333
+        }
+
+    }
+
+}
+
+374 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 902.642424
+            y = 574.314394
+        }
+
+    }
+
+}
+
+375 = {
+    text_scale = 3
+}
+
+376 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 910.911667
+            y = 503.783333
+        }
+
+    }
+
+}
+
+377 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 915.606667
+            y = 492.803333
+        }
+
+    }
+
+}
+
+378 = {
+    text_scale = 3
+}
+
+379 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 937.533333
+            y = 587.266667
+        }
+
+    }
+
+}
+
+380 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 919.975000
+            y = 477.120000
+        }
+
+    }
+
+}
+
+381 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 948.770000
+            y = 258.366667
+        }
+
+    }
+
+}
+
+382 = {
+    text_scale = 3
+}
+
+383 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 948.510000
+            y = 437.846667
+        }
+
+    }
+
+}
+
+384 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 931.458333
+            y = 462.208333
+        }
+
+    }
+
+}
+
+385 = {
+    text_scale = 3
+}
+
+386 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 950.760000
+            y = 573.053333
+        }
+
+    }
+
+}
+
+387 = {
+    text_scale = 3
+}
+
+388 = {
+    text_scale = 3
+}
+
+389 = {
+    text_scale = 3
+}
+
+390 = {
+    text_scale = 3
+}
+
+391 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 966.333333
+            y = 563.160000
+        }
+
+    }
+
+}
+
+392 = {
+    text_scale = 3
+}
+
+393 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 966.666667
+            y = 410.113333
+        }
+
+    }
+
+}
+
+394 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 971.825000
+            y = 435.525000
+        }
+
+    }
+
+}
+
+395 = {
+    text_scale = 3
+}
+
+396 = {
+    text_scale = 3
+}
+
+397 = {
+    text_scale = 3
+}
+
+398 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 971.820000
+            y = 565.700000
+        }
+
+    }
+
+}
+
+399 = {
+    text_scale = 3
+}
+
+400 = {
+    text_scale = 3
+}
+
+401 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 985.185000
+            y = 583.545000
+        }
+
+    }
+
+}
+
+402 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1043.413333
+            y = 269.053333
+        }
+
+    }
+
+}
+
+403 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1019.850000
+            y = 409.850000
+        }
+
+    }
+
+}
+
+404 = {
+    text_scale = 3
+}
+
+405 = {
+    text_scale = 3
+}
+
+406 = {
+    text_scale = 3
+}
+
+407 = {
+    text_scale = 3
+}
+
+408 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1024.716667
+            y = 602.773333
+        }
+
+    }
+
+}
+
+409 = {
+    text_scale = 3
+}
+
+410 = {
+    text_scale = 3
+}
+
+411 = {
+    text_scale = 3
+}
+
+412 = {
+    text_scale = 3
+}
+
+413 = {
+    text_scale = 3
+}
+
+414 = {
+    text_scale = 3
+}
+
+415 = {
+    text_scale = 3
+}
+
+416 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1032.241667
+            y = 379.941667
+        }
+
+    }
+
+}
+
+417 = {
+    text_scale = 3
+}
+
+418 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1039.820000
+            y = 427.820000
+        }
+
+    }
+
+}
+
+419 = {
+    text_scale = 3
+}
+
+420 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1059.905000
+            y = 578.695000
+        }
+
+    }
+
+}
+
+421 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1069.266667
+            y = 568.240000
+        }
+
+    }
+
+}
+
+422 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1060.645000
+            y = 589.055000
+        }
+
+    }
+
+}
+
+423 = {
+    text_scale = 3
+}
+
+424 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1053.426667
+            y = 450.433333
+        }
+
+    }
+
+}
+
+425 = {
+    text_scale = 3
+}
+
+426 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1064.316667
+            y = 380.291667
+        }
+
+    }
+
+}
+
+427 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1077.913333
+            y = 544.193333
+        }
+
+    }
+
+}
+
+428 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1078.766667
+            y = 553.780000
+        }
+
+    }
+
+}
+
+429 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1050.413333
+            y = 337.900000
+        }
+
+    }
+
+}
+
+430 = {
+    text_position = {
+        x = 1072.908333
+        y = 359.641667
+    }
+
+    text_scale = 3
+    unit = {
+        x = 1074.200000
+        y = 362.535000
+    }
+
+    building_position = {
+        naval_base = {
+            x = 1082.725000
+            y = 360.726667
+        }
+
+    }
+
+}
+
+431 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1076.426667
+            y = 430.800000
+        }
+
+    }
+
+}
+
+432 = {
+    text_scale = 3
+}
+
+433 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1091.233333
+            y = 526.966667
+        }
+
+    }
+
+}
+
+434 = {
+    text_scale = 3
+}
+
+435 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1090.886667
+            y = 322.046667
+        }
+
+    }
+
+}
+
+436 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1099.793333
+            y = 519.273333
+        }
+
+    }
+
+}
+
+437 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1097.553333
+            y = 443.980000
+        }
+
+    }
+
+}
+
+438 = {
+    text_scale = 3
+}
+
+439 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1102.166667
+            y = 371.083333
+        }
+
+    }
+
+}
+
+440 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1105.661667
+            y = 435.258333
+        }
+
+    }
+
+}
+
+441 = {
+    text_scale = 3
+}
+
+442 = {
+    text_scale = 3
+}
+
+443 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1119.050000
+            y = 527.800000
+        }
+
+    }
+
+}
+
+444 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1117.875000
+            y = 408.500000
+        }
+
+    }
+
+}
+
+445 = {
+    text_scale = 3
+}
+
+446 = {
+    text_scale = 3
+}
+
+447 = {
+    text_scale = 3
+}
+
+448 = {
+    text_scale = 3
+}
+
+449 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1140.000000
+            y = 381.050000
+        }
+
+    }
+
+}
+
+450 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1144.633333
+            y = 540.633333
+        }
+
+    }
+
+}
+
+451 = {
+    text_scale = 3
+}
+
+452 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1179.430000
+            y = 486.790000
+        }
+
+    }
+
+}
+
+453 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1147.620000
+            y = 358.660000
+        }
+
+    }
+
+}
+
+454 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1175.321667
+            y = 503.840000
+        }
+
+    }
+
+}
+
+455 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1169.450000
+            y = 537.150000
+        }
+
+    }
+
+}
+
+456 = {
+    text_scale = 3
+}
+
+457 = {
+    text_scale = 3
+}
+
+458 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1176.346667
+            y = 340.900000
+        }
+
+    }
+
+}
+
+459 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1197.436667
+            y = 343.766667
+        }
+
+    }
+
+}
+
+460 = {
+    text_scale = 3
+}
+
+461 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1200.845000
+            y = 366.015000
+        }
+
+    }
+
+}
+
+462 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1189.100000
+            y = 476.300000
+        }
+
+    }
+
+}
+
+463 = {
+    text_scale = 3
+}
+
+464 = {
+    text_scale = 3
+}
+
+465 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1206.833333
+            y = 371.358333
+        }
+
+    }
+
+}
+
+466 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1193.446667
+            y = 483.880000
+        }
+
+    }
+
+}
+
+467 = {
+    text_scale = 3
+}
+
+468 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1196.520000
+            y = 506.806667
+        }
+
+    }
+
+}
+
+469 = {
+    text_scale = 3
+}
+
+470 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1222.506667
+            y = 380.370000
+        }
+
+    }
+
+}
+
+471 = {
+    text_scale = 3
+}
+
+472 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1236.666667
+            y = 528.206667
+        }
+
+    }
+
+}
+
+473 = {
+    text_scale = 3
+}
+
+474 = {
+    text_scale = 3
+}
+
+475 = {
+    text_scale = 3
+}
+
+476 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1265.470000
+            y = 370.993333
+        }
+
+    }
+
+}
+
+477 = {
+    text_scale = 3
+}
+
+478 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1242.990000
+            y = 512.380000
+        }
+
+    }
+
+}
+
+479 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1263.900000
+            y = 403.460000
+        }
+
+    }
+
+}
+
+480 = {
+    text_scale = 3
+}
+
+481 = {
+    text_scale = 3
+}
+
+482 = {
+    text_scale = 3
+}
+
+483 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1255.156667
+            y = 511.276667
+        }
+
+    }
+
+}
+
+484 = {
+    text_scale = 3
+}
+
+485 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1284.870000
+            y = 411.066667
+        }
+
+    }
+
+}
+
+486 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1281.603333
+            y = 517.980000
+        }
+
+    }
+
+}
+
+487 = {
+    text_scale = 3
+}
+
+488 = {
+    text_scale = 3
+}
+
+489 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1292.141667
+            y = 429.466667
+        }
+
+    }
+
+}
+
+490 = {
+    text_scale = 3
+}
+
+491 = {
+    text_scale = 3
+}
+
+492 = {
+    text_scale = 3
+}
+
+493 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1302.153333
+            y = 390.073333
+        }
+
+    }
+
+}
+
+494 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1293.793333
+            y = 419.720000
+        }
+
+    }
+
+}
+
+495 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1307.671667
+            y = 524.795000
+        }
+
+    }
+
+}
+
+496 = {
+    text_scale = 3
+}
+
+497 = {
+    text_scale = 3
+}
+
+498 = {
+    text_scale = 3
+}
+
+499 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1325.420000
+            y = 398.953333
+        }
+
+    }
+
+}
+
+500 = {
+    text_scale = 3
+}
+
+501 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1324.040000
+            y = 526.855000
+        }
+
+    }
+
+}
+
+502 = {
+    text_scale = 3
+}
+
+503 = {
+    text_scale = 3
+}
+
+504 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1345.141667
+            y = 516.875000
+        }
+
+    }
+
+}
+
+505 = {
+    text_scale = 3
+}
+
+506 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1348.690000
+            y = 395.735000
+        }
+
+    }
+
+}
+
+507 = {
+    text_scale = 3
+}
+
+508 = {
+    text_scale = 3
+}
+
+509 = {
+    text_scale = 3
+}
+
+510 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1360.158333
+            y = 530.096667
+        }
+
+    }
+
+}
+
+511 = {
+    text_scale = 3
+}
+
+512 = {
+    text_scale = 3
+}
+
+513 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1367.290000
+            y = 397.091667
+        }
+
+    }
+
+}
+
+514 = {
+    text_scale = 3
+}
+
+515 = {
+    text_scale = 3
+}
+
+516 = {
+    text_scale = 3
+}
+
+517 = {
+    text_scale = 3
+}
+
+518 = {
+    text_scale = 3
+}
+
+519 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1378.776667
+            y = 388.093333
+        }
+
+    }
+
+}
+
+520 = {
+    text_scale = 3
+}
+
+521 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1394.900000
+            y = 537.100000
+        }
+
+    }
+
+}
+
+522 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1391.550000
+            y = 377.353333
+        }
+
+    }
+
+}
+
+523 = {
+    text_scale = 3
+}
+
+524 = {
+    text_scale = 3
+}
+
+525 = {
+    text_scale = 3
+}
+
+526 = {
+    text_scale = 3
+}
+
+527 = {
+    text_scale = 3
+}
+
+528 = {
+    text_scale = 3
+}
+
+529 = {
+    text_scale = 3
+}
+
+530 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1410.146667
+            y = 525.325000
+        }
+
+    }
+
+}
+
+531 = {
+    text_scale = 3
+}
+
+532 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1438.900000
+            y = 503.166667
+        }
+
+    }
+
+}
+
+533 = {
+    text_scale = 3
+}
+
+534 = {
+    text_scale = 3
+}
+
+535 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1430.485000
+            y = 379.991667
+        }
+
+    }
+
+}
+
+536 = {
+    text_scale = 3
+}
+
+537 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1444.075000
+            y = 478.775000
+        }
+
+    }
+
+}
+
+538 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1442.700000
+            y = 517.765000
+        }
+
+    }
+
+}
+
+539 = {
+    text_scale = 3
+}
+
+540 = {
+    text_scale = 3
+}
+
+541 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1437.610000
+            y = 382.810000
+        }
+
+    }
+
+}
+
+542 = {
+    text_scale = 3
+}
+
+543 = {
+    text_scale = 3
+}
+
+544 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1473.720000
+            y = 463.906667
+        }
+
+    }
+
+}
+
+545 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1462.925000
+            y = 361.850000
+        }
+
+    }
+
+}
+
+546 = {
+    text_scale = 3
+}
+
+547 = {
+    text_scale = 3
+}
+
+548 = {
+    text_scale = 3
+}
+
+549 = {
+    text_scale = 3
+}
+
+550 = {
+    text_scale = 3
+}
+
+551 = {
+    text_scale = 3
+}
+
+552 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1484.770000
+            y = 366.210000
+        }
+
+    }
+
+}
+
+553 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1502.595000
+            y = 464.770000
+        }
+
+    }
+
+}
+
+554 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1496.020000
+            y = 369.033333
+        }
+
+    }
+
+}
+
+555 = {
+    text_scale = 3
+}
+
+556 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1521.908333
+            y = 356.266667
+        }
+
+    }
+
+}
+
+557 = {
+    text_scale = 3
+}
+
+558 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1539.556667
+            y = 452.543333
+        }
+
+    }
+
+}
+
+559 = {
+    text_scale = 3
+}
+
+560 = {
+    text_scale = 3
+}
+
+561 = {
+    text_scale = 3
+}
+
+562 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1554.780000
+            y = 338.940000
+        }
+
+    }
+
+}
+
+563 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1535.920000
+            y = 358.430000
+        }
+
+    }
+
+}
+
+564 = {
+    text_scale = 3
+}
+
+565 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1555.916667
+            y = 439.041667
+        }
+
+    }
+
+}
+
+566 = {
+    text_scale = 3
+}
+
+567 = {
+    text_scale = 3
+}
+
+568 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1575.680000
+            y = 425.113333
+        }
+
+    }
+
+}
+
+569 = {
+    text_scale = 3
+}
+
+570 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1581.806667
+            y = 336.906667
+        }
+
+    }
+
+}
+
+571 = {
+    text_scale = 3
+}
+
+572 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1594.466667
+            y = 415.666667
+        }
+
+    }
+
+}
+
+573 = {
+    text_scale = 3
+}
+
+574 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1593.380000
+            y = 343.100000
+        }
+
+    }
+
+}
+
+575 = {
+    text_scale = 3
+}
+
+576 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1605.230000
+            y = 330.285000
+        }
+
+    }
+
+}
+
+577 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1624.296667
+            y = 412.510000
+        }
+
+    }
+
+}
+
+578 = {
+    text_scale = 3
+}
+
+579 = {
+    text_scale = 3
+}
+
+580 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1618.723333
+            y = 327.046667
+        }
+
+    }
+
+}
+
+581 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1645.110000
+            y = 383.430000
+        }
+
+    }
+
+}
+
+582 = {
+    text_scale = 3
+}
+
+583 = {
+    text_scale = 3
+}
+
+584 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1648.940000
+            y = 324.500000
+        }
+
+    }
+
+}
+
+585 = {
+    text_scale = 3
+}
+
+586 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1669.195000
+            y = 371.965000
+        }
+
+    }
+
+}
+
+587 = {
+    text_scale = 3
+    building_position = {
+        railroad = {
+            x = 1662.941667
+            y = 382.105000
+        }
+
+        naval_base = {
+            x = 1677.776667
+            y = 383.676667
+        }
+
+    }
+
+}
+
+588 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1673.041667
+            y = 325.958333
+        }
+
+    }
+
+}
+
+589 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1681.125000
+            y = 362.791667
+        }
+
+    }
+
+}
+
+590 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1684.590000
+            y = 355.680000
+        }
+
+    }
+
+}
+
+591 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1694.675000
+            y = 326.575000
+        }
+
+    }
+
+}
+
+592 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 1697.780000
+            y = 347.460000
+        }
+
+    }
+
+}
+
+593 = {
+    text_scale = 0
+    unit = {
+        x = 515.060606
+        y = 408.000000
+    }
+
+}
+
+594 = {
+    text_scale = 0
+    unit = {
+        x = 497.645455
+        y = 480.555303
+    }
+
+}
+
+595 = {
+    text_scale = 0
+    unit = {
+        x = 532.300000
+        y = 542.056818
+    }
+
+}
+
+596 = {
+    text_scale = 2
+    unit = {
+        x = 584.636364
+        y = 560.030303
+    }
+
+}
+
+597 = {
+    text_scale = 0
+    unit = {
+        x = 612.296970
+        y = 602.998485
+    }
+
+}
+
+598 = {
+    text_position = {
+        x = 626.094697
+        y = 630.731061
+    }
+
+    text_scale = 2
+    unit = {
+        x = 626.094697
+        y = 631.321970
+    }
+
+}
+
+599 = {
+    text_scale = 0
+    unit = {
+        x = 607.160606
+        y = 669.966667
+    }
+
+}
+
+600 = {
+    text_scale = 0
+    unit = {
+        x = 551.969697
+        y = 683.060606
+    }
+
+}
+
+601 = {
+    text_scale = 0
+    unit = {
+        x = 533.811364
+        y = 732.730303
+    }
+
+}
+
+602 = {
+    text_scale = 0
+    unit = {
+        x = 587.115152
+        y = 638.978788
+    }
+
+}
+
+603 = {
+    text_scale = 0
+    unit = {
+        x = 544.896970
+        y = 647.140909
+    }
+
+}
+
+604 = {
+    text_scale = 0
+    unit = {
+        x = 506.837121
+        y = 608.284091
+    }
+
+}
+
+605 = {
+    text_scale = 0
+    unit = {
+        x = 443.704545
+        y = 590.090909
+    }
+
+}
+
+606 = {
+    text_scale = 0
+    unit = {
+        x = 410.265152
+        y = 586.971212
+    }
+
+}
+
+607 = {
+    text_scale = 0
+    unit = {
+        x = 624.159091
+        y = 593.363636
+    }
+
+}
+
+608 = {
+    text_scale = 0
+    unit = {
+        x = 699.303030
+        y = 644.024242
+    }
+
+}
+
+609 = {
+    text_scale = 0
+    unit = {
+        x = 715.090909
+        y = 702.322727
+    }
+
+}
+
+610 = {
+    text_scale = 0
+    unit = {
+        x = 729.079545
+        y = 660.920455
+    }
+
+}
+
+611 = {
+    text_scale = 0
+    unit = {
+        x = 696.969697
+        y = 487.424242
+    }
+
+}
+
+612 = {
+    text_scale = 0
+    unit = {
+        x = 687.034091
+        y = 519.647727
+    }
+
+}
+
+613 = {
+    text_scale = 0
+    unit = {
+        x = 730.687879
+        y = 585.357576
+    }
+
+}
+
+614 = {
+    text_scale = 0
+    unit = {
+        x = 791.804545
+        y = 570.959091
+    }
+
+}
+
+615 = {
+    text_scale = 0
+    unit = {
+        x = 803.708333
+        y = 549.253788
+    }
+
+}
+
+616 = {
+    text_scale = 0
+    unit = {
+        x = 827.007576
+        y = 511.753788
+    }
+
+}
+
+617 = {
+    text_scale = 0
+    unit = {
+        x = 838.704545
+        y = 556.004545
+    }
+
+}
+
+618 = {
+    text_scale = 0
+    unit = {
+        x = 852.879545
+        y = 635.763636
+    }
+
+}
+
+619 = {
+    text_scale = 0
+    unit = {
+        x = 787.272727
+        y = 696.454545
+    }
+
+}
+
+620 = {
+    text_scale = 0
+    unit = {
+        x = 885.423485
+        y = 572.600000
+    }
+
+}
+
+621 = {
+    text_scale = 0
+    unit = {
+        x = 886.426515
+        y = 538.299242
+    }
+
+}
+
+622 = {
+    text_scale = 0
+    unit = {
+        x = 906.804545
+        y = 591.870455
+    }
+
+}
+
+623 = {
+    text_scale = 0
+    unit = {
+        x = 502.096212
+        y = 444.646212
+    }
+
+}
+
+624 = {
+    text_scale = 0
+    unit = {
+        x = 506.806818
+        y = 508.818182
+    }
+
+}
+
+625 = {
+    text_scale = 0
+    unit = {
+        x = 552.204545
+        y = 546.886364
+    }
+
+}
+
+626 = {
+    text_scale = 0
+    unit = {
+        x = 625.296970
+        y = 653.065152
+    }
+
+}
+
+627 = {
+    text_scale = 0
+    unit = {
+        x = 656.121212
+        y = 597.121212
+    }
+
+}
+
+628 = {
+    text_scale = 0
+    unit = {
+        x = 750.069697
+        y = 630.514394
+    }
+
+}
+
+629 = {
+    text_scale = 0
+    unit = {
+        x = 697.036364
+        y = 559.715909
+    }
+
+}
+
+630 = {
+    text_scale = 0
+    unit = {
+        x = 714.130303
+        y = 457.265152
+    }
+
+}
+
+631 = {
+    text_scale = 0
+    unit = {
+        x = 800.939394
+        y = 475.242424
+    }
+
+}
+
+632 = {
+    text_scale = 0
+    unit = {
+        x = 848.972727
+        y = 524.140152
+    }
+
+}
+
+633 = {
+    text_scale = 0
+    unit = {
+        x = 853.100000
+        y = 547.513636
+    }
+
+}
+
+634 = {
+    text_scale = 0
+    unit = {
+        x = 844.784091
+        y = 592.338636
+    }
+
+}
+
+635 = {
+    text_scale = 0
+    unit = {
+        x = 826.195455
+        y = 651.934848
+    }
+
+}
+
+636 = {
+    text_scale = 0
+    unit = {
+        x = 876.022727
+        y = 612.621212
+    }
+
+}

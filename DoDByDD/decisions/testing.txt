@@ -1,0 +1,25 @@
+political_decisions = {
+	inheritreg2 = {
+		potential = {
+			ai = no
+		}
+		allow = {}
+		effect = {
+			inherit = C13
+			inherit = C12
+			inherit = C14
+			inherit = C16
+			inherit = C20
+			inherit = C21
+			inherit = C17
+			inherit = C18
+			inherit = C22
+			inherit = C23
+			inherit = C26
+			inherit = C27
+			inherit = C24
+			inherit = C25
+		}
+	}
+
+}
