@@ -1,0 +1,251 @@
+political_decisions = {
+
+	change_national_value_on = {
+		alert = no
+		picture = national_value
+		potential = {
+			NOT = { tag = LCT }
+			NOT = {	has_country_flag = nv_change }
+			ai = no
+		}
+		
+		allow = {
+			NOT = {	has_country_modifier = national_confusion }
+			war = no
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = { set_country_flag = nv_change }
+		
+		ai_will_do = { 
+			factor = 0
+			
+			modifier = {
+				factor = 0
+				OR = {
+					is_culture_group = east_asian
+					substate_of = CHI
+				}
+			}
+		}
+	}
+
+	change_national_value_off = {
+		alert = no
+		picture = national_value
+		potential = {
+			has_country_flag = nv_change
+			ai = no
+		}
+		
+		allow = { }
+		
+		effect = { clr_country_flag = nv_change }
+		
+		ai_will_do = { factor = 0 }
+	}
+	
+	switch_to_regionalism = {
+		picture = switch_to_order
+		potential = {
+			NOT = { nationalvalue = nv_regionalism }
+			#NOT = { has_country_flag = switched_nv }
+			has_country_flag = nv_change
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			nationalvalue = nv_regionalism
+			add_country_modifier = {
+				name = national_confusion
+				duration = 1825
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+
+	switch_to_fanatacism = {
+		picture = switch_to_autocracy
+		potential = {
+			NOT = { nationalvalue = nv_fanatacism }
+			#NOT = { has_country_flag = switched_nv }
+			has_country_flag = nv_change
+			ai = no
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			nationalvalue = nv_fanatacism
+			add_country_modifier = {
+				name = national_confusion
+				duration = 1825
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+	
+	switch_to_mercantilism = {
+		picture = switch_to_education
+		potential = {
+			NOT = { nationalvalue = nv_mercantilism }
+			#NOT = { has_country_flag = switched_nv }
+			has_country_flag = nv_change
+			ai = no
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			nationalvalue = nv_mercantilism
+			add_country_modifier = {
+				name = national_confusion
+				duration = 1825
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+	
+	switch_to_statism = {
+		picture = switch_to_productivity
+		potential = {
+			NOT = { nationalvalue = nv_statism }
+			#NOT = { has_country_flag = switched_nv }
+			has_country_flag = nv_change
+			ai = no
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			nationalvalue = nv_statism
+			add_country_modifier = {
+				name = national_confusion
+				duration = 1825
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+	
+	switch_to_tribalism = {
+		picture = switch_to_equality
+		potential = {
+			NOT = { nationalvalue = nv_tribalism }
+			#NOT = { has_country_flag = switched_nv }
+			has_country_flag = nv_change
+			ai = no
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			nationalvalue = nv_tribalism
+			add_country_modifier = {
+				name = national_confusion
+				duration = 1825
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+	
+}

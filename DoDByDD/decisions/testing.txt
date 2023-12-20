@@ -2,6 +2,7 @@ political_decisions = {
 	inheritreg2 = {
 		potential = {
 			ai = no
+			always = no
 		}
 		allow = {}
 		effect = {

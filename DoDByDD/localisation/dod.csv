@@ -56,3 +56,13 @@ transport_improv_two;Advanced;x
 no_western_science;Reject foreign investment;x
 yes_western_science;Accept foreign investment;x
 western_science_two;Promote foreign investment;x
+switch_to_regionalism_title;Embrace the Ideal of Regionalism;x
+switch_to_fanatacism_title;Embrace the Ideal of Fanatacism;x
+switch_to_mercantilism_title;Embrace the Ideal of Mercantilism;x
+switch_to_statism_title;Embrace the Ideal of Statism;x
+switch_to_tribalism_title;Embrace the Ideal of Tribalism;x
+switch_to_regionalism_desc;§YThe modifiers for this NV are:§W\n§GInfamy -0.10\nInfluence +50%\nDiplomatic points +200%\nCB Speed +50%\nMobilization size +1%§W;x
+switch_to_fanatacism_desc;§YThe modifiers for this NV are:§W\n§GOrganization regain +5%\nLeadership Modifier: +100%\nLand unit experience +5\nArmy tech research +5%\nMobilization size +1%§W;x
+switch_to_mercantilism_desc;§YThe modifiers for this NV are:§W\n§GFactory throughput +15%\nCommerce tech research +5%\nIndustry tech research +5%\nMobilization size +1%§W;x
+switch_to_statism_desc;§YThe modifiers for this NV are:§W\n§GMonthly war exhaustion -0.5\nAdministration efficiency +15%\nMobilization size +3%§W;x
+switch_to_tribalism_desc;§YThe modifiers for this NV are:§W\n§GRuling party support +25%\nPolitical awareness -20%\nSocial reform desire -20%\nMilitancy -0.01\nConsciousness -0.01\nMobilization size +1%§W;x
