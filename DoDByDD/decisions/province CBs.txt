@@ -1,0 +1,90 @@
+political_decisions = {
+
+	PCB_setup = {
+		potential = {
+			tag = BAN
+			NOT = {has_country_flag = PCB_is_setup}
+		}
+		allow = {}
+		effect = {
+			set_country_flag = PCB_is_setup
+			any_country = {
+				any_owned = {
+					add_province_modifier = {
+						name = province_changer
+						duration = -1
+					}
+				}
+			}
+
+			C01={any_owned = {add_core = F01}}
+			C02={any_owned = {add_core = F02}}
+			C03={any_owned = {add_core = F03}}
+			C04={any_owned = {add_core = F04}}
+			C05={any_owned = {add_core = F05}}
+			C06={any_owned = {add_core = F06}}
+			C07={any_owned = {add_core = F07}}
+			C08={any_owned = {add_core = F08}}
+			C09={any_owned = {add_core = F09}}
+			C10={any_owned = {add_core = F10}}
+			C11={any_owned = {add_core = F11}}
+			C12={any_owned = {add_core = F12}}
+			C13={any_owned = {add_core = F13}}
+			C14={any_owned = {add_core = F14}}
+			C15={any_owned = {add_core = F15}}
+			C16={any_owned = {add_core = F16}}
+			C17={any_owned = {add_core = F17}}
+			C18={any_owned = {add_core = F18}}
+			C19={any_owned = {add_core = F19}}
+			C20={any_owned = {add_core = F20}}
+			C21={any_owned = {add_core = F21}}
+			C22={any_owned = {add_core = F22}}
+			C23={any_owned = {add_core = F23}}
+			C24={any_owned = {add_core = F24}}
+			C25={any_owned = {add_core = F25}}
+			C26={any_owned = {add_core = F26}}
+			C27={any_owned = {add_core = F27}}
+			C28={any_owned = {add_core = F28}}
+			C29={any_owned = {add_core = F29}}
+			C30={any_owned = {add_core = F30}}
+			C31={any_owned = {add_core = F31}}
+			C32={any_owned = {add_core = F32}}
+			C33={any_owned = {add_core = F33}}
+			C34={any_owned = {add_core = F34}}
+			C35={any_owned = {add_core = F35}}
+			C36={any_owned = {add_core = F36}}
+			C37={any_owned = {add_core = F37}}
+			C38={any_owned = {add_core = F38}}
+			C39={any_owned = {add_core = F39}}
+			C40={any_owned = {add_core = F40}}
+			C41={any_owned = {add_core = F41}}
+			C42={any_owned = {add_core = F42}}
+			C43={any_owned = {add_core = F43}}
+			C44={any_owned = {add_core = F44}}
+			C45={any_owned = {add_core = F45}}
+			C46={any_owned = {add_core = F46}}
+			C47={any_owned = {add_core = F47}}
+			C48={any_owned = {add_core = F48}}
+			C49={any_owned = {add_core = F49}}
+			C50={any_owned = {add_core = F50}}
+			C51={any_owned = {add_core = F51}}
+			C52={any_owned = {add_core = F52}}
+			C53={any_owned = {add_core = F53}}
+			C54={any_owned = {add_core = F54}}
+			C55={any_owned = {add_core = F55}}
+			C56={any_owned = {add_core = F56}}
+			C57={any_owned = {add_core = F57}}
+			C58={any_owned = {add_core = F58}}
+			C59={any_owned = {add_core = F59}}
+			C60={any_owned = {add_core = F60}}
+			C61={any_owned = {add_core = F61}}
+			C62={any_owned = {add_core = F62}}
+			C63={any_owned = {add_core = F63}}
+			C64={any_owned = {add_core = F64}}
+			C65={any_owned = {add_core = F65}}
+			C66={any_owned = {add_core = F66}}
+			C67={any_owned = {add_core = F67}}
+		}
+	}
+
+}

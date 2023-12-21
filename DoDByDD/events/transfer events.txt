@@ -1,7 +1,7 @@
 
 province_event = {
 	id = 9999990 
-	title = "$STATENAME$ marked for transfer"
+	title = "$PROVINCENAME$ marked for transfer"
 	desc = ""
 	is_triggered_only = yes
 	allow_multiple_instances = yes
@@ -67,11 +67,83 @@ country_event = {
 			limit={
 				has_building = state_selector
 			}
-			state_scope={
-				any_owned = {
-					secede_province = FROM
-				}
+			
+			state_selector =-3
+			state_deselector =-3
+
+			secede_province = FROM
+
+			add_province_modifier = {
+				name = province_changer
+				duration = -1
 			}
+			remove_core = F01
+			remove_core = F02
+			remove_core = F03
+			remove_core = F04
+			remove_core = F05
+			remove_core = F06
+			remove_core = F07
+			remove_core = F08
+			remove_core = F09
+			remove_core = F10
+			remove_core = F11
+			remove_core = F12
+			remove_core = F13
+			remove_core = F14
+			remove_core = F15
+			remove_core = F16
+			remove_core = F17
+			remove_core = F18
+			remove_core = F19
+			remove_core = F20
+			remove_core = F21
+			remove_core = F22
+			remove_core = F23
+			remove_core = F24
+			remove_core = F25
+			remove_core = F26
+			remove_core = F27
+			remove_core = F28
+			remove_core = F29
+			remove_core = F30
+			remove_core = F31
+			remove_core = F32
+			remove_core = F33
+			remove_core = F34
+			remove_core = F35
+			remove_core = F36
+			remove_core = F37
+			remove_core = F38
+			remove_core = F39
+			remove_core = F40
+			remove_core = F41
+			remove_core = F42
+			remove_core = F43
+			remove_core = F44
+			remove_core = F45
+			remove_core = F46
+			remove_core = F47
+			remove_core = F48
+			remove_core = F49
+			remove_core = F50
+			remove_core = F51
+			remove_core = F52
+			remove_core = F53
+			remove_core = F54
+			remove_core = F55
+			remove_core = F56
+			remove_core = F57
+			remove_core = F58
+			remove_core = F59
+			remove_core = F60
+			remove_core = F61
+			remove_core = F62
+			remove_core = F63
+			remove_core = F64
+			remove_core = F65
+			remove_core = F66
+			remove_core = F67
 		}
 	}
 

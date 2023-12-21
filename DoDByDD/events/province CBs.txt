@@ -1,0 +1,606 @@
+country_event = {
+	id = 90000001
+	title = "Recently changed province detected"
+	desc = "When taking land you can only take provinces that border you or a sea tile. (This event will also fix stated colonies.)"
+
+	trigger = {
+		any_owned_province = {
+			NOT = {
+				has_province_modifier = province_changer
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		
+		any_state = {
+			limit = { #any taken state that borders your owned states
+				any_owned_province = {
+					NOT = {
+						has_province_modifier = province_changer
+					}
+					any_neighbor_province = {
+						has_province_modifier = province_changer
+						owner = {tag = THIS}
+					}
+				}
+			}
+
+			#return nonborder provinces
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F01 } secede_province = C01 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F02 } secede_province = C02 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F03 } secede_province = C03 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F04 } secede_province = C04 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F05 } secede_province = C05 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F06 } secede_province = C06 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F07 } secede_province = C07 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F08 } secede_province = C08 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F09 } secede_province = C09 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F10 } secede_province = C10 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F11 } secede_province = C11 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F12 } secede_province = C12 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F13 } secede_province = C13 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F14 } secede_province = C14 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F15 } secede_province = C15 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F16 } secede_province = C16 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F17 } secede_province = C17 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F18 } secede_province = C18 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F19 } secede_province = C19 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F20 } secede_province = C20 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F21 } secede_province = C21 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F22 } secede_province = C22 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F23 } secede_province = C23 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F24 } secede_province = C24 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F25 } secede_province = C25 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F26 } secede_province = C26 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F27 } secede_province = C27 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F28 } secede_province = C28 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F29 } secede_province = C29 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F30 } secede_province = C30 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F31 } secede_province = C31 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F32 } secede_province = C32 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F33 } secede_province = C33 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F34 } secede_province = C34 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F35 } secede_province = C35 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F36 } secede_province = C36 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F37 } secede_province = C37 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F38 } secede_province = C38 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F39 } secede_province = C39 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F40 } secede_province = C40 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F41 } secede_province = C41 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F42 } secede_province = C42 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F43 } secede_province = C43 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F44 } secede_province = C44 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F45 } secede_province = C45 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F46 } secede_province = C46 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F47 } secede_province = C47 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F48 } secede_province = C48 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F49 } secede_province = C49 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F50 } secede_province = C50 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F51 } secede_province = C51 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F52 } secede_province = C52 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F53 } secede_province = C53 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F54 } secede_province = C54 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F55 } secede_province = C55 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F56 } secede_province = C56 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F57 } secede_province = C57 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F58 } secede_province = C58 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F59 } secede_province = C59 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F60 } secede_province = C60 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F61 } secede_province = C61 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F62 } secede_province = C62 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F63 } secede_province = C63 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F64 } secede_province = C64 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F65 } secede_province = C65 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F66 } secede_province = C66 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F67 } secede_province = C67 add_province_modifier = { name = province_changer duration = -1 } }
+		}
+
+		any_state = {
+			limit = { #any taken state that doesnt border your owned states but borders the sea
+				NOT = {
+					any_owned_province = {
+						NOT = {
+							has_province_modifier = province_changer
+						}
+						any_neighbor_province = {
+							has_province_modifier = province_changer
+							owner = {tag = THIS}
+						}
+					}
+				}
+
+				any_owned_province = {
+					NOT = {
+						has_province_modifier = province_changer
+					}
+					is_coastal = yes #if I add lakes I need to change this
+				}
+			}
+
+			#return coastal provinces
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F01 } secede_province = C01 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F02 } secede_province = C02 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F03 } secede_province = C03 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F04 } secede_province = C04 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F05 } secede_province = C05 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F06 } secede_province = C06 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F07 } secede_province = C07 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F08 } secede_province = C08 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F09 } secede_province = C09 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F10 } secede_province = C10 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F11 } secede_province = C11 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F12 } secede_province = C12 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F13 } secede_province = C13 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F14 } secede_province = C14 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F15 } secede_province = C15 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F16 } secede_province = C16 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F17 } secede_province = C17 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F18 } secede_province = C18 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F19 } secede_province = C19 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F20 } secede_province = C20 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F21 } secede_province = C21 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F22 } secede_province = C22 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F23 } secede_province = C23 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F24 } secede_province = C24 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F25 } secede_province = C25 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F26 } secede_province = C26 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F27 } secede_province = C27 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F28 } secede_province = C28 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F29 } secede_province = C29 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F30 } secede_province = C30 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F31 } secede_province = C31 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F32 } secede_province = C32 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F33 } secede_province = C33 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F34 } secede_province = C34 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F35 } secede_province = C35 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F36 } secede_province = C36 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F37 } secede_province = C37 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F38 } secede_province = C38 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F39 } secede_province = C39 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F40 } secede_province = C40 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F41 } secede_province = C41 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F42 } secede_province = C42 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F43 } secede_province = C43 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F44 } secede_province = C44 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F45 } secede_province = C45 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F46 } secede_province = C46 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F47 } secede_province = C47 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F48 } secede_province = C48 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F49 } secede_province = C49 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F50 } secede_province = C50 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F51 } secede_province = C51 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F52 } secede_province = C52 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F53 } secede_province = C53 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F54 } secede_province = C54 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F55 } secede_province = C55 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F56 } secede_province = C56 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F57 } secede_province = C57 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F58 } secede_province = C58 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F59 } secede_province = C59 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F60 } secede_province = C60 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F61 } secede_province = C61 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F62 } secede_province = C62 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F63 } secede_province = C63 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F64 } secede_province = C64 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F65 } secede_province = C65 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F66 } secede_province = C66 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } is_coastal = no is_core = F67 } secede_province = C67 add_province_modifier = { name = province_changer duration = -1 } }
+
+		}
+		
+		any_state = {
+			limit = { #any enclave state
+
+				NOT = {
+					any_owned_province = {
+						NOT = {
+							has_province_modifier = province_changer
+						}
+						is_coastal = yes
+					}
+				}
+				NOT = {
+					any_owned_province = {
+						NOT = {
+							has_province_modifier = province_changer
+						}
+						any_neighbor_province = {
+							has_province_modifier = province_changer
+							owner = {tag = THIS}
+						}
+					}
+				}
+				
+			}
+
+			#return nonborder provinces
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F01 } secede_province = C01 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F02 } secede_province = C02 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F03 } secede_province = C03 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F04 } secede_province = C04 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F05 } secede_province = C05 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F06 } secede_province = C06 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F07 } secede_province = C07 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F08 } secede_province = C08 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F09 } secede_province = C09 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F10 } secede_province = C10 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F11 } secede_province = C11 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F12 } secede_province = C12 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F13 } secede_province = C13 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F14 } secede_province = C14 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F15 } secede_province = C15 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F16 } secede_province = C16 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F17 } secede_province = C17 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F18 } secede_province = C18 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F19 } secede_province = C19 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F20 } secede_province = C20 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F21 } secede_province = C21 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F22 } secede_province = C22 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F23 } secede_province = C23 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F24 } secede_province = C24 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F25 } secede_province = C25 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F26 } secede_province = C26 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F27 } secede_province = C27 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F28 } secede_province = C28 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F29 } secede_province = C29 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F30 } secede_province = C30 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F31 } secede_province = C31 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F32 } secede_province = C32 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F33 } secede_province = C33 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F34 } secede_province = C34 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F35 } secede_province = C35 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F36 } secede_province = C36 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F37 } secede_province = C37 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F38 } secede_province = C38 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F39 } secede_province = C39 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F40 } secede_province = C40 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F41 } secede_province = C41 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F42 } secede_province = C42 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F43 } secede_province = C43 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F44 } secede_province = C44 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F45 } secede_province = C45 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F46 } secede_province = C46 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F47 } secede_province = C47 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F48 } secede_province = C48 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F49 } secede_province = C49 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F50 } secede_province = C50 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F51 } secede_province = C51 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F52 } secede_province = C52 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F53 } secede_province = C53 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F54 } secede_province = C54 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F55 } secede_province = C55 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F56 } secede_province = C56 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F57 } secede_province = C57 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F58 } secede_province = C58 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F59 } secede_province = C59 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F60 } secede_province = C60 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F61 } secede_province = C61 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F62 } secede_province = C62 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F63 } secede_province = C63 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F64 } secede_province = C64 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F65 } secede_province = C65 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F66 } secede_province = C66 add_province_modifier = { name = province_changer duration = -1 } }
+			any_owned = { limit = { NOT = { has_province_modifier = province_changer } NOT = { any_neighbor_province = { has_province_modifier = province_changer owner = {tag = THIS} } } is_core = F67 } secede_province = C67 add_province_modifier = { name = province_changer duration = -1 } }
+		}
+
+		any_owned = {
+			limit = {
+				NOT = {
+					has_province_modifier = province_changer
+				}
+			}
+			add_province_modifier = {
+				name = province_changer
+				duration = -1
+			}
+			remove_core = F01
+			remove_core = F02
+			remove_core = F03
+			remove_core = F04
+			remove_core = F05
+			remove_core = F06
+			remove_core = F07
+			remove_core = F08
+			remove_core = F09
+			remove_core = F10
+			remove_core = F11
+			remove_core = F12
+			remove_core = F13
+			remove_core = F14
+			remove_core = F15
+			remove_core = F16
+			remove_core = F17
+			remove_core = F18
+			remove_core = F19
+			remove_core = F20
+			remove_core = F21
+			remove_core = F22
+			remove_core = F23
+			remove_core = F24
+			remove_core = F25
+			remove_core = F26
+			remove_core = F27
+			remove_core = F28
+			remove_core = F29
+			remove_core = F30
+			remove_core = F31
+			remove_core = F32
+			remove_core = F33
+			remove_core = F34
+			remove_core = F35
+			remove_core = F36
+			remove_core = F37
+			remove_core = F38
+			remove_core = F39
+			remove_core = F40
+			remove_core = F41
+			remove_core = F42
+			remove_core = F43
+			remove_core = F44
+			remove_core = F45
+			remove_core = F46
+			remove_core = F47
+			remove_core = F48
+			remove_core = F49
+			remove_core = F50
+			remove_core = F51
+			remove_core = F52
+			remove_core = F53
+			remove_core = F54
+			remove_core = F55
+			remove_core = F56
+			remove_core = F57
+			remove_core = F58
+			remove_core = F59
+			remove_core = F60
+			remove_core = F61
+			remove_core = F62
+			remove_core = F63
+			remove_core = F64
+			remove_core = F65
+			remove_core = F66
+			remove_core = F67
+		}
+
+		any_owned = {limit = {is_capital = yes owner = {tag = C01}} owner = {any_owned = { limit = {NOT = {is_core = F01}} add_core = F01}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C02}} owner = {any_owned = { limit = {NOT = {is_core = F02}} add_core = F02}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C03}} owner = {any_owned = { limit = {NOT = {is_core = F03}} add_core = F03}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C04}} owner = {any_owned = { limit = {NOT = {is_core = F04}} add_core = F04}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C05}} owner = {any_owned = { limit = {NOT = {is_core = F05}} add_core = F05}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C06}} owner = {any_owned = { limit = {NOT = {is_core = F06}} add_core = F06}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C07}} owner = {any_owned = { limit = {NOT = {is_core = F07}} add_core = F07}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C08}} owner = {any_owned = { limit = {NOT = {is_core = F08}} add_core = F08}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C09}} owner = {any_owned = { limit = {NOT = {is_core = F09}} add_core = F09}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C10}} owner = {any_owned = { limit = {NOT = {is_core = F10}} add_core = F10}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C11}} owner = {any_owned = { limit = {NOT = {is_core = F11}} add_core = F11}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C12}} owner = {any_owned = { limit = {NOT = {is_core = F12}} add_core = F12}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C13}} owner = {any_owned = { limit = {NOT = {is_core = F13}} add_core = F13}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C14}} owner = {any_owned = { limit = {NOT = {is_core = F14}} add_core = F14}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C15}} owner = {any_owned = { limit = {NOT = {is_core = F15}} add_core = F15}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C16}} owner = {any_owned = { limit = {NOT = {is_core = F16}} add_core = F16}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C17}} owner = {any_owned = { limit = {NOT = {is_core = F17}} add_core = F17}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C18}} owner = {any_owned = { limit = {NOT = {is_core = F18}} add_core = F18}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C19}} owner = {any_owned = { limit = {NOT = {is_core = F19}} add_core = F19}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C20}} owner = {any_owned = { limit = {NOT = {is_core = F20}} add_core = F20}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C21}} owner = {any_owned = { limit = {NOT = {is_core = F21}} add_core = F21}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C22}} owner = {any_owned = { limit = {NOT = {is_core = F22}} add_core = F22}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C23}} owner = {any_owned = { limit = {NOT = {is_core = F23}} add_core = F23}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C24}} owner = {any_owned = { limit = {NOT = {is_core = F24}} add_core = F24}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C25}} owner = {any_owned = { limit = {NOT = {is_core = F25}} add_core = F25}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C26}} owner = {any_owned = { limit = {NOT = {is_core = F26}} add_core = F26}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C27}} owner = {any_owned = { limit = {NOT = {is_core = F27}} add_core = F27}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C28}} owner = {any_owned = { limit = {NOT = {is_core = F28}} add_core = F28}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C29}} owner = {any_owned = { limit = {NOT = {is_core = F29}} add_core = F29}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C30}} owner = {any_owned = { limit = {NOT = {is_core = F30}} add_core = F30}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C31}} owner = {any_owned = { limit = {NOT = {is_core = F31}} add_core = F31}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C32}} owner = {any_owned = { limit = {NOT = {is_core = F32}} add_core = F32}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C33}} owner = {any_owned = { limit = {NOT = {is_core = F33}} add_core = F33}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C34}} owner = {any_owned = { limit = {NOT = {is_core = F34}} add_core = F34}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C35}} owner = {any_owned = { limit = {NOT = {is_core = F35}} add_core = F35}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C36}} owner = {any_owned = { limit = {NOT = {is_core = F36}} add_core = F36}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C37}} owner = {any_owned = { limit = {NOT = {is_core = F37}} add_core = F37}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C38}} owner = {any_owned = { limit = {NOT = {is_core = F38}} add_core = F38}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C39}} owner = {any_owned = { limit = {NOT = {is_core = F39}} add_core = F39}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C40}} owner = {any_owned = { limit = {NOT = {is_core = F40}} add_core = F40}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C41}} owner = {any_owned = { limit = {NOT = {is_core = F41}} add_core = F41}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C42}} owner = {any_owned = { limit = {NOT = {is_core = F42}} add_core = F42}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C43}} owner = {any_owned = { limit = {NOT = {is_core = F43}} add_core = F43}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C44}} owner = {any_owned = { limit = {NOT = {is_core = F44}} add_core = F44}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C45}} owner = {any_owned = { limit = {NOT = {is_core = F45}} add_core = F45}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C46}} owner = {any_owned = { limit = {NOT = {is_core = F46}} add_core = F46}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C47}} owner = {any_owned = { limit = {NOT = {is_core = F47}} add_core = F47}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C48}} owner = {any_owned = { limit = {NOT = {is_core = F48}} add_core = F48}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C49}} owner = {any_owned = { limit = {NOT = {is_core = F49}} add_core = F49}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C50}} owner = {any_owned = { limit = {NOT = {is_core = F50}} add_core = F50}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C51}} owner = {any_owned = { limit = {NOT = {is_core = F51}} add_core = F51}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C52}} owner = {any_owned = { limit = {NOT = {is_core = F52}} add_core = F52}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C53}} owner = {any_owned = { limit = {NOT = {is_core = F53}} add_core = F53}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C54}} owner = {any_owned = { limit = {NOT = {is_core = F54}} add_core = F54}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C55}} owner = {any_owned = { limit = {NOT = {is_core = F55}} add_core = F55}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C56}} owner = {any_owned = { limit = {NOT = {is_core = F56}} add_core = F56}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C57}} owner = {any_owned = { limit = {NOT = {is_core = F57}} add_core = F57}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C58}} owner = {any_owned = { limit = {NOT = {is_core = F58}} add_core = F58}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C59}} owner = {any_owned = { limit = {NOT = {is_core = F59}} add_core = F59}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C60}} owner = {any_owned = { limit = {NOT = {is_core = F60}} add_core = F60}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C61}} owner = {any_owned = { limit = {NOT = {is_core = F61}} add_core = F61}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C62}} owner = {any_owned = { limit = {NOT = {is_core = F62}} add_core = F62}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C63}} owner = {any_owned = { limit = {NOT = {is_core = F63}} add_core = F63}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C64}} owner = {any_owned = { limit = {NOT = {is_core = F64}} add_core = F64}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C65}} owner = {any_owned = { limit = {NOT = {is_core = F65}} add_core = F65}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C66}} owner = {any_owned = { limit = {NOT = {is_core = F66}} add_core = F66}}}
+		any_owned = {limit = {is_capital = yes owner = {tag = C67}} owner = {any_owned = { limit = {NOT = {is_core = F67}} add_core = F67}}}
+
+	}
+	option = {
+		name = "Alright, sounds good."
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 90000002 #this will take care of cases where you have the modifier but not any coreflags for any countries
+	title = "Province flag fix"
+	desc = "You own a province without your country flag on it."
+
+	trigger = {
+		NOT = {tag = BAN}
+		any_owned_province = {
+			has_province_modifier = province_changer
+			NOT = {is_core = F01}
+			NOT = {is_core = F02}
+			NOT = {is_core = F03}
+			NOT = {is_core = F04}
+			NOT = {is_core = F05}
+			NOT = {is_core = F06}
+			NOT = {is_core = F07}
+			NOT = {is_core = F08}
+			NOT = {is_core = F09}
+			NOT = {is_core = F10}
+			NOT = {is_core = F11}
+			NOT = {is_core = F12}
+			NOT = {is_core = F13}
+			NOT = {is_core = F14}
+			NOT = {is_core = F15}
+			NOT = {is_core = F16}
+			NOT = {is_core = F17}
+			NOT = {is_core = F18}
+			NOT = {is_core = F19}
+			NOT = {is_core = F20}
+			NOT = {is_core = F21}
+			NOT = {is_core = F22}
+			NOT = {is_core = F23}
+			NOT = {is_core = F24}
+			NOT = {is_core = F25}
+			NOT = {is_core = F26}
+			NOT = {is_core = F27}
+			NOT = {is_core = F28}
+			NOT = {is_core = F29}
+			NOT = {is_core = F30}
+			NOT = {is_core = F31}
+			NOT = {is_core = F32}
+			NOT = {is_core = F33}
+			NOT = {is_core = F34}
+			NOT = {is_core = F35}
+			NOT = {is_core = F36}
+			NOT = {is_core = F37}
+			NOT = {is_core = F38}
+			NOT = {is_core = F39}
+			NOT = {is_core = F40}
+			NOT = {is_core = F41}
+			NOT = {is_core = F42}
+			NOT = {is_core = F43}
+			NOT = {is_core = F44}
+			NOT = {is_core = F45}
+			NOT = {is_core = F46}
+			NOT = {is_core = F47}
+			NOT = {is_core = F48}
+			NOT = {is_core = F49}
+			NOT = {is_core = F50}
+			NOT = {is_core = F51}
+			NOT = {is_core = F52}
+			NOT = {is_core = F53}
+			NOT = {is_core = F54}
+			NOT = {is_core = F55}
+			NOT = {is_core = F56}
+			NOT = {is_core = F57}
+			NOT = {is_core = F58}
+			NOT = {is_core = F59}
+			NOT = {is_core = F60}
+			NOT = {is_core = F61}
+			NOT = {is_core = F62}
+			NOT = {is_core = F63}
+			NOT = {is_core = F64}
+			NOT = {is_core = F65}
+			NOT = {is_core = F66}
+			NOT = {is_core = F67}
+
+		}
+
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+			any_owned = {limit = {is_capital = yes owner = {tag = C01}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F01}} add_core = F01}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C02}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F02}} add_core = F02}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C03}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F03}} add_core = F03}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C04}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F04}} add_core = F04}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C05}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F05}} add_core = F05}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C06}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F06}} add_core = F06}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C07}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F07}} add_core = F07}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C08}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F08}} add_core = F08}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C09}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F09}} add_core = F09}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C10}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F10}} add_core = F10}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C11}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F11}} add_core = F11}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C12}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F12}} add_core = F12}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C13}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F13}} add_core = F13}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C14}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F14}} add_core = F14}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C15}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F15}} add_core = F15}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C16}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F16}} add_core = F16}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C17}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F17}} add_core = F17}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C18}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F18}} add_core = F18}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C19}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F19}} add_core = F19}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C20}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F20}} add_core = F20}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C21}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F21}} add_core = F21}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C22}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F22}} add_core = F22}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C23}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F23}} add_core = F23}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C24}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F24}} add_core = F24}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C25}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F25}} add_core = F25}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C26}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F26}} add_core = F26}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C27}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F27}} add_core = F27}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C28}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F28}} add_core = F28}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C29}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F29}} add_core = F29}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C30}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F30}} add_core = F30}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C31}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F31}} add_core = F31}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C32}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F32}} add_core = F32}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C33}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F33}} add_core = F33}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C34}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F34}} add_core = F34}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C35}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F35}} add_core = F35}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C36}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F36}} add_core = F36}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C37}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F37}} add_core = F37}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C38}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F38}} add_core = F38}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C39}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F39}} add_core = F39}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C40}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F40}} add_core = F40}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C41}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F41}} add_core = F41}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C42}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F42}} add_core = F42}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C43}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F43}} add_core = F43}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C44}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F44}} add_core = F44}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C45}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F45}} add_core = F45}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C46}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F46}} add_core = F46}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C47}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F47}} add_core = F47}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C48}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F48}} add_core = F48}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C49}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F49}} add_core = F49}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C50}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F50}} add_core = F50}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C51}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F51}} add_core = F51}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C52}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F52}} add_core = F52}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C53}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F53}} add_core = F53}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C54}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F54}} add_core = F54}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C55}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F55}} add_core = F55}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C56}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F56}} add_core = F56}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C57}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F57}} add_core = F57}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C58}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F58}} add_core = F58}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C59}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F59}} add_core = F59}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C60}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F60}} add_core = F60}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C61}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F61}} add_core = F61}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C62}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F62}} add_core = F62}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C63}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F63}} add_core = F63}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C64}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F64}} add_core = F64}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C65}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F65}} add_core = F65}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C66}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F66}} add_core = F66}}}
+			any_owned = {limit = {is_capital = yes owner = {tag = C67}} owner = {any_owned = { limit = {has_province_modifier = province_changer NOT = {is_core = F67}} add_core = F67}}}
+
+		
+	}
+	option = {
+		name = "Alright, sounds good."
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+

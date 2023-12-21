@@ -10,7 +10,7 @@ plurality = 10
 nationalvalue = nv_mercantilism
 
 civilized = yes 
-prestige = 20
+prestige = 0
 schools = traditional_academic
 oob = "C56.txt"
 

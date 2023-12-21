@@ -1,0 +1,4054 @@
+political_decisions = {
+	get_cooldown_flag = {
+		potential = {
+			tag = BAN
+		}
+		allow = {
+			OR = {
+				AND = {C07 = {has_country_modifier = migrate_cooldown} C07 = {NOT = {has_country_flag = migrate_cooldown_flag}}}
+				AND = {C08 = {has_country_modifier = migrate_cooldown} C08 = {NOT = {has_country_flag = migrate_cooldown_flag}}}
+				AND = {C09 = {has_country_modifier = migrate_cooldown} C09 = {NOT = {has_country_flag = migrate_cooldown_flag}}}
+				AND = {C10 = {has_country_modifier = migrate_cooldown} C10 = {NOT = {has_country_flag = migrate_cooldown_flag}}}
+				AND = {C11 = {has_country_modifier = migrate_cooldown} C11 = {NOT = {has_country_flag = migrate_cooldown_flag}}}
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						tag = C07
+						tag = C08
+						tag = C09
+						tag = C10
+						tag = C11
+					}
+					has_country_modifier = migrate_cooldown
+					NOT = {has_country_flag = migrate_cooldown_flag}
+				}
+				set_country_flag = migrate_cooldown_flag
+			}
+		}
+	}
+
+	remove_cooldown_flag = {
+		potential = {
+			tag = BAN
+		}
+		allow = {
+			OR = {
+				AND = {C07 = {has_country_flag = migrate_cooldown_flag} C07 = {NOT = {has_country_modifier = migrate_cooldown}}}
+				AND = {C08 = {has_country_flag = migrate_cooldown_flag} C08 = {NOT = {has_country_modifier = migrate_cooldown}}}
+				AND = {C09 = {has_country_flag = migrate_cooldown_flag} C09 = {NOT = {has_country_modifier = migrate_cooldown}}}
+				AND = {C10 = {has_country_flag = migrate_cooldown_flag} C10 = {NOT = {has_country_modifier = migrate_cooldown}}}
+				AND = {C11 = {has_country_flag = migrate_cooldown_flag} C11 = {NOT = {has_country_modifier = migrate_cooldown}}}
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						tag = C07
+						tag = C08
+						tag = C09
+						tag = C10
+						tag = C11
+					}
+					NOT = {has_country_modifier = migrate_cooldown}
+					has_country_flag = migrate_cooldown_flag
+				}
+				clr_country_flag = migrate_cooldown_flag
+			}
+		}
+	}
+
+	migrate_twentythree = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				240 = {any_neighbor_province = {owner = {tag = THIS}}}
+				255 = {any_neighbor_province = {owner = {tag = THIS}}}
+				266 = {any_neighbor_province = {owner = {tag = THIS}}}
+				264 = {any_neighbor_province = {owner = {tag = THIS}}}
+				274 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 240}
+				NOT = {owns = 255}
+				NOT = {owns = 266}
+				NOT = {owns = 264}
+				NOT = {owns = 274}
+			}
+			AND = {
+				240 = {OR = {empty = yes owner = {tag = THIS}}}
+				255 = {OR = {empty = yes owner = {tag = THIS}}}
+				266 = {OR = {empty = yes owner = {tag = THIS}}}
+				264 = {OR = {empty = yes owner = {tag = THIS}}}
+				274 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			240 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			255 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			266 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			264 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			274 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 240
+							province_id = 255
+							province_id = 266
+							province_id = 264
+							province_id = 274
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 240}
+						10 = {move_pop = 255}
+						10 = {move_pop = 266}
+						10 = {move_pop = 264}
+						10 = {move_pop = 274}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			240 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			255 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			266 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_one = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				125 = {any_neighbor_province = {owner = {tag = THIS}}}
+				117 = {any_neighbor_province = {owner = {tag = THIS}}}
+				135 = {any_neighbor_province = {owner = {tag = THIS}}}
+				124 = {any_neighbor_province = {owner = {tag = THIS}}}
+				127 = {any_neighbor_province = {owner = {tag = THIS}}}
+				126 = {any_neighbor_province = {owner = {tag = THIS}}}
+				131 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 125}
+				NOT = {owns = 117}
+				NOT = {owns = 135}
+				NOT = {owns = 124}
+				NOT = {owns = 127}
+				NOT = {owns = 126}
+				NOT = {owns = 131}
+			}
+			AND = {
+				125 = {OR = {empty = yes owner = {tag = THIS}}}
+				117 = {OR = {empty = yes owner = {tag = THIS}}}
+				135 = {OR = {empty = yes owner = {tag = THIS}}}
+				124 = {OR = {empty = yes owner = {tag = THIS}}}
+				127 = {OR = {empty = yes owner = {tag = THIS}}}
+				126 = {OR = {empty = yes owner = {tag = THIS}}}
+				131 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			125 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			117 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			135 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			124 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			127 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			126 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			131 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 125
+							province_id = 117
+							province_id = 135
+							province_id = 124
+							province_id = 127
+							province_id = 126
+							province_id = 131
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 125}
+						10 = {move_pop = 117}
+						10 = {move_pop = 135}
+						10 = {move_pop = 124}
+						10 = {move_pop = 127}
+						10 = {move_pop = 126}
+						10 = {move_pop = 131}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			117 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			124 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			135 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_two = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				141 = {any_neighbor_province = {owner = {tag = THIS}}}
+				134 = {any_neighbor_province = {owner = {tag = THIS}}}
+				149 = {any_neighbor_province = {owner = {tag = THIS}}}
+				155 = {any_neighbor_province = {owner = {tag = THIS}}}
+				173 = {any_neighbor_province = {owner = {tag = THIS}}}
+				163 = {any_neighbor_province = {owner = {tag = THIS}}}
+				181 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 141}
+				NOT = {owns = 134}
+				NOT = {owns = 149}
+				NOT = {owns = 155}
+				NOT = {owns = 173}
+				NOT = {owns = 163}
+				NOT = {owns = 181}
+			}
+			AND = {
+				141 = {OR = {empty = yes owner = {tag = THIS}}}
+				134 = {OR = {empty = yes owner = {tag = THIS}}}
+				149 = {OR = {empty = yes owner = {tag = THIS}}}
+				155 = {OR = {empty = yes owner = {tag = THIS}}}
+				173 = {OR = {empty = yes owner = {tag = THIS}}}
+				163 = {OR = {empty = yes owner = {tag = THIS}}}
+				181 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			141 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			134 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			149 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			155 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			173 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			163 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			181 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 141
+							province_id = 134
+							province_id = 149
+							province_id = 155
+							province_id = 173
+							province_id = 163
+							province_id = 181
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 141}
+						10 = {move_pop = 134}
+						10 = {move_pop = 149}
+						10 = {move_pop = 155}
+						10 = {move_pop = 173}
+						10 = {move_pop = 163}
+						10 = {move_pop = 181}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			141 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			134 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			149 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_three = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				183 = {any_neighbor_province = {owner = {tag = THIS}}}
+				189 = {any_neighbor_province = {owner = {tag = THIS}}}
+				197 = {any_neighbor_province = {owner = {tag = THIS}}}
+				202 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 183}
+				NOT = {owns = 189}
+				NOT = {owns = 197}
+				NOT = {owns = 202}
+			}
+			AND = {
+				183 = {OR = {empty = yes owner = {tag = THIS}}}
+				189 = {OR = {empty = yes owner = {tag = THIS}}}
+				197 = {OR = {empty = yes owner = {tag = THIS}}}
+				202 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			183 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			189 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			197 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			202 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 183
+							province_id = 189
+							province_id = 197
+							province_id = 202
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 183}
+						10 = {move_pop = 189}
+						10 = {move_pop = 197}
+						10 = {move_pop = 202}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			183 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			189 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			197 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_four = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				212 = {any_neighbor_province = {owner = {tag = THIS}}}
+				210 = {any_neighbor_province = {owner = {tag = THIS}}}
+				203 = {any_neighbor_province = {owner = {tag = THIS}}}
+				219 = {any_neighbor_province = {owner = {tag = THIS}}}
+				222 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 212}
+				NOT = {owns = 210}
+				NOT = {owns = 203}
+				NOT = {owns = 219}
+				NOT = {owns = 222}
+			}
+			AND = {
+				212 = {OR = {empty = yes owner = {tag = THIS}}}
+				210 = {OR = {empty = yes owner = {tag = THIS}}}
+				203 = {OR = {empty = yes owner = {tag = THIS}}}
+				219 = {OR = {empty = yes owner = {tag = THIS}}}
+				222 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			212 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			210 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			203 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			219 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			222 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 212
+							province_id = 210
+							province_id = 203
+							province_id = 219
+							province_id = 222
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 212}
+						10 = {move_pop = 210}
+						10 = {move_pop = 203}
+						10 = {move_pop = 219}
+						10 = {move_pop = 222}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			212 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			210 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			203 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_five = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				234 = {any_neighbor_province = {owner = {tag = THIS}}}
+				214 = {any_neighbor_province = {owner = {tag = THIS}}}
+				216 = {any_neighbor_province = {owner = {tag = THIS}}}
+				186 = {any_neighbor_province = {owner = {tag = THIS}}}
+				187 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 234}
+				NOT = {owns = 214}
+				NOT = {owns = 216}
+				NOT = {owns = 186}
+				NOT = {owns = 187}
+			}
+			AND = {
+				234 = {OR = {empty = yes owner = {tag = THIS}}}
+				214 = {OR = {empty = yes owner = {tag = THIS}}}
+				216 = {OR = {empty = yes owner = {tag = THIS}}}
+				186 = {OR = {empty = yes owner = {tag = THIS}}}
+				187 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			234 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			214 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			216 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			186 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			187 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 234
+							province_id = 214
+							province_id = 216
+							province_id = 186
+							province_id = 187
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 234}
+						10 = {move_pop = 214}
+						10 = {move_pop = 216}
+						10 = {move_pop = 186}
+						10 = {move_pop = 187}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			234 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			214 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			216 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_six = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				230 = {any_neighbor_province = {owner = {tag = THIS}}}
+				250 = {any_neighbor_province = {owner = {tag = THIS}}}
+				269 = {any_neighbor_province = {owner = {tag = THIS}}}
+				271 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 230}
+				NOT = {owns = 250}
+				NOT = {owns = 269}
+				NOT = {owns = 271}
+			}
+			AND = {
+				230 = {OR = {empty = yes owner = {tag = THIS}}}
+				250 = {OR = {empty = yes owner = {tag = THIS}}}
+				269 = {OR = {empty = yes owner = {tag = THIS}}}
+				271 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			230 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			250 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			269 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			271 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 230
+							province_id = 250
+							province_id = 269
+							province_id = 271
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 230}
+						10 = {move_pop = 250}
+						10 = {move_pop = 269}
+						10 = {move_pop = 271}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			230 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			250 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			269 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_seven = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				262 = {any_neighbor_province = {owner = {tag = THIS}}}
+				265 = {any_neighbor_province = {owner = {tag = THIS}}}
+				279 = {any_neighbor_province = {owner = {tag = THIS}}}
+				257 = {any_neighbor_province = {owner = {tag = THIS}}}
+				256 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 262}
+				NOT = {owns = 265}
+				NOT = {owns = 279}
+				NOT = {owns = 257}
+				NOT = {owns = 256}
+			}
+			AND = {
+				262 = {OR = {empty = yes owner = {tag = THIS}}}
+				265 = {OR = {empty = yes owner = {tag = THIS}}}
+				279 = {OR = {empty = yes owner = {tag = THIS}}}
+				257 = {OR = {empty = yes owner = {tag = THIS}}}
+				256 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			262 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			265 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			279 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			257 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			256 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 262
+							province_id = 265
+							province_id = 279
+							province_id = 257
+							province_id = 256
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 262}
+						10 = {move_pop = 265}
+						10 = {move_pop = 279}
+						10 = {move_pop = 257}
+						10 = {move_pop = 256}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			262 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			265 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			279 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_eight = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				259 = {any_neighbor_province = {owner = {tag = THIS}}}
+				243 = {any_neighbor_province = {owner = {tag = THIS}}}
+				246 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 259}
+				NOT = {owns = 243}
+				NOT = {owns = 246}
+			}
+			AND = {
+				259 = {OR = {empty = yes owner = {tag = THIS}}}
+				243 = {OR = {empty = yes owner = {tag = THIS}}}
+				246 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			259 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			243 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			246 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 259
+							province_id = 243
+							province_id = 246
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 259}
+						10 = {move_pop = 243}
+						10 = {move_pop = 246}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			259 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			243 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			246 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_nine = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				286 = {any_neighbor_province = {owner = {tag = THIS}}}
+				285 = {any_neighbor_province = {owner = {tag = THIS}}}
+				284 = {any_neighbor_province = {owner = {tag = THIS}}}
+				296 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 286}
+				NOT = {owns = 285}
+				NOT = {owns = 284}
+				NOT = {owns = 296}
+			}
+			AND = {
+				286 = {OR = {empty = yes owner = {tag = THIS}}}
+				285 = {OR = {empty = yes owner = {tag = THIS}}}
+				284 = {OR = {empty = yes owner = {tag = THIS}}}
+				296 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			286 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			285 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			284 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			296 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 286
+							province_id = 285
+							province_id = 284
+							province_id = 296
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 286}
+						10 = {move_pop = 285}
+						10 = {move_pop = 284}
+						10 = {move_pop = 296}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			286 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			285 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			284 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_ten = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				287 = {any_neighbor_province = {owner = {tag = THIS}}}
+				290 = {any_neighbor_province = {owner = {tag = THIS}}}
+				299 = {any_neighbor_province = {owner = {tag = THIS}}}
+				302 = {any_neighbor_province = {owner = {tag = THIS}}}
+				307 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 287}
+				NOT = {owns = 290}
+				NOT = {owns = 299}
+				NOT = {owns = 302}
+				NOT = {owns = 307}
+			}
+			AND = {
+				287 = {OR = {empty = yes owner = {tag = THIS}}}
+				290 = {OR = {empty = yes owner = {tag = THIS}}}
+				299 = {OR = {empty = yes owner = {tag = THIS}}}
+				302 = {OR = {empty = yes owner = {tag = THIS}}}
+				307 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			287 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			290 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			299 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			302 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			307 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 287
+							province_id = 290
+							province_id = 299
+							province_id = 302
+							province_id = 307
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 287}
+						10 = {move_pop = 290}
+						10 = {move_pop = 299}
+						10 = {move_pop = 302}
+						10 = {move_pop = 307}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			287 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			290 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			299 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_eleven = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				190 = {any_neighbor_province = {owner = {tag = THIS}}}
+				166 = {any_neighbor_province = {owner = {tag = THIS}}}
+				168 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 190}
+				NOT = {owns = 166}
+				NOT = {owns = 168}
+			}
+			AND = {
+				190 = {OR = {empty = yes owner = {tag = THIS}}}
+				166 = {OR = {empty = yes owner = {tag = THIS}}}
+				168 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			190 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			166 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			168 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 190
+							province_id = 166
+							province_id = 168
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 190}
+						10 = {move_pop = 166}
+						10 = {move_pop = 168}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			190 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			166 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			168 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_twelve = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				144 = {any_neighbor_province = {owner = {tag = THIS}}}
+				140 = {any_neighbor_province = {owner = {tag = THIS}}}
+				130 = {any_neighbor_province = {owner = {tag = THIS}}}
+				108 = {any_neighbor_province = {owner = {tag = THIS}}}
+				93 = {any_neighbor_province = {owner = {tag = THIS}}}
+				96 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 144}
+				NOT = {owns = 140}
+				NOT = {owns = 130}
+				NOT = {owns = 108}
+				NOT = {owns = 93}
+				NOT = {owns = 96}
+			}
+			AND = {
+				144 = {OR = {empty = yes owner = {tag = THIS}}}
+				140 = {OR = {empty = yes owner = {tag = THIS}}}
+				130 = {OR = {empty = yes owner = {tag = THIS}}}
+				108 = {OR = {empty = yes owner = {tag = THIS}}}
+				93 = {OR = {empty = yes owner = {tag = THIS}}}
+				96 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			144 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			140 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			130 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			108 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			93 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			96 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 144
+							province_id = 140
+							province_id = 130
+							province_id = 108
+							province_id = 93
+							province_id = 96
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 144}
+						10 = {move_pop = 140}
+						10 = {move_pop = 130}
+						10 = {move_pop = 108}
+						10 = {move_pop = 93}
+						10 = {move_pop = 96}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			144 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			140 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			130 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_thirteen = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				87 = {any_neighbor_province = {owner = {tag = THIS}}}
+				102 = {any_neighbor_province = {owner = {tag = THIS}}}
+				112 = {any_neighbor_province = {owner = {tag = THIS}}}
+				111 = {any_neighbor_province = {owner = {tag = THIS}}}
+				120 = {any_neighbor_province = {owner = {tag = THIS}}}
+				116 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 87}
+				NOT = {owns = 102}
+				NOT = {owns = 112}
+				NOT = {owns = 111}
+				NOT = {owns = 120}
+				NOT = {owns = 116}
+			}
+			AND = {
+				87 = {OR = {empty = yes owner = {tag = THIS}}}
+				102 = {OR = {empty = yes owner = {tag = THIS}}}
+				112 = {OR = {empty = yes owner = {tag = THIS}}}
+				111 = {OR = {empty = yes owner = {tag = THIS}}}
+				120 = {OR = {empty = yes owner = {tag = THIS}}}
+				116 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			87 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			102 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			112 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			111 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			120 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			116 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 87
+							province_id = 102
+							province_id = 112
+							province_id = 111
+							province_id = 120
+							province_id = 116
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 87}
+						10 = {move_pop = 102}
+						10 = {move_pop = 112}
+						10 = {move_pop = 111}
+						10 = {move_pop = 120}
+						10 = {move_pop = 116}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			87 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			102 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			112 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_fourteen = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				253 = {any_neighbor_province = {owner = {tag = THIS}}}
+				263 = {any_neighbor_province = {owner = {tag = THIS}}}
+				261 = {any_neighbor_province = {owner = {tag = THIS}}}
+				235 = {any_neighbor_province = {owner = {tag = THIS}}}
+				239 = {any_neighbor_province = {owner = {tag = THIS}}}
+				218 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 253}
+				NOT = {owns = 263}
+				NOT = {owns = 261}
+				NOT = {owns = 235}
+				NOT = {owns = 239}
+				NOT = {owns = 218}
+			}
+			AND = {
+				253 = {OR = {empty = yes owner = {tag = THIS}}}
+				263 = {OR = {empty = yes owner = {tag = THIS}}}
+				261 = {OR = {empty = yes owner = {tag = THIS}}}
+				235 = {OR = {empty = yes owner = {tag = THIS}}}
+				239 = {OR = {empty = yes owner = {tag = THIS}}}
+				218 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			253 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			263 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			261 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			235 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			239 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			218 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 253
+							province_id = 263
+							province_id = 261
+							province_id = 235
+							province_id = 239
+							province_id = 218
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 253}
+						10 = {move_pop = 263}
+						10 = {move_pop = 261}
+						10 = {move_pop = 235}
+						10 = {move_pop = 239}
+						10 = {move_pop = 218}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			253 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			263 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			261 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_fifteen = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				198 = {any_neighbor_province = {owner = {tag = THIS}}}
+				192 = {any_neighbor_province = {owner = {tag = THIS}}}
+				179 = {any_neighbor_province = {owner = {tag = THIS}}}
+				170 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 198}
+				NOT = {owns = 192}
+				NOT = {owns = 179}
+				NOT = {owns = 170}
+			}
+			AND = {
+				198 = {OR = {empty = yes owner = {tag = THIS}}}
+				192 = {OR = {empty = yes owner = {tag = THIS}}}
+				179 = {OR = {empty = yes owner = {tag = THIS}}}
+				170 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			198 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			192 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			179 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			170 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 198
+							province_id = 192
+							province_id = 179
+							province_id = 170
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 198}
+						10 = {move_pop = 192}
+						10 = {move_pop = 179}
+						10 = {move_pop = 170}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			198 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			192 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			179 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_sixteen = {
+		picture = die_groot_trek
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				160 = {any_neighbor_province = {owner = {tag = THIS}}}
+				174 = {any_neighbor_province = {owner = {tag = THIS}}}
+				161 = {any_neighbor_province = {owner = {tag = THIS}}}
+				176 = {any_neighbor_province = {owner = {tag = THIS}}}
+				162 = {any_neighbor_province = {owner = {tag = THIS}}}
+				177 = {any_neighbor_province = {owner = {tag = THIS}}}
+				159 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 160}
+				NOT = {owns = 174}
+				NOT = {owns = 161}
+				NOT = {owns = 176}
+				NOT = {owns = 162}
+				NOT = {owns = 177}
+				NOT = {owns = 159}
+			}
+			AND = {
+				160 = {OR = {empty = yes owner = {tag = THIS}}}
+				174 = {OR = {empty = yes owner = {tag = THIS}}}
+				161 = {OR = {empty = yes owner = {tag = THIS}}}
+				176 = {OR = {empty = yes owner = {tag = THIS}}}
+				162 = {OR = {empty = yes owner = {tag = THIS}}}
+				177 = {OR = {empty = yes owner = {tag = THIS}}}
+				159 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			160 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			174 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			161 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			176 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			162 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			177 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			159 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 160
+							province_id = 174
+							province_id = 161
+							province_id = 176
+							province_id = 162
+							province_id = 177
+							province_id = 159
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 160}
+						10 = {move_pop = 174}
+						10 = {move_pop = 161}
+						10 = {move_pop = 176}
+						10 = {move_pop = 162}
+						10 = {move_pop = 177}
+						10 = {move_pop = 159}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			160 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			174 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			161 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_seventeen = {
+		picture = die_groot_trek
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				278 = {any_neighbor_province = {owner = {tag = THIS}}}
+				258 = {any_neighbor_province = {owner = {tag = THIS}}}
+				241 = {any_neighbor_province = {owner = {tag = THIS}}}
+				252 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 278}
+				NOT = {owns = 258}
+				NOT = {owns = 241}
+				NOT = {owns = 252}
+			}
+			AND = {
+				278 = {OR = {empty = yes owner = {tag = THIS}}}
+				258 = {OR = {empty = yes owner = {tag = THIS}}}
+				241 = {OR = {empty = yes owner = {tag = THIS}}}
+				252 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			278 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			258 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			241 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			252 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 278
+							province_id = 258
+							province_id = 241
+							province_id = 252
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 278}
+						10 = {move_pop = 258}
+						10 = {move_pop = 241}
+						10 = {move_pop = 252}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			278 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			258 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			241 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_eighteen = {
+		picture = die_groot_trek
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				297 = {any_neighbor_province = {owner = {tag = THIS}}}
+				282 = {any_neighbor_province = {owner = {tag = THIS}}}
+				281 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 297}
+				NOT = {owns = 282}
+				NOT = {owns = 281}
+			}
+			AND = {
+				297 = {OR = {empty = yes owner = {tag = THIS}}}
+				282 = {OR = {empty = yes owner = {tag = THIS}}}
+				281 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			297 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			282 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			281 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 297
+							province_id = 282
+							province_id = 281
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 297}
+						10 = {move_pop = 282}
+						10 = {move_pop = 281}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			297 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			282 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			281 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_nineteen = {
+		picture = die_groot_trek
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				80 = {any_neighbor_province = {owner = {tag = THIS}}}
+				83 = {any_neighbor_province = {owner = {tag = THIS}}}
+				85 = {any_neighbor_province = {owner = {tag = THIS}}}
+				79 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 80}
+				NOT = {owns = 83}
+				NOT = {owns = 85}
+				NOT = {owns = 79}
+			}
+			AND = {
+				80 = {OR = {empty = yes owner = {tag = THIS}}}
+				83 = {OR = {empty = yes owner = {tag = THIS}}}
+				85 = {OR = {empty = yes owner = {tag = THIS}}}
+				79 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			80 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			83 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			85 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			79 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 80
+							province_id = 83
+							province_id = 85
+							province_id = 79
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 80}
+						10 = {move_pop = 83}
+						10 = {move_pop = 85}
+						10 = {move_pop = 79}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			80 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			83 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			85 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_twenty = {
+		picture = die_groot_trek
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				154 = {any_neighbor_province = {owner = {tag = THIS}}}
+				136 = {any_neighbor_province = {owner = {tag = THIS}}}
+				138 = {any_neighbor_province = {owner = {tag = THIS}}}
+				121 = {any_neighbor_province = {owner = {tag = THIS}}}
+				118 = {any_neighbor_province = {owner = {tag = THIS}}}
+				109 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 154}
+				NOT = {owns = 136}
+				NOT = {owns = 138}
+				NOT = {owns = 121}
+				NOT = {owns = 118}
+				NOT = {owns = 109}
+			}
+			AND = {
+				154 = {OR = {empty = yes owner = {tag = THIS}}}
+				136 = {OR = {empty = yes owner = {tag = THIS}}}
+				138 = {OR = {empty = yes owner = {tag = THIS}}}
+				121 = {OR = {empty = yes owner = {tag = THIS}}}
+				118 = {OR = {empty = yes owner = {tag = THIS}}}
+				109 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			154 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			136 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			138 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			121 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			118 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			109 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 154
+							province_id = 136
+							province_id = 138
+							province_id = 121
+							province_id = 118
+							province_id = 109
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 154}
+						10 = {move_pop = 136}
+						10 = {move_pop = 138}
+						10 = {move_pop = 121}
+						10 = {move_pop = 118}
+						10 = {move_pop = 109}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			154 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			136 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			138 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_twentyone = {
+		picture = die_groot_trek
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				151 = {any_neighbor_province = {owner = {tag = THIS}}}
+				158 = {any_neighbor_province = {owner = {tag = THIS}}}
+				152 = {any_neighbor_province = {owner = {tag = THIS}}}
+				142 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 151}
+				NOT = {owns = 158}
+				NOT = {owns = 152}
+				NOT = {owns = 142}
+			}
+			AND = {
+				151 = {OR = {empty = yes owner = {tag = THIS}}}
+				158 = {OR = {empty = yes owner = {tag = THIS}}}
+				152 = {OR = {empty = yes owner = {tag = THIS}}}
+				142 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			151 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			158 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			152 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			142 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 151
+							province_id = 158
+							province_id = 152
+							province_id = 142
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 151}
+						10 = {move_pop = 158}
+						10 = {move_pop = 152}
+						10 = {move_pop = 142}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			151 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			158 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			152 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+	migrate_twentytwo = {
+		picture = die_groot_trek
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			NOT = {
+				has_country_flag = tribe_has_settled
+			}
+			NOT = {
+				number_of_states = 3
+			}
+			OR = {
+				245 = {any_neighbor_province = {owner = {tag = THIS}}}
+				231 = {any_neighbor_province = {owner = {tag = THIS}}}
+				221 = {any_neighbor_province = {owner = {tag = THIS}}}
+				208 = {any_neighbor_province = {owner = {tag = THIS}}}
+				232 = {any_neighbor_province = {owner = {tag = THIS}}}
+				207 = {any_neighbor_province = {owner = {tag = THIS}}}
+			}
+			OR = {
+				NOT = {owns = 245}
+				NOT = {owns = 231}
+				NOT = {owns = 221}
+				NOT = {owns = 208}
+				NOT = {owns = 232}
+				NOT = {owns = 207}
+			}
+			AND = {
+				245 = {OR = {empty = yes owner = {tag = THIS}}}
+				231 = {OR = {empty = yes owner = {tag = THIS}}}
+				221 = {OR = {empty = yes owner = {tag = THIS}}}
+				208 = {OR = {empty = yes owner = {tag = THIS}}}
+				232 = {OR = {empty = yes owner = {tag = THIS}}}
+				207 = {OR = {empty = yes owner = {tag = THIS}}}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				NOT = {has_country_modifier = migrate_cooldown}
+				ai = no
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = migrate_cooldown
+				duration = 365
+			}
+
+			245 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			231 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			221 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			208 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			232 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			207 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 245
+							province_id = 231
+							province_id = 221
+							province_id = 208
+							province_id = 232
+							province_id = 207
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 245}
+						10 = {move_pop = 231}
+						10 = {move_pop = 221}
+						10 = {move_pop = 208}
+						10 = {move_pop = 232}
+						10 = {move_pop = 207}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			245 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			231 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			221 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+
+}

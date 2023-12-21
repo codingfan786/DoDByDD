@@ -283,6 +283,14 @@ migration_chance =
 {
 	factor = 0.25
 
+	modifier = {
+		factor = 50
+		country = {
+			has_country_flag = migrate_cooldown_flag
+		}
+		unemployment = 0.5
+	}
+
 #If pop group is 70%/80%/90%/99% literacy, is not primary culture, and is in a colony then 2.5% chance to migrate to another state for each threshold. (Chance for colonial pops to migrate to home states once they reach some literacy thresholds)	(10% total)
 #	group = { ############### DOES NOT WORK
 #		modifier = {
@@ -678,6 +686,13 @@ colonialmigration_chance =
 emigration_chance = 
 {
 	factor = 1
+
+	modifier = {
+		factor = -10000
+		country = {
+			has_country_flag = migrate_cooldown_flag
+		}
+	}
 
 	#War exhaustion
 	group = {

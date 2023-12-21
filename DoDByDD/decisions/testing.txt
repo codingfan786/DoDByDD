@@ -1,11 +1,13 @@
 political_decisions = {
-	inheritreg2 = {
+	inheritregtwo = {
 		potential = {
 			ai = no
 			always = no
 		}
 		allow = {}
 		effect = {
+			BAN = {
+			sphere_owner = {
 			inherit = C13
 			inherit = C12
 			inherit = C14
@@ -20,7 +22,171 @@ political_decisions = {
 			inherit = C27
 			inherit = C24
 			inherit = C25
+			}
+			}
+			
 		}
 	}
 
+	inheritregone = {
+		potential = {
+			ai = no
+			always = no
+		}
+		allow = {}
+		effect = {
+			F08 = {all_core = {remove_core = F08}}
+			F09 = {all_core = {remove_core = F09}}
+			F10 = {all_core = {remove_core = F10}}
+			F11 = {all_core = {remove_core = F11}}
+
+			BAN = {
+			sphere_owner = {
+			inherit = C11
+			inherit = C10
+			inherit = C09
+			inherit = C08
+			}
+			}
+			
+		}
+	}
+
+	movecountry = {
+		potential = {ai = no always = no}
+		allow = {}
+		effect = {
+
+			125 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			117 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			135 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			124 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			127 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			126 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+			131 = {secede_province = THIS add_core = THIS add_province_modifier = { name = province_changer duration = -1 }}
+
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 125
+							province_id = 117
+							province_id = 135
+							province_id = 124
+							province_id = 127
+							province_id = 126
+							province_id = 131
+						}
+					}
+				}
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				remove_core = C07
+				remove_core = C08
+				remove_core = C09
+				remove_core = C10
+				remove_core = C11
+
+				any_pop = {
+					limit = { NOT = {has_pop_culture = sakirn} }
+					random_list = {
+						10 = {move_pop = 125}
+						10 = {move_pop = 117}
+						10 = {move_pop = 135}
+						10 = {move_pop = 124}
+						10 = {move_pop = 127}
+						10 = {move_pop = 126}
+						10 = {move_pop = 131}
+					}
+				}
+				secede_province = C15
+			}
+			BAN = {sphere_owner = {inherit = C15}}
+
+			117 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			124 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+			135 = {
+				sub_unit = { type = hussar value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = infantry value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+				sub_unit = { type = artillery value = current }
+			}
+
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = tropical_wood
+						trade_goods = rubber
+						trade_goods = oil
+					}
+				}
+				any_pop = {
+					limit = {
+						type = farmers
+					}
+					pop_type = labourers
+				}
+			}
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = sulphur
+							trade_goods = iron
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = oil
+						}
+					}
+					
+				}
+				any_pop = {
+					limit = {
+						type = labourers
+					}
+					pop_type = farmers
+				}
+			}
+		}
+	}
+	movecountrytwo = {
+		potential = {ai = no always = no}
+		allow = {}
+		effect = {any_owned = {add_core = THIS}}
+	}
 }

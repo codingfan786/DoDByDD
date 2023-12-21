@@ -1016,7 +1016,7 @@ medicine = {
 	year = 1836
 	cost = 7200
 
-	supply_limit = 0.25
+	supply_limit = 0.35
 	
 	ai_chance = {
 		factor = 1.5
@@ -1039,7 +1039,7 @@ inorganic_chemistry = {
 	year = 1850
 	cost = 10800
 
-	supply_limit = 0.25
+	supply_limit = 0.35
 	
 	ai_chance = {
 		factor = 1.1
@@ -1074,7 +1074,7 @@ organic_chemistry = {
 	year = 1870
 	cost = 14400
 
-	supply_limit = 0.25
+	supply_limit = 0.35
 	
 	ai_chance = {
 		factor = 1.1

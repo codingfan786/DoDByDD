@@ -833,7 +833,7 @@ railroad = {
 		max_level = 2
 		province = yes
 
-		one_per_state = yes
+		#one_per_state = yes
 	}
 
 	state_deselector = {

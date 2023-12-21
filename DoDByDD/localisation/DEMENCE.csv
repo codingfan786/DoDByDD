@@ -1,0 +1,116 @@
+south_arden;South Arden;x
+north_arden;North Arden;x
+ciric;Ciric;x
+palish;Palish;x
+ollin;Ollin;x
+sillesian;Sillesian;x
+aelin;Aelin;x
+filn;Filn;x
+futn;Futn;x
+koullan;Koullan;x
+buldashi;Buldashi;x
+celian;Celian;x
+gladan;Gladan;x
+south_bosnark;South Bosnark;x
+north_bosnark;North Bosnark;x
+pasan;Pasan;x
+darren;Darren;x
+dirven;Dirven;x
+ertan;Ertan;x
+docen;Docen;x
+iquan;Iquan;x
+odparshing;Odparshing;x
+memphin;Memphin;x
+antlanin;Antlanin;x
+ethior;Ethior;x
+sudparshing;Sudparshing;x
+wostciric;Wostciric;x
+walnf;Walnf;x
+wif;Wif;x
+sudirk;Sudirk;x
+warf;Warf;x
+winf;Winf;x
+saqui;Saqui;x
+sakirn;Sakirn;x
+sudsan;Sudsan;x
+odsan;Odsan;x
+furodsan;Furodsan;x
+inlandar;Inlandar;x
+odinlandar;Odinlandar;x
+wool_factory;Wool Fabric;x
+wool_fabric_factory;Wool Fabric Factory;x
+C53;Sillysia;x
+C53_ADJ;Sill;x
+world_bank_rp_nerf;World Bank Nerf;x
+BAN;World Bank;x
+BAN_ADJ;World Bank;x
+nv_mercantilism;Mercantilism;x
+nv_fanatacism;Fanatacism;x
+nv_statism;Statism;x
+nv_tribalism;Tribalism;x
+nv_regionalism;Regionalism;x
+land_reform_two;Extensive land reform;x
+admin_reform_two;Extensive admin reform;x
+education_reform_two;Extensive school reform;x
+transport_improv_two;Advanced;x
+no_western_science;Reject foreign investment;x
+yes_western_science;Accept foreign investment;x
+western_science_two;Promote foreign investment;x
+switch_to_regionalism_title;Embrace the Ideal of Regionalism;x
+switch_to_fanatacism_title;Embrace the Ideal of Fanatacism;x
+switch_to_mercantilism_title;Embrace the Ideal of Mercantilism;x
+switch_to_statism_title;Embrace the Ideal of Statism;x
+switch_to_tribalism_title;Embrace the Ideal of Tribalism;x
+switch_to_regionalism_desc;§YThe modifiers for this NV are:§W\n§GInfamy -0.10\nInfluence +50%\nDiplomatic points +200%\nCB Speed +50%\nMobilization size +1%§W;x
+switch_to_fanatacism_desc;§YThe modifiers for this NV are:§W\n§GOrganization regain +5%\nLeadership Modifier: +100%\nLand unit experience +5\nArmy tech research +5%\nMobilization size +1%§W;x
+switch_to_mercantilism_desc;§YThe modifiers for this NV are:§W\n§GFactory throughput +15%\nCommerce tech research +5%\nIndustry tech research +5%\nMobilization size +1%§W;x
+switch_to_statism_desc;§YThe modifiers for this NV are:§W\n§GMonthly war exhaustion -0.5\nAdministration efficiency +15%\nMobilization size +3%§W;x
+switch_to_tribalism_desc;§YThe modifiers for this NV are:§W\n§GRuling party support +25%\nPolitical awareness -20%\nSocial reform desire -20%\nMilitancy -0.01\nConsciousness -0.01\nMobilization size +1%§W;x
+province_changer;Province hasn't changed hands recently.;x
+migrate_cooldown;Tribal Migration Cooldown;x
+migrate_one_title;Migrate to North Platte;x
+migrate_two_title;Migrate to Dallas;x
+migrate_three_title;Migrate to Marietta;x
+migrate_four_title;Migrate to Bermuda;x
+migrate_five_title;Migrate to Bowling Green;x
+migrate_six_title;Migrate to Trenton-Edinburgh;x
+migrate_seven_title;Migrate to Waterford-Armagh;x
+migrate_eight_title;Migrate to Sligo;x
+migrate_nine_title;Migrate to Birmingham;x
+migrate_ten_title;Migrate to Plymouth;x
+migrate_eleven_title;Migrate to Knoxville;x
+migrate_twelve_title;Migrate to Pocatello;x
+migrate_thirteen_title;Migrate to Tuscon-Billings;x
+migrate_fourteen_title;Migrate to Faroe Islands;x
+migrate_fifteen_title;Migrate to Tallahassee;x
+migrate_sixteen_title;Migrate to Madison-Eau Claire;x
+migrate_seventeen_title;Migrate to Manchester;x
+migrate_eighteen_title;Migrate to Hull;x
+migrate_nineteen_title;Migrate to Walla Walla;x
+migrate_twenty_title;Migrate to Dupree-Sioux City;x
+migrate_twentyone_title;Migrate to Shreveport;x
+migrate_twentytwo_title;Migrate to Greenville-New York;x
+migrate_twentythree_title;Migrate to Londonderry;x
+migrate_one_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_two_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_three_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_four_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_five_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_six_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_seven_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_eight_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_nine_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_ten_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_eleven_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_twelve_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_thirteen_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_fourteen_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_fifteen_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_sixteen_desc;Migrate to a new state, taking your primary culture pops with you. §YThis is a formable settlement state! §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_seventeen_desc;Migrate to a new state, taking your primary culture pops with you. §YThis is a formable settlement state! §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_eighteen_desc;Migrate to a new state, taking your primary culture pops with you. §YThis is a formable settlement state! §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_nineteen_desc;Migrate to a new state, taking your primary culture pops with you. §YThis is a formable settlement state! §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_twenty_desc;Migrate to a new state, taking your primary culture pops with you. §YThis is a formable settlement state! §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_twentyone_desc;Migrate to a new state, taking your primary culture pops with you. §YThis is a formable settlement state! §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_twentytwo_desc;Migrate to a new state, taking your primary culture pops with you. §YThis is a formable settlement state! §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+migrate_twentythree_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
