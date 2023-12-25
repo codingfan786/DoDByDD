@@ -144,6 +144,19 @@ country_event = {
 			remove_core = F65
 			remove_core = F66
 			remove_core = F67
+			remove_core = F68
+			remove_core = F69
+			remove_core = F70
+			remove_core = F71
+			remove_core = F72
+			remove_core = F73
+			remove_core = F74
+			remove_core = F75
+			remove_core = F76
+			remove_core = F77
+			remove_core = F78
+			remove_core = F79
+			remove_core = F80
 		}
 	}
 

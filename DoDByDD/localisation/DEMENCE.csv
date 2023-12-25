@@ -39,11 +39,7 @@ inlandar;Inlandar;x
 odinlandar;Odinlandar;x
 wool_factory;Wool Fabric;x
 wool_fabric_factory;Wool Fabric Factory;x
-C53;Sillysia;x
-C53_ADJ;Sill;x
 world_bank_rp_nerf;World Bank Nerf;x
-BAN;World Bank;x
-BAN_ADJ;World Bank;x
 nv_mercantilism;Mercantilism;x
 nv_fanatacism;Fanatacism;x
 nv_statism;Statism;x
@@ -114,3 +110,26 @@ migrate_twenty_desc;Migrate to a new state, taking your primary culture pops wit
 migrate_twentyone_desc;Migrate to a new state, taking your primary culture pops with you. §YThis is a formable settlement state! §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
 migrate_twentytwo_desc;Migrate to a new state, taking your primary culture pops with you. §YThis is a formable settlement state! §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
 migrate_twentythree_desc;Migrate to a new state, taking your primary culture pops with you. §GYou can do so once a year as long as you have fewer than three states. §RYou will lose all but 30 brigades in the process. Sorry! This is unavoidable.;x
+tribe_settle_one_title;Settle into Gallia;x
+tribe_settle_two_title;Rally the Jumbletrüpe!;x
+tribe_settle_three_title;Settle the Suo Clearing;x
+tribe_settle_four_title;Establish Jälpristát;x
+tribe_settle_five_title;Establish Karlspristát;x
+tribe_settle_six_title;Unite the Northern Woodlands;x
+tribe_settle_seven_title;Claim Tumis!;x
+tribe_settle_eight_title;Establish Wostdirktrib;x
+tribe_settle_nine_title;Spread through Dereka!;x
+tribe_settle_one_desc;Settle into Madison-Eau Claire.;x
+tribe_settle_two_desc;Settle into Greenville-New York.;x
+tribe_settle_three_desc;Settle into Shreveport.;x
+tribe_settle_four_desc;Settle into Manchester.;x
+tribe_settle_five_desc;Settle into Walla Walla.;x
+tribe_settle_six_desc;Settle into Dupree-Sioux City.;x
+tribe_settle_seven_desc;Settle into Hull.;x
+tribe_settle_eight_desc;Expand into Dirksan;x
+tribe_settle_nine_desc;Expand into Dereka;x
+region2;Dereka;x
+integrate_greater_ael_title;Unify the Aellina Shorestates;x
+integrate_greater_ael_desc;This will annex any of the six states between your core territory and the coastline that you have puppeted and give you their accepted cultures.;x
+koullan_compromise_title;Koullan Compromise;x
+koullan_compromise_desc;The absence of a free Koullan state has lead many of these people to view us as the best possible alternative. We should strike upon this immediately and cement this sentiment in our society.;x

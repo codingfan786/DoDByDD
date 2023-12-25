@@ -1,0 +1,45 @@
+political_decisions = {
+	
+	koullan_compromise = {
+		picture = abolish_prohibition
+		potential = {
+			tag = C46
+			NOT = {accepted_culture = koullan}
+		}
+		allow = {
+			state_n_government = 1
+			C45 = {
+				OR = {
+					exists = no
+					government = proletarian_dictatorship
+					government = presidential_dictatorship
+					government = bourgeois_dictatorship
+					government = fascist_dictatorship
+				}
+			}
+			C44 = {
+				OR = {
+					exists = no
+					government = proletarian_dictatorship
+					government = presidential_dictatorship
+					government = bourgeois_dictatorship
+					government = fascist_dictatorship
+				}
+			}
+			C43 = {
+				OR = {
+					exists = no
+					government = proletarian_dictatorship
+					government = presidential_dictatorship
+					government = bourgeois_dictatorship
+					government = fascist_dictatorship
+				}
+			}
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			add_accepted_culture = koullan
+		}
+	}
+
+}

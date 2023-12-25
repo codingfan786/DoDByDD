@@ -1,0 +1,371 @@
+political_decisions = {
+	
+	tribe_settle_one = {
+		picture = form_arabia
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			C64 = {exists = no}
+		}
+		allow = {
+			state_n_government = 1
+			owns = 174
+			owns = 160
+			owns = 161
+			owns = 176
+			owns = 162
+			owns = 177
+			owns = 159
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			civilized = yes
+			any_owned = {
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				add_core = F64
+			}
+			all_core = {
+				remove_core = THIS
+				add_core = C64
+			}
+			change_tag = C64
+		}
+	}
+
+	tribe_settle_two = {
+		picture = form_arabia
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			C65 = {exists = no}
+		}
+		allow = {
+			state_n_government = 1
+			owns = 207
+			owns = 208
+			owns = 221
+			owns = 231
+			owns = 245
+			owns = 232
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			civilized = yes
+			any_owned = {
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				add_core = F65
+			}
+			all_core = {
+				remove_core = THIS
+				add_core = C65
+			}
+			change_tag = C65
+		}
+	}
+
+	tribe_settle_three = {
+		picture = form_arabia
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			C66 = {exists = no}
+		}
+		allow = {
+			state_n_government = 1
+			owns = 142
+			owns = 152
+			owns = 158
+			owns = 151
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			civilized = yes
+			any_owned = {
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				add_core = F66
+			}
+			all_core = {
+				remove_core = THIS
+				add_core = C66
+			}
+			change_tag = C66
+		}
+	}
+
+	tribe_settle_four = {
+		picture = form_arabia
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			C67 = {exists = no}
+		}
+		allow = {
+			state_n_government = 1
+			owns = 278
+			owns = 252
+			owns = 258
+			owns = 241
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			civilized = yes
+			any_owned = {
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				add_core = F67
+			}
+			all_core = {
+				remove_core = THIS
+				add_core = C67
+			}
+			change_tag = C67
+		}
+	}
+
+	tribe_settle_five = {
+		picture = form_arabia
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			C68 = {exists = no}
+		}
+		allow = {
+			state_n_government = 1
+			owns = 80
+			owns = 83
+			owns = 85
+			owns = 79
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			civilized = yes
+			any_owned = {
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				add_core = F68
+			}
+			all_core = {
+				remove_core = THIS
+				add_core = C68
+			}
+			change_tag = C68
+		}
+	}
+
+	tribe_settle_six = {
+		picture = form_arabia
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			C69 = {exists = no}
+		}
+		allow = {
+			state_n_government = 1
+			owns = 154
+			owns = 136
+			owns = 138
+			owns = 121
+			owns = 109
+			owns = 118
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			civilized = yes
+			any_owned = {
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				add_core = F69
+			}
+			all_core = {
+				remove_core = THIS
+				add_core = C69
+			}
+			change_tag = C69
+		}
+	}
+
+	tribe_settle_seven = {
+		picture = form_arabia
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			C70 = {exists = no}
+		}
+		allow = {
+			state_n_government = 1
+			owns = 282
+			owns = 281
+			owns = 297
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			civilized = yes
+			any_owned = {
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				add_core = F70
+			}
+			all_core = {
+				remove_core = THIS
+				add_core = C70
+			}
+			change_tag = C70
+		}
+	}
+
+	tribe_settle_eight = {
+		picture = form_arabia
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			C71 = {exists = no}
+		}
+		allow = {
+			state_n_government = 1
+			C05 = {
+				exists = no
+				all_core = {
+					owner = {tag = THIS}
+				}
+			}
+
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			civilized = yes
+			any_owned = {
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				add_core = F71
+			}
+			all_core = {
+				remove_core = THIS
+				add_core = C71
+			}
+			change_tag = C71
+		}
+	}
+
+	tribe_settle_nine = {
+		picture = form_arabia
+		potential = {
+			OR = {
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+			}
+			C72 = {exists = no}
+		}
+		allow = {
+			state_n_government = 1
+			OR = {
+				C16 = {
+					exists = no
+					all_core = {
+						owner = {tag = THIS}
+					}
+				}
+				C12 = {
+					exists = no
+					all_core = {
+						owner = {tag = THIS}
+					}
+				}
+			}
+			C14 = {
+				exists = no
+				all_core = {
+					owner = {tag = THIS}
+				}
+			}
+
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			civilized = yes
+			any_owned = {
+				remove_core = F07
+				remove_core = F08
+				remove_core = F09
+				remove_core = F10
+				remove_core = F11
+				add_core = F72
+			}
+			all_core = {
+				remove_core = THIS
+				add_core = C72
+			}
+			change_tag = C72
+		}
+	}
+
+}

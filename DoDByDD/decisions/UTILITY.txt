@@ -252,7 +252,6 @@ political_decisions = {
 		alert = no
 		picture = national_value
 		potential = {
-			NOT = { tag = LCT }
 			NOT = {	has_country_flag = tech_school_change }
 			civilized = yes
 		}
@@ -268,13 +267,6 @@ political_decisions = {
 		ai_will_do = { 
 			factor = 1
 			
-			modifier = {
-				factor = 0
-				OR = {
-					is_culture_group = east_asian
-					substate_of = CHI
-				}
-			}
 		}
 	}
 
@@ -434,10 +426,6 @@ political_decisions = {
 		potential = {
 			ai = no
 			NOT = {has_country_flag = show_util}
-			#any_greater_power  = {
-			#	NOT = {tag = THIS}
-			#	ai = no
-			#}
 		}
 		allow = {
 			ai = no
@@ -466,9 +454,6 @@ political_decisions = {
         potential = {
             ai = no
             NOT = { has_country_modifier = bureaucrats_fix_cooldown }
-			NOT = { tag = LCT }
-
-            
             has_country_flag = show_util
            
         }
@@ -488,8 +473,6 @@ political_decisions = {
 		alert = no
 		potential = {
 			has_country_flag = show_util
-			NOT = { tag = LCT }
-			civilized = yes
 			ai = no
 			NOT = { has_country_flag = will_receive_grants }
 			}
@@ -510,8 +493,6 @@ political_decisions = {
 		alert = no
 		potential = {
 			has_country_flag = show_util
-			NOT = { tag = LCT }
-			civilized = yes
 			ai = no
 			NOT = { has_country_flag = will_give_grants }
 			}
@@ -526,9 +507,7 @@ political_decisions = {
 		picture = grant
 		alert = no
 		potential = {
-			has_country_flag = show_util	
-			NOT = { tag = LCT }
-			civilized = yes
+			has_country_flag = show_util
 			ai = no
 			has_country_flag = will_give_grants
 		}
@@ -676,7 +655,6 @@ political_decisions = {
 		alert = no
 		potential = {
 			has_country_flag = show_util
-			civilized = yes
 			ai = no
 			
 		}
@@ -703,8 +681,6 @@ political_decisions = {
 		alert = no
 		potential = {
 			has_country_flag = show_util
-			NOT = { tag = LCT }
-			civilized = yes
 			ai = no
 			NOT = { has_country_flag = AOT_will_give_grants }
 		}
@@ -723,8 +699,6 @@ political_decisions = {
 		alert = no
 		potential = {
 			has_country_flag = show_util
-			NOT = { tag = LCT }
-			civilized = yes
 			ai = no
 			has_country_flag = AOT_will_give_grants
 		}

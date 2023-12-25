@@ -1,3 +1,15 @@
+C53 = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+C42 = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
 army = {
 	name = "Army" #done
 	location = 532

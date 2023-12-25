@@ -9,7 +9,7 @@ government = presidential_dictatorship
 plurality = 20
 nationalvalue = nv_tribalism
 
-civilized = yes 
+civilized = no 
 prestige = 20
 schools = traditional_academic
 oob = "C11.txt"

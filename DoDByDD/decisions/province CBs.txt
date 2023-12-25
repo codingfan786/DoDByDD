@@ -84,6 +84,19 @@ political_decisions = {
 			C65={any_owned = {add_core = F65}}
 			C66={any_owned = {add_core = F66}}
 			C67={any_owned = {add_core = F67}}
+			C68={any_owned = {add_core = F68}}
+			C69={any_owned = {add_core = F69}}
+			C70={any_owned = {add_core = F70}}
+			C71={any_owned = {add_core = F71}}
+			C72={any_owned = {add_core = F72}}
+			C73={any_owned = {add_core = F73}}
+			C74={any_owned = {add_core = F74}}
+			C75={any_owned = {add_core = F75}}
+			C76={any_owned = {add_core = F76}}
+			C77={any_owned = {add_core = F77}}
+			C78={any_owned = {add_core = F78}}
+			C79={any_owned = {add_core = F79}}
+			C80={any_owned = {add_core = F80}}
 		}
 	}
 

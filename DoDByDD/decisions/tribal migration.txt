@@ -100,11 +100,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -280,11 +281,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -466,11 +468,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -643,11 +646,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -814,11 +818,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -988,11 +993,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -1159,11 +1165,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -1330,11 +1337,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -1498,11 +1506,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -1663,11 +1672,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -1834,11 +1844,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -2002,11 +2013,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -2173,11 +2185,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -2353,11 +2366,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -2533,11 +2547,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -2707,11 +2722,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -2884,11 +2900,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -3061,11 +3078,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -3226,11 +3244,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -3391,11 +3410,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -3565,11 +3585,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -3739,11 +3760,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {
@@ -3913,11 +3935,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 			war = no
-			OR = {
+			#OR = {
 				NOT = {has_country_modifier = migrate_cooldown}
-				ai = no
-			}
+			#	ai = no
+			#}
 			
 		}
 		effect = {

@@ -4,8 +4,8 @@ region1 = {
 
 	}
 
-	farm_rgo_size = 1
-	mine_rgo_size = 1
+	farm_rgo_size = 2
+	mine_rgo_size = 2
 }
 
 region2 = {
