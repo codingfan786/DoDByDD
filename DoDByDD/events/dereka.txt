@@ -1,0 +1,21 @@
+country_event = {
+	id = 9003001
+	title = "Upriver damming!"
+	desc = "Someone upriver has dammed the river, destroying much of our agriculture and supply along the coast."
+
+	is_triggered_only = yes
+
+	immediate = {
+		FROM = {
+			add_casus_belli = {
+				target = THIS
+				type = humiliate
+				months = 60
+			}
+		}
+	}
+
+	option = {
+		name = "This is an outrage!"
+	}
+}

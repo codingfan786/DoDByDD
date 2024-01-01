@@ -1,0 +1,75 @@
+political_decisions = {
+
+	koullan_to_gladan = {
+		picture = manifest_destiny
+		potential = {
+			NOT = {accepted_culture = gladan}
+			primary_culture = koullan
+		}
+		allow = {
+			state_n_government = 1
+			C44 = {all_core = {OR = {owner = {tag = THIS} NOT = {culture = gladan}}}}
+			C42 = {all_core = {OR = {owner = {tag = THIS} NOT = {culture = gladan}}}}
+			C45 = {all_core = {OR = {owner = {tag = THIS} NOT = {culture = gladan}}}}
+
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			add_accepted_culture = gladan
+		}
+	}
+
+	koullan_to_celian = {
+		picture = manifest_destiny
+		potential = {
+			NOT = {accepted_culture = celian}
+			primary_culture = koullan
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			all_core = {owner = {tag = THIS}}
+
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			add_accepted_culture = celian
+		}
+	}
+
+	gladan_to_celian = {
+		picture = manifest_destiny
+		potential = {
+			NOT = {accepted_culture = celian}
+			primary_culture = gladan
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			C44 = {all_core = {OR = {owner = {tag = THIS} NOT = {culture = gladan}}}}
+			C42 = {all_core = {OR = {owner = {tag = THIS} NOT = {culture = gladan}}}}
+			C45 = {all_core = {OR = {owner = {tag = THIS} NOT = {culture = gladan}}}}
+
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			add_accepted_culture = celian
+		}
+	}
+
+	celian_west = {
+		picture = manifest_destiny
+		potential = {
+			tag = C43
+			NOT = {has_country_flag = celian_went_west}
+		}
+		allow = {
+			state_n_government = 1
+			C41 = {all_core = {owner = {tag = THIS}}}
+
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			set_country_flag = celian_went_west
+			C41 = {all_core = {add_core = THIS}}
+		}
+	}
+}

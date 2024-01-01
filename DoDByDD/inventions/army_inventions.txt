@@ -1,3 +1,27 @@
+Infantry = {
+	limit = {flintlock_rifles = 1}
+	chance = {
+		base = 0 
+		modifier = {
+			factor = 100
+			has_country_flag = switch_to_infantry
+		}
+	}
+	effect = {activate_unit = infantry}
+}
+
+Vozova = {
+	limit = {has_country_flag = get_vozova}
+	chance = {
+		base = 0 
+		modifier = {
+			factor = 100
+			has_country_flag = get_vozova
+		}
+	}
+	effect = {activate_unit = irregular}
+}
+
 #post_napoleonic_thought
 post_napoleonic_army_doctrine = {
 	limit = { post_napoleonic_thought = 1 }
@@ -6,6 +30,9 @@ post_napoleonic_army_doctrine = {
 	}
 	effect = {
 		infantry = {
+			defence = 1
+		}
+		irregular = {
 			defence = 1
 		}
 		guard = {
@@ -24,9 +51,6 @@ post_napoleonic_army_doctrine = {
 			defence = 1
 		}
 		cavalry = {
-			defence = 1
-		}
-		irregular = {
 			defence = 1
 		}
 	}
@@ -49,6 +73,9 @@ field_fortifications = {
 		infantry = {
 			defence = 1
 		}
+		irregular = {
+			defence = 1
+		}
 		guard = {
 			defence = 1
 		}
@@ -65,9 +92,6 @@ field_fortifications = {
 			defence = 1
 		}
 		cavalry = {
-			defence = 1
-		}
-		irregular = {
 			defence = 1
 		}
 	}
@@ -132,6 +156,9 @@ flexible_firepower = {
 		infantry = {
 			defence = 1
 		}
+		irregular = {
+			defence = 1
+		}
 		guard = {
 			defence = 1
 		}
@@ -148,9 +175,6 @@ flexible_firepower = {
 			defence = 1
 		}
 		cavalry = {
-			defence = 0.5
-		}
-		irregular = {
 			defence = 0.5
 		}
 		army_base = {
@@ -175,6 +199,9 @@ synchronized_heavy_support = {
 		infantry = {
 			defence = 1
 		}
+		irregular = {
+			defence = 1
+		}
 		guard = {
 			defence = 1
 		}
@@ -191,9 +218,6 @@ synchronized_heavy_support = {
 			defence = 1
 		}
 		cavalry = {
-			defence = 0.5
-		}
-		irregular = {
 			defence = 0.5
 		}
 		army_base = {
@@ -236,6 +260,9 @@ trench_systems = {
 		infantry = {
 			defence = 1
 		}
+		irregular = {
+			defence = 1
+		}
 		guard = {
 			defence = 1
 		}
@@ -255,9 +282,6 @@ trench_systems = {
 			defence = 0.5
 		}
 		cavalry = {
-			defence = 0.5
-		}
-		irregular = {
 			defence = 0.5
 		}
 		army_base = {
@@ -313,6 +337,9 @@ elastic_defense_system = {
 		infantry = {
 			defence = 1
 		}
+		irregular = {
+			defence = 1
+		}
 		guard = {
 			defence = 1
 		}
@@ -332,9 +359,6 @@ elastic_defense_system = {
 			defence = 0.5
 		}
 		cavalry = {
-			defence = 0.5
-		}
-		irregular = {
 			defence = 0.5
 		}
 		army_base = {
@@ -360,6 +384,9 @@ flexible_counterattacks = {
 		infantry = {
 			attack = 1
 		}
+		irregular = {
+			attack = 1
+		}
 		guard = {
 			attack = 1
 		}
@@ -373,9 +400,6 @@ flexible_counterattacks = {
 			attack = 1
 		}
 		cavalry = {
-			attack = 0.5
-		}
-		irregular = {
 			attack = 0.5
 		}
 		army_base = {
@@ -409,6 +433,9 @@ low_echelon_fire_support = {
 		infantry = {
 			attack = 1
 		}
+		irregular = {
+			attack = 1
+		}
 		guard = {
 			attack = 1
 		}
@@ -429,10 +456,6 @@ low_echelon_fire_support = {
 			attack = 0.5
 			defence = 1
 		}
-		irregular = {
-			attack = 0.5
-			defence = 1
-		}
 		army_base = {
 			supply_consumption = 0.05
 		}
@@ -449,6 +472,9 @@ stormtrooper_training = {
 	}
 	effect = {
 		infantry = {
+			attack = 1
+		}
+		irregular = {
 			attack = 1
 		}
 		guard = {
@@ -533,6 +559,10 @@ firepower_vs_mobility = {
 			attack = 1
 			defence = 1
 		}
+		irregular = {
+			attack = 1
+			defence = 1
+		}
 		guard = {
 			attack = 1
 			defence = 1
@@ -601,6 +631,10 @@ human_wave_vs_spearhead = {
 			attack = 1
 			defence = 1
 		}
+		irregular = {
+			attack = 1
+			defence = 1
+		}
 		guard = {
 			attack = 1
 			defence = 1
@@ -625,9 +659,6 @@ human_wave_vs_spearhead = {
 			defence = 1
 		}
 		cavalry = {
-			defence = 2
-		}
-		irregular = {
 			defence = 2
 		}
 		army_base = {
@@ -655,6 +686,10 @@ flintlock_rifle_armament = {
 			attack = 1
 			supply_consumption = 0.10
 		}
+		irregular = {
+			attack = 1
+			supply_consumption = 0.10
+		}
 		dragoon = {
 			attack = 1
 			supply_consumption = 0.10
@@ -664,10 +699,6 @@ flintlock_rifle_armament = {
 			supply_consumption = 0.10
 		}
 		cavalry = {
-			attack = 0.5
-			supply_consumption = 0.10
-		}
-		irregular = {
 			attack = 0.5
 			supply_consumption = 0.10
 		}
@@ -690,6 +721,11 @@ muzzle_loaded_rifle_armament = {
 			attack = 1
 			supply_consumption = 0.10
 		}
+		irregular = {
+			attack = 1
+			support = 0.1
+			supply_consumption = 0.10
+		}
 		engineer = {
 			attack = 1
 			supply_consumption = 0.10
@@ -699,10 +735,6 @@ muzzle_loaded_rifle_armament = {
 			supply_consumption = 0.10
 		}
 		cavalry = {
-			attack = 0.5
-			supply_consumption = 0.10
-		}
-		irregular = {
 			attack = 0.5
 			supply_consumption = 0.10
 		}
@@ -725,6 +757,11 @@ breech_loaded_rifle_armament = {
 			attack = 1
 			supply_consumption = 0.20
 		}
+		irregular = {
+			attack = 1
+			support = 0.1
+			supply_consumption = 0.20
+		}
 		guard = {
 			attack = 1
 			supply_consumption = 0.20
@@ -745,10 +782,6 @@ breech_loaded_rifle_armament = {
 			attack = 0.5
 			supply_consumption = 0.20
 		}
-		irregular = {
-			attack = 0.5
-			supply_consumption = 0.20
-		}
 	}
 }
 
@@ -765,6 +798,10 @@ machine_gun_armament = {
 	}
 	effect = {
 		infantry = {
+			defence = 4
+			supply_consumption = 0.20
+		}
+		irregular = {
 			defence = 4
 			supply_consumption = 0.20
 		}
@@ -789,10 +826,6 @@ machine_gun_armament = {
 			supply_consumption = 0.20
 		}
 		cavalry = {
-			defence = 1
-			supply_consumption = 0.20
-		}
-		irregular = {
 			defence = 1
 			supply_consumption = 0.20
 		}
@@ -851,6 +884,10 @@ bolt_action_rifle_armament = {
 			attack = 4
 			supply_consumption = 0.20
 		}
+		irregular = {
+			attack = 4
+			supply_consumption = 0.20
+		}
 		guard = {
 			attack = 4
 			supply_consumption = 0.20
@@ -872,10 +909,6 @@ bolt_action_rifle_armament = {
 			supply_consumption = 0.20
 		}
 		cavalry = {
-			attack = 0.5
-			supply_consumption = 0.20
-		}
-		irregular = {
 			attack = 0.5
 			supply_consumption = 0.20
 		}
@@ -901,6 +934,11 @@ interwar_infantry = {
 			defence = 2
 			supply_consumption = 0.20
 		}
+		irregular = {
+			attack = 4
+			defence = 2
+			supply_consumption = 0.20
+		}
 		guard = {
 			attack = 4
 			defence = 2
@@ -908,11 +946,6 @@ interwar_infantry = {
 		}
 		engineer = {
 			attack = 2
-			defence = 2
-			supply_consumption = 0.20
-		}
-		irregular = {
-			attack = 1
 			defence = 2
 			supply_consumption = 0.20
 		}

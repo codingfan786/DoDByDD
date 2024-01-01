@@ -1,0 +1,83 @@
+political_decisions = {
+
+	ard_unification = {
+		picture = manifest_destiny
+		potential = {
+			OR = {
+				AND = {
+					tag = C48
+					NOT = {accepted_culture = south_arden}
+				}
+				AND = {
+					tag = C49
+					NOT = {accepted_culture = north_arden}
+				}
+			}
+		}
+		allow = {
+			C49 = {
+				OR = {
+					in_sphere = THIS
+					all_core = {owner = {tag = THIS}}
+				}
+			}
+			C48 = {
+				OR = {
+					in_sphere = THIS
+					all_core = {OR = {owner = {tag = THIS} province_id = 569}}
+				}
+			}
+
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			add_accepted_culture = north_arden
+			add_accepted_culture = south_arden
+		}
+	}
+
+	ciric_to_palish = {
+		picture = manifest_destiny
+		potential = {
+			tag = C47
+			NOT = {accepted_culture = palish}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			all_core = {owner = {tag = THIS}}
+
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			add_accepted_culture = palish
+		}
+	}
+
+	ard_to_ciric = {
+		picture = manifest_destiny
+		potential = {
+			OR = {
+				tag = C48
+				tag = C49
+			}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			OR = {
+				AND = {
+					primary_culture = north_arden
+					accepted_culture = south_arden
+				}
+				AND = {
+					primary_culture = south_arden
+					accepted_culture = north_arden
+				}
+			}
+
+			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+		}
+		effect = {
+			add_accepted_culture = ciric
+		}
+	}
+}

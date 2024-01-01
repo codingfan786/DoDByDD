@@ -1,0 +1,38 @@
+country_event = {
+	id = 9002001
+	title = "Dominance of Bosnark"
+	desc = "Yes you will be annexed."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Yes!"
+		THIS = {
+			all_core = {
+				add_core = FROM
+			}
+		}
+		
+		any_owned = {
+			remove_core = F40
+			remove_core = F41
+			remove_core = F39
+			remove_core = F38
+			remove_core = F37
+			remove_core = F36
+			remove_core = F35
+			secede_province = FROM
+			add_province_modifier = { name = province_changer duration = -1 }
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "No!"	
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

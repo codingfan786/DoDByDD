@@ -43,6 +43,77 @@ country_migration_target =
 
 	modifier = {
 		factor = -1000
+		FROM = {continent = region5}
+		NOT = {
+			OR = {
+				continent = region5
+				continent = region4
+			}
+		}
+	}
+	modifier = {
+		factor = -1000
+		FROM = {continent = region4}
+		NOT = {
+			OR = {
+				continent = region6
+				continent = region5
+				continent = region4
+				continent = region3
+			}
+		}
+	}
+	modifier = {
+		factor = -1000
+		FROM = {continent = region3}
+		NOT = {
+			OR = {
+				continent = region6
+				continent = region4
+				continent = region3
+				continent = region2
+			}
+		}
+	}
+	modifier = {
+		factor = -1000
+		FROM = {continent = region2}
+		NOT = {
+			OR = {
+				continent = region6
+				continent = region3
+				continent = region2
+				continent = region1
+			}
+		}
+	}
+	modifier = {
+		factor = -1000
+		FROM = {continent = region1}
+		NOT = {
+			OR = {
+				continent = region6
+				continent = region2
+				continent = region1
+			}
+		}
+	}
+	modifier = {
+		factor = -1000
+		FROM = {continent = region6}
+		NOT = {
+			OR = {
+				continent = region6
+				continent = region4
+				continent = region3
+				continent = region2
+				continent = region1
+			}
+		}
+	}
+
+	modifier = {
+		factor = -1000
 		has_country_flag = ghostland
 	}
 	modifier = {

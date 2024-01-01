@@ -128,8 +128,38 @@ tribe_settle_six_desc;Settle into Dupree-Sioux City.;x
 tribe_settle_seven_desc;Settle into Hull.;x
 tribe_settle_eight_desc;Expand into Dirksan;x
 tribe_settle_nine_desc;Expand into Dereka;x
-region2;Dereka;x
 integrate_greater_ael_title;Unify the Aellina Shorestates;x
 integrate_greater_ael_desc;This will annex any of the six states between your core territory and the coastline that you have puppeted and give you their accepted cultures.;x
 koullan_compromise_title;Koullan Compromise;x
 koullan_compromise_desc;The absence of a free Koullan state has lead many of these people to view us as the best possible alternative. We should strike upon this immediately and cement this sentiment in our society.;x
+koullan_to_gladan_title;Reintegrate southern Dotante;x
+koullan_to_celian_title;Reintegrate northwestern Dotante;x
+gladan_to_celian_title;Bring northern Dotante in line;x
+celian_west_title;Passify the western tribes;x
+koullan_to_gladan_desc;The Dotante Union at one point unified all Koullan, Gladan, and Celian people under one banner. Now that we've reclaimed the southern lands we can properly welcome their residents back into the union.;x
+koullan_to_celian_desc;The Dotante Union at one point unified all Koullan, Gladan, and Celian people under one banner. Now that we've reclaimed the northwestern lands we can properly welcome their residents back into the union.;x
+gladan_to_celian_desc;Northwestern Dotante had long been our staunch subject and supporter in the past conflicts over control of the entire Dotante region. Now that our position has been solidified in the south we can turn our entire attention towards the northwest.;x
+celian_west_desc;We need more living room for our people!;x
+ard_unification_title;Unify Ard;x
+ciric_to_palish_title;Integrate the Pale;x
+ard_to_ciric_title;Statify western Ard;x
+ard_unification_desc;The former Kingdom of Ard, which was split following a lengthy period of instability, has formally reunited.;x
+ciric_to_palish_desc;The Pale and it's people have long been marginalized and denied their own self governance. Having thrown of our own yoke in recent years we may find sympathy among the Palish people;x
+ard_to_ciric_desc;Having reunified the heartland of the Arden Kingdom, we must now look towards reclaiming the western outliers.;x
+darren_to_pasan_title;Integrate Pasan;x
+docen_to_iquan_title;Integrate Iquan;x
+docen_to_dirven_title;Integrate Dirven;x
+iquan_qol_title;Bastion in the Mountains;x
+darren_to_pasan_desc;Fill;x
+docen_to_iquan_desc;Fill;x
+docen_to_dirven_desc;Fill;x
+iquan_qol_desc;Fill;x
+Vozova;Vozová;x
+change_to_infantry_title;Switch mobilization units;x
+change_to_infantry_desc;This will allow you to build regular infantry and you will mobilize regular infantry instead of Vozová. This decision cannot be undone. Wait for the month tick for this to take effect.;x
+region6;Inlandia;x
+region5;Evropský;x
+region4;Bosnark;x
+region3;Stredohorí;x
+region2;Dereka;x
+region1;Drevník;x

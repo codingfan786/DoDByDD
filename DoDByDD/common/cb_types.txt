@@ -54,7 +54,6 @@ colonial_competition
 cut_down_to_size_boxer
 cut_down_to_size 
 free_peoples
-liberate_country
 release_puppet
 become_independent
 make_puppet
@@ -158,26 +157,15 @@ conquest = {
 	can_use = {
 		NOT = { is_our_vassal = THIS }
 		# only one state or unciv
-		NOT = { number_of_states = 5 }
+		NOT = { number_of_states = 2 }
+		THIS = {nationalism_n_imperialism = 1}
 		OR = {
 			AND = {
 				civilized = yes
-				NOT = { number_of_states = 2 }
 			}
 			AND = {
 				civilized = no
 				THIS = { civilized = no }
-				NOT = { number_of_states = 2 }
-			}
-			AND = {
-				civilized = no
-				number_of_states = 2
-				THIS = {
-					OR = {
-						NOT = { is_greater_power = yes }
-						NOT = { nationalism_n_imperialism = 1 }
-					}
-				}
 			}
 		}
 		is_independant = yes
@@ -207,7 +195,10 @@ conquest = {
 		}
 	}
 	
-	po_annex = yes
+	#po_annex = yes
+	on_po_accepted = {
+		country_event = 9001001
+	}
 	
 	war_name = WAR_CONQUEST_NAME
 }
@@ -240,7 +231,10 @@ civil_war = {
 	good_relation_infamy_factor = 1
 	good_relation_militancy_factor = 1
 
-	po_annex = yes
+	#po_annex = yes
+	on_po_accepted = {
+		country_event = 9001001
+	}
 	
 	war_name = CIVIL_WAR_NAME
 	
@@ -375,7 +369,7 @@ acquire_core_state = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
-		number_of_states = 2 # annex if you want their last state
+		#number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			is_core = THIS
 		}
@@ -385,7 +379,15 @@ acquire_core_state = {
 		any_owned_province = {
 			is_core = THIS
 		}
-		not = { any_owned_province = { is_capital = yes } }
+		#not = { any_owned_province = { is_capital = yes } }
+		any_owned_province = {
+			or = {
+				is_coastal = yes
+				any_neighbor_province = {
+					owner = {tag = THIS}
+				}
+			}
+		}
 	}
 
 	po_demand_state = yes
@@ -435,9 +437,14 @@ annex_core_country = {
 				}
 			}
 		}
+		NOT = { number_of_states = 2 }
+		THIS = {nationalism_n_imperialism = 1}
 	}
 
-	po_annex = yes
+	#po_annex = yes
+	on_po_accepted = {
+		country_event = 9001001
+	}
 	
 	war_name = WAR_RESTORE_ORDER_NAME
 	
@@ -477,19 +484,27 @@ acquire_substate_region = {
 		num_of_substates = 1 # if has any substate
 		any_substate = {
 			number_of_states = 1
-			any_owned_province = {
-				not = { is_core = THIS }
-				is_colonial = no
-			}
+			#any_owned_province = {
+			#	not = { is_core = THIS }
+			#	is_colonial = no
+			#}
 		}
 	}
 	
 	allowed_substate_regions = {
-		is_colonial = no
+		#is_colonial = no
 		owner = { NOT = { in_sphere = THIS } }
+		#any_owned_province = {
+		#	not = {	is_core = THIS }
+		#	is_colonial = no
+		#}
 		any_owned_province = {
-			not = {	is_core = THIS }
-			is_colonial = no
+			or = {
+				is_coastal = yes
+				any_neighbor_province = {
+					owner = {tag = THIS}
+				}
+			}
 		}
 	}
 
@@ -530,7 +545,7 @@ acquire_state = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
-		number_of_states = 2 # annex if you want their last state
+		#number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			not = { is_core = THIS }
 			is_colonial = no
@@ -538,9 +553,9 @@ acquire_state = {
 		OR = {
 			AND = {
 				civilized = yes
-				THIS = {
-					civilized = yes
-				}
+				#THIS = {
+				#	civilized = yes
+				#}
 			}
 			AND = {
 				civilized = no
@@ -558,13 +573,16 @@ acquire_state = {
 			not = {	is_core = THIS }
 			is_colonial = no
 		}
-		not = { any_owned_province = { is_capital = yes } }
+		#not = { any_owned_province = { is_capital = yes } }
 
-		#not = {
-		#	any_owned_province = {
-		#		is_state_capital = no
-		#	}
-		#}
+		any_owned_province = {
+			or = {
+				is_coastal = yes
+				any_neighbor_province = {
+					owner = {tag = THIS}
+				}
+			}
+		}
 	}
 	
 	allowed_states_in_crisis = {
@@ -617,6 +635,14 @@ place_in_the_sun = {
 	
 	allowed_states = {
 		is_colonial = yes
+		any_owned_province = {
+			or = {
+				is_coastal = yes
+				any_neighbor_province = {
+					owner = {tag = THIS}
+				}
+			}
+		}
 	}
 	
 	allowed_states_in_crisis = {
@@ -787,7 +813,7 @@ free_peoples = {
 	# FROM - country scope is possible match?
 	# war target country of goal is scope
 	allowed_countries = {
-		number_of_states = 2
+		#number_of_states = 2
 		NOT = {
 			tag = FROM
 			this_culture_union = FROM	
@@ -795,17 +821,6 @@ free_peoples = {
 		from = {
 			OR = {
 				exists = yes
-				NOT = {
-						OR = {
-							tag = GER
-							tag = SCA
-							tag = ITA
-							tag = YUG
-							tag = ROM
-							tag = CZH
-						}
-					}
-				}
 			}
 		
 		any_owned_province = {
@@ -824,95 +839,20 @@ free_peoples = {
 	allowed_states = {
 		any_owned_province = {
 			is_core = FROM
+		}
+		any_owned_province = {
+			or = {
+				is_coastal = yes
+				any_neighbor_province = {
+					owner = {tag = THIS}
+				}
+			}
 		}
 	}
 
 	po_transfer_provinces = yes
 
 	war_name = WAR_FREE_NAME
-	
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
-}
-
-# Liberate country
-liberate_country = {
-	sprite_index = 15
-	is_triggered_only = yes
-	months = 12
-
-	badboy_factor = 2.2
-	prestige_factor = 1
-	peace_cost_factor = 1
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 0
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-	
-	
-	can_use = {
-		NOT = { is_our_vassal = THIS }
-	}
-
-	# THIS - us
-	# FROM - country scope is possible match?
-	# war target country of goal is scope
-	allowed_countries = {
-		number_of_states = 2
-		NOT = {
-			tag = FROM
-			this_culture_union = FROM	
-		}
-		from = {
-			OR = {
-				exists = yes
-				NOT = {
-						OR = {
-							tag = GER
-							tag = SCA
-							tag = ITA
-							tag = YUG
-							#tag = ROM # TODO: shoudl we let the rest be liberated too?
-							tag = CZH
-						}
-					}
-				}
-			}
-		
-		any_owned_province = {
-			is_core = FROM
-			NOT =
-			{
-				is_core = THIS
-			}
-		}
-		is_releasable_vassal = FROM
-	}
-
-	# THIS - us
-	# FROM - country scope is possible match?
-	# war target country of goal's state
-	allowed_states = {
-		any_owned_province = {
-			is_core = FROM
-		}
-	}
-	all_allowed_states = yes
-	po_transfer_provinces = yes
-	po_remove_cores = yes
-
-	war_name = WAR_LIBERATE_NAME
 	
 	on_add = {
 		move_issue_percentage = { 
@@ -1045,7 +985,7 @@ make_puppet = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
-		NOT = { number_of_states = 4 }
+		NOT = { number_of_states = 5 }
 		is_greater_power = no
 		is_vassal = no
 	}
@@ -1197,14 +1137,22 @@ demand_concession_casus_belli = {
 			civilized = yes
 		}
 		civilized = no
-		number_of_states = 2
+		#number_of_states = 2
 	}
 	
 	allowed_states = {
 		any_owned_province = {
 			is_colonial = no
 		}
-		not = { any_owned_province = { is_capital = yes } }
+		#not = { any_owned_province = { is_capital = yes } }
+		any_owned_province = {
+			or = {
+				is_coastal = yes
+				any_neighbor_province = {
+					owner = {tag = THIS}
+				}
+			}
+		}
 	}
 	
 	po_demand_state = yes
@@ -1249,24 +1197,18 @@ establish_protectorate_casus_belli = {
 		THIS = {
 			civilized = yes
 		}
-		OR = {
-			NOT = {
-				number_of_states = 2 
-			}
-			AND = {
-				THIS = {
-					AND = {
-						is_greater_power = yes
-						nationalism_n_imperialism = 1
-					}
-				}
-				NOT = { number_of_states = 5 }
-			}
-		}
+		
 		civilized = no
+
+		NOT = { number_of_states = 2 }
+		THIS = {nationalism_n_imperialism = 1}
+		
 	}
 	
-	po_annex = yes
+	#po_annex = yes
+	on_po_accepted = {
+		country_event = 9001001
+	}
 	
 	war_name = WAR_PROTECTORATE_NAME
 
@@ -1424,7 +1366,7 @@ unification_casus_belli = {
 		NOT = {
 			is_culture_group = THIS
 		}
-		number_of_states = 2
+		#number_of_states = 2
 		any_state = {
 			any_owned_province = {
 				any_core = {
@@ -1432,7 +1374,7 @@ unification_casus_belli = {
 					is_cultural_union = yes
 				}
 			}
-			not = { any_owned_province = { is_capital = yes } }
+			#not = { any_owned_province = { is_capital = yes } }
 		}
 	}
 	allowed_states = {
@@ -1442,7 +1384,15 @@ unification_casus_belli = {
 				is_cultural_union = yes
 			}
 		}
-		not = { any_owned_province = { is_capital = yes } }
+		#not = { any_owned_province = { is_capital = yes } }
+		any_owned_province = {
+			or = {
+				is_coastal = yes
+				any_neighbor_province = {
+					owner = {tag = THIS}
+				}
+			}
+		}
 	}
 	
 	po_demand_state = yes
@@ -1503,7 +1453,10 @@ unification_annex_casus_belli = {
 		}
 	}
 	
-	po_annex = yes
+	#po_annex = yes
+	on_po_accepted = {
+		country_event = 9001001
+	}
 	
 	war_name = WAR_UNIFICATION_ANNEX_NAME
 

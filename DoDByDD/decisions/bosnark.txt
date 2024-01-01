@@ -1,0 +1,118 @@
+political_decisions = {
+	
+	unify_bosnark = {
+		potential = {
+			OR = {
+				primary_culture = south_bosnark
+				primary_culture = north_bosnark
+			}
+			NOT = {has_global_flag = bornark_unified}
+		}
+		allow = {
+			civilized = yes
+			nationalism_n_imperialism = 1
+			C40 = {
+				all_core = {
+					owner = {
+						OR = { 
+							tag = THIS
+							in_sphere = THIS
+						}
+					}
+					
+				}
+				NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+			}
+			C41 = {
+				all_core = {
+					owner = {
+						OR = { 
+							tag = THIS
+							in_sphere = THIS
+						}
+					}
+					
+				}
+				NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+			}
+			C39 = {
+				all_core = {
+					owner = {
+						OR = { 
+							tag = THIS
+							in_sphere = THIS
+						}
+					}
+					
+				}
+				NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+			}
+			C38 = {
+				all_core = {
+					owner = {
+						OR = { 
+							tag = THIS
+							in_sphere = THIS
+						}
+					}
+					
+				}
+				NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+			}
+			C37 = {
+				all_core = {
+					owner = {
+						OR = { 
+							tag = THIS
+							in_sphere = THIS
+						}
+					}
+					
+				}
+				NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+			}
+			C36 = {
+				all_core = {
+					owner = {
+						OR = { 
+							tag = THIS
+							in_sphere = THIS
+						}
+					}
+					
+				}
+				NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+			}
+			C35 = {
+				all_core = {
+					owner = {
+						OR = { 
+							tag = THIS
+							in_sphere = THIS
+						}
+					}
+					
+				}
+				NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
+			}
+
+		}
+		effect = {
+			set_global_flag = bornark_unified
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = south_bosnark
+						primary_culture = north_bosnark
+					}
+					NOT = {tag = THIS}
+					in_sphere = THIS
+				}
+				country_event = 9002001
+			}
+			add_accepted_culture = south_bosnark
+			add_accepted_culture = north_bosnark
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+C49;Scandinavia;x
+C48;Dual Monarchy;x
+C46;Burgundy;x
+C50;Bohemia;x
+C47;Bavaria;x
+C42;Spain;x
+C45;Aragon;x
+C43;Venice;x
+C29;PLC;x
+C33;Muscovy;x
+C30;Hungary;x
+C26;Ottomans;x
+C13;Leeuwin;x
+C20;Ethiopia;x
+C40;Teheran;x
+C41;Japan;x
+C07;Vinland;x
+C08;Belgian Confederacy;x
+C09;Plantagenia;x
+C10;Xifang/Qingqiu;x
+C05;Gran Colombia;x
+C11;Amazonie;x
+C25;Lotharingia;x
+C27;Beornia;x
+C37;Tawantinsuyu;x

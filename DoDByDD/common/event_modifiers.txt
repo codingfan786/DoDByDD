@@ -1,6 +1,43 @@
 ##################################################################################################
 # scriptable and usable for event-system below.
 ##################################################################################################
+lake_cutoff_cooldown_one = {
+	war_exhaustion = 0.5
+	icon = 12
+}
+lake_cutoff_penalty_one = {
+	local_RGO_output = -0.3
+	supply_limit = -5
+	icon = 14
+}
+lake_cutoff_cooldown_two = {
+	war_exhaustion = 0.5
+	icon = 12
+}
+lake_cutoff_penalty_two = {
+	local_RGO_output = -0.3
+	supply_limit = -5
+	icon = 14
+}
+lake_cutoff_cooldown_three = {
+	war_exhaustion = 0.5
+	icon = 12
+}
+lake_cutoff_penalty_three = {
+	local_RGO_output = -0.3
+	supply_limit = -5
+	icon = 14
+}
+lake_cutoff_cooldown_four = {
+	war_exhaustion = 0.5
+	icon = 12
+}
+lake_cutoff_penalty_four = {
+	local_RGO_output = -0.3
+	supply_limit = -5
+	icon = 14
+}
+
 migrate_cooldown = {
 	icon = 18
 }

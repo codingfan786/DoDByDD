@@ -312,7 +312,7 @@ flintlock_rifles = {
 	cost = 3600
 	unciv_military = yes
 	
-	activate_unit = infantry
+	#activate_unit = infantry
 	combat_width = -1
 
 	ai_chance = {
@@ -573,7 +573,6 @@ modern_divisional_structure = {
 		}
 	}
 }
-
 
 #heavy_armament
 bronze_muzzle_loaded_artillery = {
