@@ -1,7 +1,7 @@
 country_event = {
 	id = 90000001
 	title = "Recently changed province detected"
-	desc = "When taking land you can only take provinces that border you or a sea tile. (This event will also fix stated colonies.)"
+	desc = "provinceeventdesc"
 
 	trigger = {
 		any_owned_province = {

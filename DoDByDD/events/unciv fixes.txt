@@ -1,0 +1,98 @@
+country_event = {
+	id = 69217643
+	title = "Unciv tech fix"
+	desc = "Just what it says on the tin."
+	trigger = {
+		civilized = yes
+		OR = {
+			has_country_flag = uncivtech1
+			has_country_flag = uncivtech2
+			has_country_flag = uncivtech3
+			has_country_flag = uncivtech4
+			has_country_flag = uncivtech5
+			has_country_flag = uncivtech6
+			has_country_flag = uncivtech7
+			has_country_flag = uncivtech8
+		}
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	immediate = {
+		any_owned= {
+			limit = {
+				is_capital = yes
+				owner = {has_country_flag = uncivtech1}
+			}
+			owner = {activate_technology = practical_steam_engine}
+		}
+
+		any_owned= {
+			limit = {
+				is_capital = yes
+				owner = {has_country_flag = uncivtech2}
+			}
+			owner = {activate_technology = ad_hoc_money_bill_printing}
+		}
+
+		any_owned= {
+			limit = {
+				is_capital = yes
+				owner = {has_country_flag = uncivtech3}
+			}
+			owner = {activate_technology = stock_exchange}
+		}
+
+		any_owned= {
+			limit = {
+				is_capital = yes
+				owner = {has_country_flag = uncivtech4}
+			}
+			owner = {activate_technology = positivism}
+		}
+
+		any_owned= {
+			limit = {
+				is_capital = yes
+				owner = {has_country_flag = uncivtech5}
+			}
+			owner = {activate_technology = experimental_railroad}
+		}
+
+		any_owned= {
+			limit = {
+				is_capital = yes
+				owner = {has_country_flag = uncivtech6}
+			}
+			owner = {activate_technology = early_railroad}
+		}
+
+		any_owned= {
+			limit = {
+				is_capital = yes
+				owner = {has_country_flag = uncivtech7}
+			}
+			owner = {activate_technology = organized_factories}
+		}
+
+		any_owned= {
+			limit = {
+				is_capital = yes
+				owner = {has_country_flag = uncivtech8}
+			}
+			owner = {activate_technology = medicine}
+		}
+		clr_country_flag = uncivtech1
+		clr_country_flag = uncivtech2
+		clr_country_flag = uncivtech3
+		clr_country_flag = uncivtech4
+		clr_country_flag = uncivtech5
+		clr_country_flag = uncivtech6
+		clr_country_flag = uncivtech7
+		clr_country_flag = uncivtech8
+	}
+
+	option = {
+		name = "I see."}
+	}
+}

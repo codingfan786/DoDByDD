@@ -8,6 +8,8 @@ country_event = {
 	trigger = {
 		NOT = {has_country_flag = pseudo_gw}
 		
+		year = 1870
+		
 		war_countries = {
 			AND = {
 				is_greater_power = yes

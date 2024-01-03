@@ -867,42 +867,57 @@ promote_to =
 			modifier = {
 				factor = -2
 				soldiers = 0.005
+				location = {owner = {ai = no}}
 			}
 			modifier = {
 				factor = -2
 				soldiers = 0.01
+				location = {owner = {ai = no}}
 			}
 			modifier = {
 				factor = -2
 				soldiers = 0.015
+				location = {owner = {ai = no}}
 			}
 			modifier = {
 				factor = -2
 				soldiers = 0.02
+				location = {owner = {ai = no}}
 			}
 			modifier = {
 				factor = -2
 				soldiers = 0.025
+				location = {owner = {ai = no}}
 			}
 			modifier = {
 				factor = -2
 				soldiers = 0.03
+				location = {owner = {ai = no}}
 			}
 			modifier = {
 				factor = -2
 				soldiers = 0.035
+				location = {owner = {ai = no}}
 			}
 			modifier = {
 				factor = -2
 				soldiers = 0.04
+				location = {owner = {ai = no}}
 			}
 			modifier = {
 				factor = -2
 				soldiers = 0.045
+				location = {owner = {ai = no}}
 			}
 			modifier = {
 				factor = -100
 				soldiers = 0.05
+			}
+		}
+		group = {
+			modifier = {
+				factor = 10
+				location = {owner = {ai = yes}}
 			}
 		}
 	}
