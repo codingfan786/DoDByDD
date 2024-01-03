@@ -9,7 +9,7 @@ political_decisions = {
 		allow = {
 			state_n_government = 1
 			C44 = {all_core = {OR = {owner = {tag = THIS} NOT = {culture = gladan}}}}
-			C42 = {all_core = {OR = {owner = {tag = THIS} NOT = {culture = gladan}}}}
+			#C42 = {all_core = {OR = {owner = {tag = THIS} NOT = {culture = gladan}}}}
 			C45 = {all_core = {OR = {owner = {tag = THIS} NOT = {culture = gladan}}}}
 
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
@@ -69,7 +69,12 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = celian_went_west
-			C41 = {all_core = {add_core = THIS}}
+			C41 = {
+				all_core = {
+					add_core = THIS
+					add_province_modifier = { name = settling_west duration = 1825 }
+				}
+			}
 		}
 	}
 }

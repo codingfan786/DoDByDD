@@ -29,7 +29,6 @@ romanticism = {
 	
 	prestige = 0.05
 
-
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -62,8 +61,7 @@ realism = {
 	year = 1836
 	cost = 10800
 
-	prestige = 0.05
-	ai_chance = {
+	prestige = 0.05	ai_chance = {
 		factor = 1.05
 		modifier = {
 			factor = 2
@@ -89,8 +87,7 @@ impressionism = {
 	year = 1850
 	cost = 14400
 
-	prestige = 0.05
-	ai_chance = {
+	prestige = 0.05	ai_chance = {
 		factor = 1.05
 		modifier = {
 			factor = 2
@@ -116,8 +113,7 @@ expressionism = {
 	year = 1870
 	cost = 18000
 
-	prestige = 0.05
-	ai_chance = {
+	prestige = 0.05	ai_chance = {
 		factor = 1.05
 		modifier = {
 			factor = 2
@@ -143,8 +139,7 @@ mass_culture_n_the_avant_garde = {
 	year = 1900
 	cost = 21600
 
-	prestige = 0.05
-	ai_chance = {
+	prestige = 0.05	ai_chance = {
 		factor = 1.01
 		modifier = {
 			factor = 2
@@ -339,7 +334,7 @@ malthusian_thought = {
 	year = 1836
 	cost = 3600
 
-	colonial_migration = 0.05
+	colonial_migration = 0.1
 	education_efficiency = 0.1
 	
 	ai_chance = {
@@ -362,7 +357,7 @@ positivism = {
 	area = social_thought
 	year = 1836
 	cost = 7200
-	colonial_migration = 0.05
+	colonial_migration = 0.1
 	education_efficiency = 0.1
 	ai_chance = {
 		factor = 1.01
@@ -382,7 +377,7 @@ functionalism = {
 	year = 1836
 	cost = 10800
 
-	colonial_migration = 0.05
+	colonial_migration = 0.1
 	education_efficiency = 0.1
 	ai_chance = {
 		factor = 1.01
@@ -402,7 +397,7 @@ biologism = {
 	year = 1850
 	cost = 14400
 
-	colonial_migration = 0.05
+	colonial_migration = 0.1
 	education_efficiency = 0.1
 	ai_chance = {
 		factor = 1.01
@@ -422,7 +417,7 @@ social_science = {
 	year = 1870
 	cost = 18000
 
-	colonial_migration = 0.05
+	colonial_migration = 0.1
 	education_efficiency = 0.1
 	ai_chance = {
 		factor = 1.01
@@ -442,7 +437,7 @@ social_alienation = {
 	year = 1900
 	cost = 21600
 	
-	colonial_migration = 0.05
+	colonial_migration = 0.1
 	education_efficiency = 0.1
 	ai_chance = {
 		factor = 1.01

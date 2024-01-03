@@ -1,6 +1,7 @@
 political_decisions = {
 	
 	unify_bosnark = {
+		picture = annals_of_the_fulani_jihad
 		potential = {
 			OR = {
 				primary_culture = south_bosnark

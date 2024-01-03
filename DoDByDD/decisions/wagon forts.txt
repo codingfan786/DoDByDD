@@ -6,6 +6,16 @@ political_decisions = {
 		}
 		allow = {}
 		effect = {
+			C56 = {civilized = yes} #unrelated
+			C07 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}
+			C08 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}
+			C09 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}
+			C10 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}
+			C11 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}
+			any_country = {
+				leadership = 40
+			}
+
 			set_country_flag = inf_setup
 			any_country = {
 				limit = {

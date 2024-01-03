@@ -3,5 +3,7 @@ primary_culture = saqui
 ruling_party = GHO_exclusive
 civilized = no
 
+decision = inf_setup
+decision = infamytech
 
 set_country_flag = ghostland

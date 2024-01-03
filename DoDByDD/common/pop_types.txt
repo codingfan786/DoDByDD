@@ -505,7 +505,7 @@ migration_chance =
 #general colonial migration mtth, same for all pops
 colonialmigration_chance = 
 {
-	factor = 0.5 #was 0.25
+	factor = 2 #was 0.25
 	
 #If pop group doesn't obtain 10%/20%/30%/40%/50%/60%/70%/80%/90%/99% of their life needs, then 0.05% chance to migrate to a colony for each threshold. (0.5% total)
 	group = {

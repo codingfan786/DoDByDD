@@ -1,4 +1,3 @@
-#F53;Owned by ;x
 C53;Sillysia;x
 C53_ADJ;Sill;x
 BAN;World Bank;x
@@ -23,3 +22,241 @@ C72;Tribdereka;x
 C72_ADJ;Tribderekan;x
 #C05;Dirksan;x
 #C05_ADJ;Dirk;x
+F01;Domain;x
+F02;Domain;x
+F03;Domain;x
+F04;Domain;x
+F05;Domain;x
+F06;Domain;x
+F07;Domain;x
+F08;Domain;x
+F09;Domain;x
+F10;Domain;x
+F11;Domain;x
+F12;Domain;x
+F13;Domain;x
+F14;Domain;x
+F15;Domain;x
+F16;Domain;x
+F17;Domain;x
+F18;Domain;x
+F19;Domain;x
+F20;Domain;x
+F21;Domain;x
+F22;Domain;x
+F23;Domain;x
+F24;Domain;x
+F25;Domain;x
+F26;Domain;x
+F27;Domain;x
+F28;Domain;x
+F29;Domain;x
+F30;Domain;x
+F31;Domain;x
+F32;Domain;x
+F33;Domain;x
+F34;Domain;x
+F35;Domain;x
+F36;Domain;x
+F37;Domain;x
+F38;Domain;x
+F39;Domain;x
+F40;Domain;x
+F41;Domain;x
+F42;Domain;x
+F43;Domain;x
+F44;Domain;x
+F45;Domain;x
+F46;Domain;x
+F47;Domain;x
+F48;Domain;x
+F49;Domain;x
+F50;Domain;x
+F51;Domain;x
+F52;Domain;x
+F53;Domain;x
+F54;Domain;x
+F55;Domain;x
+F56;Domain;x
+F57;Domain;x
+F58;Domain;x
+F59;Domain;x
+F60;Domain;x
+F61;Domain;x
+F62;Domain;x
+F63;Domain;x
+F64;Domain;x
+F65;Domain;x
+F66;Domain;x
+F67;Domain;x
+F68;Domain;x
+F69;Domain;x
+F70;Domain;x
+F71;Domain;x
+F72;Domain;x
+F73;Domain;x
+F74;Domain;x
+F75;Domain;x
+F76;Domain;x
+F77;Domain;x
+F78;Domain;x
+F79;Domain;x
+F80;Domain;x
+F01_ADJ; ;x
+F02_ADJ; ;x
+F03_ADJ; ;x
+F04_ADJ; ;x
+F05_ADJ; ;x
+F06_ADJ; ;x
+F07_ADJ; ;x
+F08_ADJ; ;x
+F09_ADJ; ;x
+F10_ADJ; ;x
+F11_ADJ; ;x
+F12_ADJ; ;x
+F13_ADJ; ;x
+F14_ADJ; ;x
+F15_ADJ; ;x
+F16_ADJ; ;x
+F17_ADJ; ;x
+F18_ADJ; ;x
+F19_ADJ; ;x
+F20_ADJ; ;x
+F21_ADJ; ;x
+F22_ADJ; ;x
+F23_ADJ; ;x
+F24_ADJ; ;x
+F25_ADJ; ;x
+F26_ADJ; ;x
+F27_ADJ; ;x
+F28_ADJ; ;x
+F29_ADJ; ;x
+F30_ADJ; ;x
+F31_ADJ; ;x
+F32_ADJ; ;x
+F33_ADJ; ;x
+F34_ADJ; ;x
+F35_ADJ; ;x
+F36_ADJ; ;x
+F37_ADJ; ;x
+F38_ADJ; ;x
+F39_ADJ; ;x
+F40_ADJ; ;x
+F41_ADJ; ;x
+F42_ADJ; ;x
+F43_ADJ; ;x
+F44_ADJ; ;x
+F45_ADJ; ;x
+F46_ADJ; ;x
+F47_ADJ; ;x
+F48_ADJ; ;x
+F49_ADJ; ;x
+F50_ADJ; ;x
+F51_ADJ; ;x
+F52_ADJ; ;x
+F53_ADJ; ;x
+F54_ADJ; ;x
+F55_ADJ; ;x
+F56_ADJ; ;x
+F57_ADJ; ;x
+F58_ADJ; ;x
+F59_ADJ; ;x
+F60_ADJ; ;x
+F61_ADJ; ;x
+F62_ADJ; ;x
+F63_ADJ; ;x
+F64_ADJ; ;x
+F65_ADJ; ;x
+F66_ADJ; ;x
+F67_ADJ; ;x
+F68_ADJ; ;x
+F69_ADJ; ;x
+F70_ADJ; ;x
+F71_ADJ; ;x
+F72_ADJ; ;x
+F73_ADJ; ;x
+F74_ADJ; ;x
+F75_ADJ; ;x
+F76_ADJ; ;x
+F77_ADJ; ;x
+F78_ADJ; ;x
+F79_ADJ; ;x
+F80_ADJ; ;x
+C01;Ofpines;x
+C02;Hazil Tirates;x
+C03;Racos;x
+C04;Nathe Buslands;x
+C06;Sotanland;x
+C12;Neasia Camanni;x
+C14;Moluvi;x
+C15;TAG RESERVED FOR GHOSTTRICKS;x
+C16;Thuacan Ntecelize;x
+C17;Taibhu Pamenew;x
+C18;Saintdan;x
+C19;Puzil;x
+C21;Maubul;x
+C22;Slandbai Republic;x
+C23;Bangri;x
+C24;Blicand;x
+C28;Ranroc;x
+C31;Biarki;x
+C32;Rea Neaan;x
+C34;Nashall;x
+C35;Trodel;x
+C36;Crusau;x
+C38;Khirgakk;x
+C39;Proa Smye;x
+C44;Triyc Greau;x
+C51;Straudor;x
+C52;Oglesh;x
+C53;Hvalba;x
+C54;Kolvereid;x
+C55;Pickshard;x
+C56;Oflos;x
+C57;Turksmenjiis;x
+C58;Barslands;x
+C59;Guaylaalcos;x
+C60;Hrainber Cayslands;x
+C61;Kyrcos;x
+C62;Raelaslands;x
+C63;Jislands;x
+C01_ADJ; ;x
+C02_ADJ; ;x
+C03_ADJ; ;x
+C04_ADJ; ;x
+C06_ADJ; ;x
+C12_ADJ; ;x
+C13_ADJ; ;x
+C14_ADJ; ;x
+C15_ADJ; ;x
+C16_ADJ; ;x
+C17_ADJ; ;x
+C18_ADJ; ;x
+C19_ADJ; ;x
+C21_ADJ; ;x
+C22_ADJ; ;x
+C23_ADJ; ;x
+C24_ADJ; ;x
+C28_ADJ; ;x
+C31_ADJ; ;x
+C32_ADJ; ;x
+C34_ADJ; ;x
+C35_ADJ; ;x
+C36_ADJ; ;x
+C37_ADJ; ;x
+C38_ADJ; ;x
+C39_ADJ; ;x
+C44_ADJ; ;x
+C51_ADJ; ;x
+C52_ADJ; ;x
+C53_ADJ; ;x
+C54_ADJ; ;x
+C55_ADJ; ;x
+C56_ADJ; ;x
+C57_ADJ; ;x
+C58_ADJ; ;x
+C59_ADJ; ;x
+C60_ADJ; ;x
+C61_ADJ; ;x
+C62_ADJ; ;x
+C63_ADJ; ;x

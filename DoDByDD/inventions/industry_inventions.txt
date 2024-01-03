@@ -1014,7 +1014,7 @@ prophylaxis_against_malaria = {
 	effect = {
 		land_attrition = -0.05 
 		soldier_to_pop_loss = 0.01
-		colonial_life_rating = -5
+		#colonial_life_rating = -5
 	}
 }
 pressure_chambers_for_thorax_surgery = {

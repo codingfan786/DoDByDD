@@ -119,15 +119,15 @@ tribe_settle_six_title;Unite the Northern Woodlands;x
 tribe_settle_seven_title;Claim Tumis!;x
 tribe_settle_eight_title;Establish Wostdirktrib;x
 tribe_settle_nine_title;Spread through Dereka!;x
-tribe_settle_one_desc;Settle into Madison-Eau Claire.;x
-tribe_settle_two_desc;Settle into Greenville-New York.;x
-tribe_settle_three_desc;Settle into Shreveport.;x
-tribe_settle_four_desc;Settle into Manchester.;x
-tribe_settle_five_desc;Settle into Walla Walla.;x
-tribe_settle_six_desc;Settle into Dupree-Sioux City.;x
-tribe_settle_seven_desc;Settle into Hull.;x
-tribe_settle_eight_desc;Expand into Dirksan;x
-tribe_settle_nine_desc;Expand into Dereka;x
+tribe_settle_one_desc;Settle into Madison-Eau Claire. §GThis will let you colonize earlier.;x
+tribe_settle_two_desc;Settle into Greenville-New York. §GThis will let you colonize earlier.;x
+tribe_settle_three_desc;Settle into Shreveport. §GThis will let you colonize earlier.;x
+tribe_settle_four_desc;Settle into Manchester. §GThis will let you colonize earlier.;x
+tribe_settle_five_desc;Settle into Walla Walla. §GThis will let you colonize earlier.;x
+tribe_settle_six_desc;Settle into Dupree-Sioux City. §GThis will let you colonize earlier.;x
+tribe_settle_seven_desc;Settle into Hull. §GThis will let you colonize earlier.;x
+tribe_settle_eight_desc;Expand into Dirksan. §GThis will let you colonize earlier.;x
+tribe_settle_nine_desc;Expand into Dereka. §GThis will let you colonize earlier.;x
 integrate_greater_ael_title;Unify the Aellina Shorestates;x
 integrate_greater_ael_desc;This will annex any of the six states between your core territory and the coastline that you have puppeted and give you their accepted cultures.;x
 koullan_compromise_title;Koullan Compromise;x
@@ -163,3 +163,47 @@ region4;Bosnark;x
 region3;Stredohorí;x
 region2;Dereka;x
 region1;Drevník;x
+settling_west;Armed Settlers;x
+unify_bosnark_title;Proclaim dominance over Bosnark;x
+unify_bosnark_desc;Our nation has propelled itself further beyond all others in the Bosnark region. Clearly we are the deserved rulers over both North and South Bosnarks.;x
+get_both_river_people_title;Between the seas and across the rivers;x
+lake_cuttoff_one_title;Dam the Leicester Lake;x
+lake_cuttoff_two_title;Dam the Umea Lake;x
+lake_cuttoff_three_title;Dam the Mikkeli-Vaasa-Turku Lake;x
+lake_cuttoff_four_title;Dam the Jelgava-Kaunas-Aarhus Lake;x
+wostciric_to_inlandar_title;Return to the Isles;x
+wostciric_to_regionsix_title;Return to all of Inlandia;x
+get_both_river_people_desc;Dereka is a region shaped entirely by its geography. The numerous rivers and lakes have lead many of its people and communities to congregate and base their livelihood around them. Despite this there are many who look down on the riverside peoples and live more inland. Irregardless of this conflict the lake and river system of Dereka provides life and sustenance to the whole region. §GBy taking control over at least half of the four lakes we can cement ourselves as a central figurehead of the whole of Dereka.;x
+lake_cuttoff_one_desc;This will dam the rivers downstream from the aforementioned lake, giving a rgo and supply penalty. Affected nations will get a humiliate CB against you for this and you will suffer +0.50 war exhaustion for the next 5 years.\nThe affected rivers are the ones connecting the lake to the following outlets:§W\n§GManchester-Ipswich\nCambridge;x
+lake_cuttoff_two_desc;This will dam the rivers downstream from the aforementioned lake, giving a rgo and supply penalty. Affected nations will get a humiliate CB against you for this and you will suffer +0.50 war exhaustion for the next 5 years.\nThe affected rivers are the ones connecting the lake to the following outlets:§W\n§GCambridge\nFalun\nKuopio\nUppsala-Orebro\nHelsinki;x
+lake_cuttoff_three_desc;This will dam the rivers downstream from the aforementioned lake, giving a rgo and supply penalty. Affected nations will get a humiliate CB against you for this and you will suffer +0.50 war exhaustion for the next 5 years.\nThe affected rivers are the ones connecting the lake to the following outlets:§W\n§GFalun\nKuopio\nParnu;x
+lake_cuttoff_four_desc;This will dam the rivers downstream from the aforementioned lake, giving a rgo and supply penalty. Affected nations will get a humiliate CB against you for this and you will suffer +0.50 war exhaustion for the next 5 years.\nThe affected rivers are the ones connecting the lake to the following outlets:§W\n§GOsel-Palanga\nAabenraa-Odense\nParnu;x
+wostciric_to_inlandar_desc;Fill;x
+wostciric_to_regionsix_desc;Fill;x
+lake_cutoff_cooldown_one;Dammed the Leicester Lake;x
+lake_cutoff_penalty_one;Leicester Lake Dammed;x
+lake_cutoff_cooldown_two;Dammed the Umea Lake;x
+lake_cutoff_penalty_two;Umea Lake Dammed;x
+lake_cutoff_cooldown_three;Dammed the Mikkeli-Vaasa-Turku Lake;x
+lake_cutoff_penalty_three;Mikkeli-Vaasa-Turku Lake Dammed;x
+lake_cutoff_cooldown_four;Dammed the Jelgava-Kaunas-Aarhus Lake;x
+lake_cutoff_penalty_four;Jelgava-Kaunas-Aarhus Lake Dammed;x
+migration_bugfix;Migration RP fix;x
+karlspristat_expand_title;All along the coast;x
+jalpristat_expand_title;Integrate Inlandia;x
+wostdirktrib_expand_title;Integrate the Sudirk;x
+ufw_expand_title;Integrate the Sakirn;x
+karlspristat_expand_desc;Fill;x
+jalpristat_expand_desc;Fill;x
+wostdirktrib_expand_desc;Fill;x
+ufw_expand_desc;Fill;x
+badboymod;Sanctions;x
+release_puppets_title;Release Puppets;x
+release_puppets_desc;Will give you events to decide which puppets to release, if any.;x
+event9780001desc;The evolution of arms and politics has inevitably lead to the present conclusion: that the domination of ones surroundings is necessary for the survival of the nation. In practice this has lead to the competing Great Powers of the current conflict to poise themselves for an all out war of national survival.\n§GWar score costs are cheaper against others whom have gotten this event.\n§RThis event fires after 1870 if you are at war with a Great Power who is at war with another Great Power.;x
+aesthetics_tech1;Classicism & Early Romanticism;x
+aesthetics_tech2;Romanticism;x
+aesthetics_tech3;Realism;x
+aesthetics_tech4;Impressionism;x
+aesthetics_tech5;Expressionism;x
+aesthetics_tech6;Mass Culture & the Avant-Garde;x

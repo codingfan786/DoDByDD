@@ -47,7 +47,12 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-
+military_constructions = yes_military_constructions
+land_reform = yes_land_reform
+foreign_officers = yes_foreign_officers
+foreign_training = yes_foreign_training
+foreign_weapons = yes_foreign_weapons
+army_schools = yes_army_schools
 
 
 

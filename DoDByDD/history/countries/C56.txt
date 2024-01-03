@@ -9,7 +9,7 @@ government = prussian_constitutionalism
 plurality = 10
 nationalvalue = nv_mercantilism
 
-civilized = yes 
+civilized = no 
 prestige = 0
 schools = traditional_academic
 oob = "C56.txt"

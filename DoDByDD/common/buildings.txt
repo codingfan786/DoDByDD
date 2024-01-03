@@ -785,6 +785,7 @@ naval_base = {
 		steel = 800
 		machine_parts = 60
 	}
+	one_per_state = yes
 	time = 360
 	naval_capacity = 1
 	capital = yes
@@ -794,7 +795,7 @@ naval_base = {
 	max_level = 6
 	colonial_points = { 30 50 70 90 95 100 } #points at levels 1-6
 	province = yes
-	colonial_range = 50
+	colonial_range = 0 #was 50
 	local_ship_build = -0.05
 }
        

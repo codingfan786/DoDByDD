@@ -234,6 +234,27 @@ political_decisions = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = C10
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					tag = C09
+					owns = 290
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					tag = C09
+					owns = 284
+				}
+			}
+		}
 	}
 
 	migrate_one = {
@@ -420,6 +441,9 @@ political_decisions = {
 					pop_type = farmers
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 
@@ -608,6 +632,10 @@ political_decisions = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	migrate_three = {
@@ -775,6 +803,17 @@ political_decisions = {
 					}
 					pop_type = farmers
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {tag = C07}
+			}
+			modifier = {
+				factor = 0
+				owns = 159
 			}
 		}
 	}
@@ -952,6 +991,9 @@ political_decisions = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	migrate_five = {
@@ -1127,6 +1169,9 @@ political_decisions = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	migrate_six = {
@@ -1295,6 +1340,9 @@ political_decisions = {
 					pop_type = farmers
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 
@@ -1471,6 +1519,13 @@ political_decisions = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				owns = 258
+			}
+		}
 	}
 
 	migrate_eight = {
@@ -1632,6 +1687,17 @@ political_decisions = {
 					}
 					pop_type = farmers
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {tag = C10}
+			}
+			modifier = {
+				factor = 0
+				owns = 231
 			}
 		}
 	}
@@ -1801,6 +1867,17 @@ political_decisions = {
 					}
 					pop_type = farmers
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {tag = C09}
+			}
+			modifier = {
+				factor = 0
+				owns = 281
 			}
 		}
 	}
@@ -1978,6 +2055,17 @@ political_decisions = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {tag = C09}
+			}
+			modifier = {
+				factor = 0
+				owns = 284
+			}
+		}
 	}
 
 	migrate_eleven = {
@@ -2139,6 +2227,17 @@ political_decisions = {
 					}
 					pop_type = farmers
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {tag = C08}
+			}
+			modifier = {
+				factor = 0
+				owns = 158
 			}
 		}
 	}
@@ -2322,6 +2421,17 @@ political_decisions = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {tag = C08}
+			}
+			modifier = {
+				factor = 0
+				owns = 85
+			}
+		}
 	}
 
 	migrate_thirteen = {
@@ -2503,6 +2613,9 @@ political_decisions = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	migrate_fourteen = {
@@ -2683,6 +2796,9 @@ political_decisions = {
 					pop_type = farmers
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 
@@ -3038,6 +3154,13 @@ political_decisions = {
 					}
 					pop_type = farmers
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {tag = C07}
 			}
 		}
 	}
@@ -3891,6 +4014,17 @@ political_decisions = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {tag = C08}
+			}
+			modifier = {
+				factor = 0
+				owns = 140
+			}
+		}
 	}
 
 	migrate_twentytwo = {
@@ -4070,6 +4204,13 @@ political_decisions = {
 					}
 					pop_type = farmers
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {tag = C10}
 			}
 		}
 	}

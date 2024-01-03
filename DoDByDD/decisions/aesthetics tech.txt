@@ -1,0 +1,521 @@
+political_decisions = {
+
+	infamytech = {
+		potential = {
+			tag = BAN
+		}
+		allow = {
+			OR = {
+				C01= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C02= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C03= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C04= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C05= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C06= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C07= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C08= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C09= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C10= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C11= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C12= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C13= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C14= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C15= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C16= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C17= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C18= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C19= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C20= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C21= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C22= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C23= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C24= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C25= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C26= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C27= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C28= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C29= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C30= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C31= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C32= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C33= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C34= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C35= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C36= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C37= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C38= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C39= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C40= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C41= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C42= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C43= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C44= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C45= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C46= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C47= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C48= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C49= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C50= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C51= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C52= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C53= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C54= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C55= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C56= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C57= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C58= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C59= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C60= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C61= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C62= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C63= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C64= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C65= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C66= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C67= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C68= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C69= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C70= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C71= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C72= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C73= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C74= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C75= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C76= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C77= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C78= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C79= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C80= {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				C01={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C02={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C03={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C04={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C05={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C06={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C07={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C08={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C09={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C10={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C11={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C12={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C13={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C14={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C15={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C16={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C17={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C18={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C19={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C20={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C21={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C22={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C23={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C24={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C25={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C26={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C27={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C28={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C29={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C30={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C31={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C32={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C33={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C34={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C35={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C36={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C37={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C38={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C39={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C40={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C41={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C42={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C43={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C44={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C45={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C46={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C47={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C48={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C49={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C50={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C51={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C52={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C53={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C54={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C55={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C56={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C57={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C58={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C59={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C60={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C61={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C62={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C63={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C64={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C65={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C66={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C67={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C68={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C69={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C70={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C71={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C72={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C73={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C74={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C75={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C76={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C77={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C78={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C79={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C80={romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				C01= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C02= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C03= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C04= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C05= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C06= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C07= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C08= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C09= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C10= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C11= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C12= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C13= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C14= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C15= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C16= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C17= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C18= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C19= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C20= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C21= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C22= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C23= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C24= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C25= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C26= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C27= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C28= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C29= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C30= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C31= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C32= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C33= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C34= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C35= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C36= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C37= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C38= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C39= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C40= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C41= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C42= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C43= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C44= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C45= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C46= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C47= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C48= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C49= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C50= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C51= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C52= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C53= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C54= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C55= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C56= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C57= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C58= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C59= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C60= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C61= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C62= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C63= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C64= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C65= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C66= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C67= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C68= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C69= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C70= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C71= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C72= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C73= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C74= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C75= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C76= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C77= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C78= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C79= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C80= {realism = 1 NOT = {has_country_flag = badboytech3}}
+				C01={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C02={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C03={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C04={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C05={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C06={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C07={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C08={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C09={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C10={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C11={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C12={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C13={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C14={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C15={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C16={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C17={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C18={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C19={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C20={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C21={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C22={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C23={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C24={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C25={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C26={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C27={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C28={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C29={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C30={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C31={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C32={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C33={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C34={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C35={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C36={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C37={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C38={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C39={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C40={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C41={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C42={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C43={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C44={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C45={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C46={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C47={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C48={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C49={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C50={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C51={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C52={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C53={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C54={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C55={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C56={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C57={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C58={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C59={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C60={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C61={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C62={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C63={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C64={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C65={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C66={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C67={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C68={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C69={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C70={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C71={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C72={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C73={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C74={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C75={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C76={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C77={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C78={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C79={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C80={impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				C01={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C02={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C03={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C04={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C05={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C06={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C07={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C08={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C09={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C10={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C11={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C12={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C13={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C14={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C15={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C16={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C17={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C18={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C19={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C20={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C21={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C22={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C23={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C24={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C25={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C26={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C27={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C28={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C29={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C30={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C31={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C32={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C33={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C34={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C35={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C36={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C37={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C38={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C39={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C40={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C41={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C42={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C43={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C44={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C45={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C46={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C47={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C48={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C49={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C50={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C51={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C52={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C53={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C54={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C55={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C56={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C57={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C58={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C59={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C60={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C61={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C62={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C63={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C64={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C65={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C66={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C67={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C68={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C69={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C70={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C71={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C72={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C73={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C74={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C75={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C76={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C77={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C78={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C79={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C80={expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				C01={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C02={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C03={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C04={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C05={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C06={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C07={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C08={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C09={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C10={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C11={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C12={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C13={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C14={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C15={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C16={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C17={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C18={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C19={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C20={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C21={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C22={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C23={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C24={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C25={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C26={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C27={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C28={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C29={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C30={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C31={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C32={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C33={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C34={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C35={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C36={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C37={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C38={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C39={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C40={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C41={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C42={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C43={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C44={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C45={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C46={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C47={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C48={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C49={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C50={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C51={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C52={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C53={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C54={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C55={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C56={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C57={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C58={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C59={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C60={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C61={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C62={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C63={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C64={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C65={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C66={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C67={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C68={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C69={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C70={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C71={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C72={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C73={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C74={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C75={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C76={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C77={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C78={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C79={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				C80={mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+			}
+
+		}
+		effect = {
+			any_country = {
+				limit = {classicism_n_early_romanticism = 1 NOT = {has_country_flag = badboytech1}}
+				set_country_flag = badboytech1
+			}
+			any_country = {
+				limit = {romanticism = 1 NOT = {has_country_flag = badboytech2}}
+				set_country_flag = badboytech2
+			}
+			any_country = {
+				limit = {realism = 1 NOT = {has_country_flag = badboytech3}}
+				set_country_flag = badboytech3
+			}
+			any_country = {
+				limit = {impressionism = 1 NOT = {has_country_flag = badboytech4}}
+				set_country_flag = badboytech4
+			}
+			any_country = {
+				limit = {expressionism = 1 NOT = {has_country_flag = badboytech5}}
+				set_country_flag = badboytech5
+			}
+			any_country = {
+				limit = {mass_culture_n_the_avant_garde = 1 NOT = {has_country_flag = badboytech6}}
+				set_country_flag = badboytech6
+			}
+		}
+	}
+
+
+}

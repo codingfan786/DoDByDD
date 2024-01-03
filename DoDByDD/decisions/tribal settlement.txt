@@ -13,7 +13,8 @@ political_decisions = {
 			C64 = {exists = no}
 		}
 		allow = {
-			state_n_government = 1
+			#state_n_government = 1
+			year = 1840
 			owns = 174
 			owns = 160
 			owns = 161
@@ -24,6 +25,7 @@ political_decisions = {
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
+			set_country_flag = drevnik_tribal_settler
 			civilized = yes
 			any_owned = {
 				remove_core = F07
@@ -54,7 +56,8 @@ political_decisions = {
 			C65 = {exists = no}
 		}
 		allow = {
-			state_n_government = 1
+			#state_n_government = 1
+			year = 1840
 			owns = 207
 			owns = 208
 			owns = 221
@@ -64,6 +67,7 @@ political_decisions = {
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
+			set_country_flag = drevnik_tribal_settler
 			civilized = yes
 			any_owned = {
 				remove_core = F07
@@ -94,7 +98,8 @@ political_decisions = {
 			C66 = {exists = no}
 		}
 		allow = {
-			state_n_government = 1
+			#state_n_government = 1
+			year = 1840
 			owns = 142
 			owns = 152
 			owns = 158
@@ -102,6 +107,7 @@ political_decisions = {
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
+			set_country_flag = drevnik_tribal_settler
 			civilized = yes
 			any_owned = {
 				remove_core = F07
@@ -132,7 +138,8 @@ political_decisions = {
 			C67 = {exists = no}
 		}
 		allow = {
-			state_n_government = 1
+			#state_n_government = 1
+			year = 1840
 			owns = 278
 			owns = 252
 			owns = 258
@@ -140,6 +147,7 @@ political_decisions = {
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
+			set_country_flag = drevnik_tribal_settler
 			civilized = yes
 			any_owned = {
 				remove_core = F07
@@ -170,7 +178,8 @@ political_decisions = {
 			C68 = {exists = no}
 		}
 		allow = {
-			state_n_government = 1
+			#state_n_government = 1
+			year = 1840
 			owns = 80
 			owns = 83
 			owns = 85
@@ -178,6 +187,7 @@ political_decisions = {
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
+			set_country_flag = drevnik_tribal_settler
 			civilized = yes
 			any_owned = {
 				remove_core = F07
@@ -208,7 +218,8 @@ political_decisions = {
 			C69 = {exists = no}
 		}
 		allow = {
-			state_n_government = 1
+			#state_n_government = 1
+			year = 1840
 			owns = 154
 			owns = 136
 			owns = 138
@@ -218,6 +229,7 @@ political_decisions = {
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
+			set_country_flag = drevnik_tribal_settler
 			civilized = yes
 			any_owned = {
 				remove_core = F07
@@ -248,13 +260,15 @@ political_decisions = {
 			C70 = {exists = no}
 		}
 		allow = {
-			state_n_government = 1
+			#state_n_government = 1
+			year = 1840
 			owns = 282
 			owns = 281
 			owns = 297
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
+			set_country_flag = drevnik_tribal_settler
 			civilized = yes
 			any_owned = {
 				remove_core = F07
@@ -285,7 +299,8 @@ political_decisions = {
 			C71 = {exists = no}
 		}
 		allow = {
-			state_n_government = 1
+			#state_n_government = 1
+			year = 1840
 			C05 = {
 				exists = no
 				all_core = {
@@ -296,6 +311,7 @@ political_decisions = {
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
+			set_country_flag = drevnik_tribal_settler
 			civilized = yes
 			any_owned = {
 				remove_core = F07
@@ -326,7 +342,8 @@ political_decisions = {
 			C72 = {exists = no}
 		}
 		allow = {
-			state_n_government = 1
+			#state_n_government = 1
+			year = 1840
 			OR = {
 				C16 = {
 					exists = no
@@ -351,6 +368,7 @@ political_decisions = {
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
+			set_country_flag = drevnik_tribal_settler
 			civilized = yes
 			any_owned = {
 				remove_core = F07
@@ -368,4 +386,51 @@ political_decisions = {
 		}
 	}
 
+	cry_about_it = {
+		potential = {
+			ai = yes
+			OR = {
+				tag = C64
+				tag = C65
+				tag = C66
+				tag = C67
+				tag = C68
+				tag = C69
+				tag = C70
+				tag = C71
+				tag = C72
+			}
+		}
+		allow = {
+			NOT = {ideological_thought = 1}
+		}
+		effect = {
+			activate_technology = ideological_thought
+			treasury = 300000
+		}
+	}
+	cry_about_it_some_more = {
+		potential = {
+			ai = yes
+			OR = {
+				tag = C64
+				tag = C65
+				tag = C66
+				tag = C67
+				tag = C68
+				tag = C69
+				tag = C70
+				tag = C71
+				tag = C72
+			}
+		}
+		allow = {
+			NOT = {state_n_government = 1}
+			ideological_thought = 1
+			year = 1845
+		}
+		effect = {
+			activate_technology = state_n_government
+		}
+	}
 }

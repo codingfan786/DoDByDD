@@ -1,7 +1,7 @@
 country_event = {
 	id = 9002001
 	title = "Dominance of Bosnark"
-	desc = "Yes you will be annexed."
+	desc = "$FROM$ is proclaiming dominance over all of Bosnark and is insisting that we unite with them!"
 
 	is_triggered_only = yes
 

@@ -1,0 +1,44 @@
+cheap_conquest;Great War Conquest;Conquête;Eroberung;;Conquista;;;;;;;;;x;;;;
+cheap_conquest_setup;Annex $RECIPIENT$;Annexer $RECIPIENT$;$RECIPIENT$ annektieren;;Anexión de $RECIPIENT$;;;;;;;;;x;;;;
+cheap_conquest_short;Annex $RECIPIENT$;Annexer $RECIPIENT$;$RECIPIENT$ annektieren;;Anexión de $RECIPIENT$;;;;;;;;;x;;;;
+cheap_conquest_desc;Annex a single-state §Ycountry§W or an §Yuncivilized nation§W;Annexer un §Ypays§W à un État ou une §Ynation non civilisée§W;Annektieren Sie ein Einzelstaat-§YLand§W oder eine §Yunzivilisierte Nation§W;;Anexionar un §Ypaís§W o una §Ynación sin civilizar§W de un solo estado;;;;;;;;;x
+cheap_acquire_core_state;Great War Acquire core;Prendre territoire clé;Kernprovinzregion erobern;;Adquirir núcleo;;;;;;;;;x;;;;
+cheap_acquire_core_state_short;Acquire $STATE$; Prendre le territoire clé de $STATE$;Kernprovinzregion $STATE$ erobern;;Adquirir $STATE$;;;;;;;;;x;;;;
+cheap_acquire_core_state_setup;Acquire core $STATE$ from $RECIPIENT$;Prendre territoire clé $STATE$ à $RECIPIENT$;Kernprovinzregion $STATE$ von $RECIPIENT$ erobern.;;Adquirir el núcleo de $STATE$ de manos de $RECIPIENT$;;;;;;;;;x;;;;
+cheap_acquire_core_state_desc;Aquire an enemy §Ystate§W where we have §Ycore provinces§W;Prendre un §YÉtat§W ennemi où nous avons des §Yprovinces principales§W;Erobern Sie einen feindlichen §YStaat§W, in dem wir §YKernprovinzen§W haben.;;Adquirir un §Yestado§W enemigo donde tenemos §Yprovincias núcleo§W;;;;;;;;;x
+cheap_annex_core_country;Great War Restore Order;Rétablir l'ordre;Stellen Sie die Ordnung wieder her;;Restablecer el orden;;;;;;;;;x;;
+cheap_annex_core_country_short;Annex $RECIPIENT$;Annexer $RECIPIENT$;Annektieren Sie $RECIPIENT$;;Anexionar $RECIPIENT$;;;;;;;;;x;;
+cheap_annex_core_country_setup;Annex $RECIPIENT$;Annexer $RECIPIENT$;Annektieren Sie $RECIPIENT$;;Anexionar $RECIPIENT$;;;;;;;;;x;;
+cheap_annex_core_country_desc;Annex a foreign §Ycountry§W all provinces of which are your cores.;Annexez un §Ypays§W étranger dont toutes les provinces sont vos territoires clés.;Annektieren Sie alle Provinzen eines ausländischen §YLandes§W, die zu Ihren Kernprovinzen gehören.;;Anexiona un §Ypaís§W extranjero cuyas provincias son todas núcleos tuyos.;;;;;;;;;x;;
+cheap_acquire_substate_region;Great War Acquire substate region;Acquérir une région comme Sous-État;Beschafft eine Unterstaatsregion;;;;;;;;;;;x
+cheap_acquire_substate_region_desc;Acquire a region from enemy §Ysubstate§W;Acquérir une région d'un §YSous-État§W ennemi;Beschafft eine Region des Feindes §Ysubstate§W;;;;;;;;;;;x
+cheap_acquire_substate_region_short;Acquire $STATE$;Prendre $STATE$;$STATE$ erobern;;Adquirir $STATE$;;;;;;;;;x
+cheap_acquire_substate_region_setup;Acquire $STATE$ from $RECIPIENT$;Prendre $STATE$ de $RECIPIENT$;$STATE$ von $RECIPIENT$ erobern.;;Adquirir $STATE$ de manos de $RECIPIENT$;;;;;;;;;x
+cheap_acquire_state;Great War Acquire state;Prendre un état;Region erobern;;Adquirir estado;;;;;;;;;x;;;;
+cheap_acquire_state_short;Acquire $STATE$; Prendre l'État de $STATE$;$STATE$ erobern;;Adquirir $STATE$;;;;;;;;;x;;;;
+cheap_acquire_state_setup;Acquire $STATE$ from $RECIPIENT$;Prendre $STATE$ à $RECIPIENT$;$STATE$ von $RECIPIENT$ erobern.;;Adquirir $STATE$ de manos de $RECIPIENT$;;;;;;;;;x;;;;
+cheap_acquire_state_desc;Aquire an enemy §Ystate§W;Prendre un §YÉtat§W ennemi;Erobern Sie einen feindlichen §YStaat§W.;;Adquirir un §Yestado§W enemigo;;;;;;;;;x
+cheap_place_in_the_sun;Great War Place in the sun;Une place au soleil;Ein Platz an der Sonne;;Un lugar bajo el sol;;;;;;;;;x;;;;
+cheap_place_in_the_sun_short;Acquire $STATE$; Prendre l'État de $STATE$;Kolonie $STATE$ erobern;;Adquirir $STATE$;;;;;;;;;x;;;;
+cheap_place_in_the_sun_setup;Acquire colony $STATE$ from $RECIPIENT$;Prendre colonie $STATE$ à $RECIPIENT$;Kolonie $STATE$ von $RECIPIENT$ erobern.;;Adquirir la colonia de $STATE$ de manos de $RECIPIENT$;;;;;;;;;x;;;;
+cheap_place_in_the_sun_desc;Aquire an enemy §Ycolonial state§W;Prendre un §YÉtat colonial§W ennemi;Erobern Sie einen feindlichen §YKolonialstaat§W.;;Adquirir un §Yestado colonial§W enemigo;;;;;;;;;x
+cheap_make_puppet;Great War Make puppet;Créer un pays satellite;Erschafft eine Marionette;;;;;;;;;;;x
+cheap_make_puppet_short;$RECIPIENT$ becomes a puppet of $ACTOR$;$RECIPIENT$ devient satellite de $ACTOR$;$RECIPIENT$ wird eine Marionette von $ACTOR$;;;;;;;;;;;x
+cheap_make_puppet_setup;$RECIPIENT$ becomes a puppet of $ACTOR$;$RECIPIENT$ devient satellite de $ACTOR$;$RECIPIENT$ wird eine Marionette von $ACTOR$;;;;;;;;;;;x
+cheap_make_puppet_desc;Become a puppet;Devenir un satellite;Werdet eine Marionette;;;;;;;;;;;x
+cheap_demand_concession_casus_belli;Great War Demand Concession;Demande de concession;Zugeständnisse verlangen;;Exigir concesión;;;;;;;;;x;;
+cheap_demand_concession_casus_belli_desc;Force an §Yuncivilized country§W to secede territory to form a colonial concession.;Obligez un §Ypays non civilisé§W à faire sécession d'un territoire pour former une concession coloniale.;Zwingen Sie ein §Yunzivilisiertes Land§W, Gebiete zur Gründung einer Kolonie abzuspalten.;;Obliga a un §Ypaís incivilizado§W a escindir territorio para formar una concesión colonial.;;;;;;;;;x;;
+cheap_demand_concession_casus_belli_setup;Demand that $RECIPIENT$ secede territory to form a colonial concession.;Demandez à ce que $RECIPIENT$ fasse sécession d'un territoire pour former une concession coloniale.;Verlangen Sie, dass $RECIPIENT$ Gebiete zur Gründung einer Kolonie abspaltet.;;Exigir que $RECIPIENT$ escinda territorio para formar una concesión colonial.;;;;;;;;;x;;
+cheap_demand_concession_casus_belli_short;Demand $STATE$;Demande $STATE$;Fordern Sie $STATE$;;Exigir $STATE$;;;;;;;;;x;;
+cheap_establish_protectorate_casus_belli;Great War Establish Protectorate;Établir un protectorat;Protektorat gründen;;Establecer protectorado;;;;;;;;;x;;
+cheap_establish_protectorate_casus_belli_desc;Annex an §Yuncivilized country§W by forcing them to become a protectorate of ours.;Annexez un §Ypays non civilisé§W en l'obligeant à devenir l'un de nos protectorats.;Annektieren Sie ein §Yunzivilisiertes Land§W, indem Sie es zwingen, eines Ihrer Protektorate zu werden.;;Anexiona un §Ypaís incivilizado§W, obligándolo a convertirse en protectorado nuestro.;;;;;;;;;x;;
+cheap_establish_protectorate_casus_belli_setup;Annex $RECIPIENT$ by establishing a protectorate over them.;Annexez $RECIPIENT$ en établissant un protectorat.;Annektieren Sie $RECIPIENT$ durch die Gründung cheap_eines Protektorats.;;Anexionar $RECIPIENT$ estableciendo un protectorado sobre ellos.;;;;;;;;;x;;
+cheap_establish_protectorate_casus_belli_short;Annex $RECIPIENT$;Annexer $RECIPIENT$;Annektieren Sie $RECIPIENT$;;Anexionar $RECIPIENT$;;;;;;;;;x;;
+cheap_unification_casus_belli;Great War War of Unification;Guerre d'unification;Vereinigungskrieg;;Guerra de unificación;;;;;;;;;x;;
+cheap_unification_casus_belli_desc;Liberate core territory of our §YCultural Union§W;Libérer un territoire clé de notre §Yunion culturelle§W;Befreien Sie das Kerngebiet unserer §YKulturunion§W;;Libera territorio fundamental de nuestra §Yunión cultural§W;;;;;;;;;x;;
+cheap_unification_casus_belli_setup;Liberate core territory of our §YCultural Union§W.;Libérez un territoire clé de notre §Yunion culturelle§W.;Befreien Sie das Kerngebiet unserer §YKulturunion§W;;Liberar territorio fundamental de nuestra §Yunión cultural§W;;;;;;;;;x;;
+cheap_unification_casus_belli_short;Liberate $STATE$ ;Libérer $STATE$ ;Befreien Sie $STATE$;;Liberar $STATE$ ;;;;;;;;;x;;
+cheap_unification_annex_casus_belli;Great War War of Unification;Guerre d'unification;Vereinigungskrieg;;Guerra de unificación;;;;;;;;;x;;
+cheap_unification_annex_casus_belli_desc;Liberate core territory of our §YCultural Union§W.;Libérez un territoire clé de notre §Yunion culturelle§W.;Befreien Sie das Kerngebiet unserer §YKulturunion§W;;Liberar territorio fundamental de nuestra §Yunión cultural§W;;;;;;;;;x;;
+cheap_unification_annex_casus_belli_setup;Liberate core territory of our §YCultural Union§W.;Libérez un territoire clé de notre §Yunion culturelle§W.;Befreien Sie das Kerngebiet unserer §YKulturunion§W;;Liberar territorio fundamental de nuestra §Yunión cultural§W;;;;;;;;;x;;
+cheap_unification_annex_casus_belli_short;Annexation;Annexion;Annektierung;;Anexión;;;;;;;;;x;;

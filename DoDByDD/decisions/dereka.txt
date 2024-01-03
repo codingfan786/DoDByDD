@@ -1,5 +1,6 @@
 political_decisions = {
 	get_both_river_people = {
+		picture = build_kiel_canal
 		potential = {
 			OR = {
 				AND = {
@@ -10,6 +11,7 @@ political_decisions = {
 					primary_culture = antlanin
 					NOT = {accepted_culture = memphin}
 				}
+				tag = C72
 			}
 		}
 		allow = {
@@ -70,6 +72,7 @@ political_decisions = {
 	}
 
 	lake_cuttoff_one = {
+		picture = suezcanal
 		potential = {
 			any_owned_province = {
 				continent = region2
@@ -119,9 +122,50 @@ political_decisions = {
 				country_event = 9003001
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {national_provinces_occupied = 0.5}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						278 = {owner = {war_with = THIS}}
+						292 = {owner = {war_with = THIS}}
+						272 = {owner = {war_with = THIS}}
+						283 = {owner = {war_with = THIS}}
+						268 = {owner = {war_with = THIS}}
+						265 = {owner = {war_with = THIS}}
+						279 = {owner = {war_with = THIS}}
+						262 = {owner = {war_with = THIS}}
+						250 = {owner = {war_with = THIS}}
+						269 = {owner = {war_with = THIS}}
+						277 = {owner = {war_with = THIS}}
+						280 = {owner = {war_with = THIS}}
+						289 = {owner = {war_with = THIS}}
+						302 = {owner = {war_with = THIS}}
+
+						308 = {owner = {war_with = THIS}}
+						307 = {owner = {war_with = THIS}}
+						312 = {owner = {war_with = THIS}}
+						299 = {owner = {war_with = THIS}}
+						303 = {owner = {war_with = THIS}}
+						287 = {owner = {war_with = THIS}}
+						296 = {owner = {war_with = THIS}}
+						284 = {owner = {war_with = THIS}}
+						285 = {owner = {war_with = THIS}}
+						286 = {owner = {war_with = THIS}}
+						291 = {owner = {war_with = THIS}}
+					}
+				}
+			}
+		}
 	}
 
 	lake_cuttoff_two = {
+		picture = suezcanal
 		potential = {
 			any_owned_province = {
 				continent = region2
@@ -138,6 +182,7 @@ political_decisions = {
 				duration = 1825
 			}
 			
+			351 = {add_province_modifier = { name = lake_cutoff_penalty_two duration = 1825 }}
 			308 = {add_province_modifier = { name = lake_cutoff_penalty_two duration = 1825 }}
 			307 = {add_province_modifier = { name = lake_cutoff_penalty_two duration = 1825 }}
 			312 = {add_province_modifier = { name = lake_cutoff_penalty_two duration = 1825 }}
@@ -189,9 +234,68 @@ political_decisions = {
 				country_event = 9003001
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {national_provinces_occupied = 0.5}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						351 = {owner = {war_with = THIS}}
+						308 = {owner = {war_with = THIS}}
+						307 = {owner = {war_with = THIS}}
+						312 = {owner = {war_with = THIS}}
+						299 = {owner = {war_with = THIS}}
+						303 = {owner = {war_with = THIS}}
+						287 = {owner = {war_with = THIS}}
+						296 = {owner = {war_with = THIS}}
+						284 = {owner = {war_with = THIS}}
+						285 = {owner = {war_with = THIS}}
+						286 = {owner = {war_with = THIS}}
+						291 = {owner = {war_with = THIS}}
+
+						318 = {owner = {war_with = THIS}}
+						311 = {owner = {war_with = THIS}}
+						321 = {owner = {war_with = THIS}}
+						328 = {owner = {war_with = THIS}}
+						320 = {owner = {war_with = THIS}}
+						334 = {owner = {war_with = THIS}}
+						335 = {owner = {war_with = THIS}}
+						341 = {owner = {war_with = THIS}}
+						345 = {owner = {war_with = THIS}}
+						347 = {owner = {war_with = THIS}}
+						343 = {owner = {war_with = THIS}}
+						333 = {owner = {war_with = THIS}}
+						336 = {owner = {war_with = THIS}}
+						325 = {owner = {war_with = THIS}}
+						327 = {owner = {war_with = THIS}}
+						324 = {owner = {war_with = THIS}}
+
+						339 = {owner = {war_with = THIS}}
+						337 = {owner = {war_with = THIS}}
+						348 = {owner = {war_with = THIS}}
+						350 = {owner = {war_with = THIS}}
+						340 = {owner = {war_with = THIS}}
+						352 = {owner = {war_with = THIS}}
+						353 = {owner = {war_with = THIS}}
+						342 = {owner = {war_with = THIS}}
+						331 = {owner = {war_with = THIS}}
+						332 = {owner = {war_with = THIS}}
+						317 = {owner = {war_with = THIS}}
+						323 = {owner = {war_with = THIS}}
+						313 = {owner = {war_with = THIS}}
+						309 = {owner = {war_with = THIS}}
+					}
+				}
+			}
+		}
 	}
 
 	lake_cuttoff_three = {
+		picture = suezcanal
 		potential = {
 			any_owned_province = {
 				continent = region2
@@ -248,9 +352,51 @@ political_decisions = {
 				country_event = 9003001
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {national_provinces_occupied = 0.5}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						308 = {owner = {war_with = THIS}}
+						339 = {owner = {war_with = THIS}}
+						337 = {owner = {war_with = THIS}}
+						348 = {owner = {war_with = THIS}}
+						350 = {owner = {war_with = THIS}}
+						340 = {owner = {war_with = THIS}}
+						352 = {owner = {war_with = THIS}}
+						353 = {owner = {war_with = THIS}}
+						342 = {owner = {war_with = THIS}}
+						331 = {owner = {war_with = THIS}}
+						332 = {owner = {war_with = THIS}}
+						317 = {owner = {war_with = THIS}}
+						323 = {owner = {war_with = THIS}}
+						313 = {owner = {war_with = THIS}}
+						309 = {owner = {war_with = THIS}}
+						328 = {owner = {war_with = THIS}}
+						335 = {owner = {war_with = THIS}}
+						346 = {owner = {war_with = THIS}}
+						341 = {owner = {war_with = THIS}}
+						345 = {owner = {war_with = THIS}}
+						354 = {owner = {war_with = THIS}}
+						347 = {owner = {war_with = THIS}}
+						355 = {owner = {war_with = THIS}}
+						351 = {owner = {war_with = THIS}}
+						360 = {owner = {war_with = THIS}}
+						359 = {owner = {war_with = THIS}}
+						367 = {owner = {war_with = THIS}}
+					}
+				}
+			}
+		}
 	}
 
 	lake_cuttoff_four = {
+		picture = suezcanal
 		potential = {
 			any_owned_province = {
 				continent = region2
@@ -259,9 +405,9 @@ political_decisions = {
 		allow = {
 			state_n_government = 1
 			AND = {
-				owns = 341
-				owns = 346
-				owns = 345
+				owns = 357
+				owns = 361
+				owns = 366
 			}
 
 			NOT = {has_country_modifier = lake_cutoff_cooldown_four}
@@ -300,6 +446,86 @@ political_decisions = {
 				}
 				country_event = 9003001
 			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {national_provinces_occupied = 0.5}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						357 = {owner = {war_with = THIS}}
+						366 = {owner = {war_with = THIS}}
+						361 = {owner = {war_with = THIS}}
+						349 = {owner = {war_with = THIS}}
+						348 = {owner = {war_with = THIS}}
+						350 = {owner = {war_with = THIS}}
+						352 = {owner = {war_with = THIS}}
+						353 = {owner = {war_with = THIS}}
+						362 = {owner = {war_with = THIS}}
+						365 = {owner = {war_with = THIS}}
+						371 = {owner = {war_with = THIS}}
+						373 = {owner = {war_with = THIS}}
+						374 = {owner = {war_with = THIS}}
+						369 = {owner = {war_with = THIS}}
+						363 = {owner = {war_with = THIS}}
+						368 = {owner = {war_with = THIS}}
+						360 = {owner = {war_with = THIS}}
+						355 = {owner = {war_with = THIS}}
+						351 = {owner = {war_with = THIS}}
+						359 = {owner = {war_with = THIS}}
+						367 = {owner = {war_with = THIS}}
+					}
+				}
+			}
+		}
+	}
+
+	wostciric_to_inlandar = {
+		picture = annals_of_the_fulani_jihad
+		potential = {
+			tag = C26
+			NOT = {accepted_culture = inlandar}
+		}
+		allow = {
+			state_n_government = 1
+		}
+		effect = {
+			add_accepted_culture = inlandar
+		}
+	}
+
+	wostciric_to_regionsix = {
+		picture = annals_of_the_fulani_jihad
+		potential = {
+			tag = C26
+			NOT = {accepted_culture = odinlandar}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			C63 = {
+				all_core = {
+					owner = {
+						tag = THIS
+					}
+				}
+			}
+			C59 = {
+				all_core = {
+					owner = {
+						tag = THIS
+					}
+				}
+			}
+		}
+		effect = {
+			add_accepted_culture = odinlandar
+			add_accepted_culture = odsan
+			add_accepted_culture = sudsan
+			add_accepted_culture = furodsan
 		}
 	}
 }

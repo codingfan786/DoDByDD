@@ -1,0 +1,102 @@
+political_decisions = {
+
+	karlspristat_expand = {
+		picture = annals_of_the_fulani_jihad
+		potential = {
+			tag = C68
+			NOT = {has_country_flag = taken_kp_expand}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect= {
+			set_country_flag = taken_kp_expand
+			C01 = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			C02 = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			88 = {
+				add_core = THIS
+			}
+			97 = {
+				add_core = THIS
+			}
+			92 = {
+				add_core = THIS
+			}
+		}
+	}
+
+	jalpristat_expand = {
+		picture = annals_of_the_fulani_jihad
+		potential = {
+			tag = C67
+			NOT = {has_country_flag = taken_jp_expand}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_country_flag = taken_jp_expand
+			add_accepted_culture = sudsan
+			add_accepted_culture = inlandar
+		}
+	}
+
+	wostdirktrib_expand = {
+		picture = annals_of_the_fulani_jihad
+		potential = {
+			tag = C71
+			NOT = {has_country_flag = taken_wd_expand}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_country_flag = taken_wd_expand
+			add_accepted_culture = sudirk
+		}
+	}
+
+	ufw_expand = {
+		picture = annals_of_the_fulani_jihad
+		potential = {
+			tag = C69
+			NOT = {has_country_flag = taken_ufw_expand}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_country_flag = taken_ufw_expand
+			add_country_modifier = {
+				name = the_statue_of_liberty
+				duration = -1
+			}
+		}
+	}
+
+	inner_expand = {
+		picture = annals_of_the_fulani_jihad
+		potential = {
+			OR = {
+				tag = C64
+				tag = C65
+				tag = C66
+			}
+			NOT = {accepted_culture = sakirn}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			add_accepted_culture = sakirn
+		}
+	}
+}

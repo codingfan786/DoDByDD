@@ -1,0 +1,67 @@
+country_event = {
+	id = 9870001
+	title = "A Great War"
+	desc = "event9780001desc"
+	picture = "supportwar" 
+	
+
+	trigger = {
+		NOT = {has_country_flag = pseudo_gw}
+		
+		war_countries = {
+			AND = {
+				is_greater_power = yes
+				war_countries = {
+					is_greater_power = yes
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = pseudo_gw
+	}
+
+	option = {
+		name = "Our nation is at stake!"
+	}
+}
+
+country_event = {
+	id = 9870002
+	title = "Peace in our time."
+	desc = "We are no longer involved in a conflict between two Great Powers and so our war score costs have returned to normal."
+	picture = "supportwar" 
+	
+
+	trigger = {
+		has_country_flag = pseudo_gw
+		NOT = {
+			war_countries = {
+				AND = {
+					is_greater_power = yes
+					war_countries = {
+						is_greater_power = yes
+					}
+				}
+			}
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		clr_country_flag = pseudo_gw
+	}
+
+	option = {
+		name = "Until next time..."
+	}
+}
