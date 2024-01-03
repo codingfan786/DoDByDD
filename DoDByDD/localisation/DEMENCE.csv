@@ -207,4 +207,4 @@ aesthetics_tech3;Realism;x
 aesthetics_tech4;Impressionism;x
 aesthetics_tech5;Expressionism;x
 aesthetics_tech6;Mass Culture & the Avant-Garde;x
-provinceeventdesc;When taking land you can only take provinces that border you or a sea tile. (This event will also fix stated colonies.)\n§RMORE SPECIFICALLY:§BYou keep any provinces in a state that you neighbour, and if you neighbour no provinces you keep the coast.;x
+provinceeventdesc;When taking land you can only take provinces that border you or a sea tile. (This event will also fix stated colonies.)\n§RMORE SPECIFICALLY:§BYou keep any provinces in a state that you neighbour, and if you neighbour no provinces in a state you keep the coastline of that state.;x
