@@ -835,6 +835,7 @@ railroad = {
 		province = yes
 
 		#one_per_state = yes
+		#spawn_railway_track = yes
 	}
 
 	state_deselector = {

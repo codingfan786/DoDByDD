@@ -1,0 +1,96 @@
+political_decisions = {
+	inf_setup = {
+		potential = {
+			tag = BAN
+			NOT= {has_country_flag = inf_setup}
+		}
+		allow = {}
+		effect = {
+			C56 = {civilized = yes} #unrelated
+			C07 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}
+			C08 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}
+			C09 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}
+			C10 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}
+			C11 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}
+			any_country = {
+				leadership = 40
+			}
+
+			any_country = {
+				limit = {
+					NOT = {total_amount_of_divisions = 1}
+				}
+				capital_scope = {
+					sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		        	sub_unit = {type = artillery value = current}
+		            sub_unit = {type = hussar value = current}
+				}
+				random_owned = {
+					limit = {
+						is_capital = no
+					}
+					sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		        	sub_unit = {type = artillery value = current}
+		            sub_unit = {type = hussar value = current}
+				}
+			}
+
+			set_country_flag = inf_setup
+			any_country = {
+				limit = {
+					NOT = {flintlock_rifles=1}
+				}
+				activate_technology = flintlock_rifles
+				set_country_flag = get_vozova
+			}
+		}
+	}
+
+	change_to_infantry = {
+		picture = switch_to_army_tech
+		potential = {
+			has_country_flag = get_vozova
+			NOT = {has_country_flag = switch_to_infantry}
+		}
+		allow = {}
+		effect = {set_country_flag = switch_to_infantry}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					year = 1840
+				}
+				NOT = {
+					OR = {
+						tag = C07
+						tag = C08
+						tag = C09
+						tag = C10
+						tag = C11
+						tag = C40
+						tag = C41
+						tag = C34
+						tag = C36
+						tag = C35
+					}
+				}
+			}
+		}
+	}
+
+}
