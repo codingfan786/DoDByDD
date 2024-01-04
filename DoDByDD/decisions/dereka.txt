@@ -11,7 +11,12 @@ political_decisions = {
 					primary_culture = antlanin
 					NOT = {accepted_culture = memphin}
 				}
-				tag = C72
+				AND = {
+					tag = C72
+					NOT = {accepted_culture = memphin}
+					NOT = {accepted_culture = antlanin}
+				}
+				
 			}
 		}
 		allow = {

@@ -345,12 +345,7 @@ political_decisions = {
 			#state_n_government = 1
 			year = 1840
 			OR = {
-				C16 = {
-					exists = no
-					all_core = {
-						owner = {tag = THIS}
-					}
-				}
+				owns = 308
 				C12 = {
 					exists = no
 					all_core = {
