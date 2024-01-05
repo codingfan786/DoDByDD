@@ -172,7 +172,13 @@ conquest = {
 		}
 		NOT = { is_our_vassal = THIS }
 		# only one state or unciv
-		NOT = { number_of_states = 2 }
+		OR = {
+			NOT = { number_of_states = 2 }
+			AND = {
+				NOT = { number_of_states = 3 }
+				NOT = {total_pops = 1000000}
+			}
+		}
 		THIS = {nationalism_n_imperialism = 1}
 		OR = {
 			AND = {
@@ -186,9 +192,9 @@ conquest = {
 		is_independant = yes
 	}
 
-	badboy_factor = 4.5
+	badboy_factor = 1800
 	prestige_factor = 1
-	peace_cost_factor = 60
+	peace_cost_factor = 0.012
 	penalty_factor = 1
 	
 	break_truce_prestige_factor = 5
@@ -234,7 +240,7 @@ civil_war = {
 
 	badboy_factor = 0
 	prestige_factor = 1
-	peace_cost_factor = 80
+	peace_cost_factor = 0.016
 	penalty_factor = 1
 	is_civil_war = yes #this is a civil war
 
@@ -371,7 +377,7 @@ acquire_core_state = {
 	
 	badboy_factor = 0
 	prestige_factor = 5
-	peace_cost_factor = 0.7
+	peace_cost_factor = 0.006
 	penalty_factor = 1
 	always = yes
 
@@ -412,6 +418,7 @@ acquire_core_state = {
 	}
 
 	po_demand_state = yes
+	po_remove_prestige = yes
 	
 	war_name = WAR_TAKE_CORE_NAME
 	
@@ -433,7 +440,7 @@ annex_core_country = {
 
 	badboy_factor = 0
 	prestige_factor = 1
-	peace_cost_factor = 75
+	peace_cost_factor = 0.014
 	penalty_factor = 1
 	always = yes
 
@@ -462,7 +469,13 @@ annex_core_country = {
 				}
 			}
 		}
-		NOT = { number_of_states = 2 }
+		OR = {
+			NOT = { number_of_states = 2 }
+			AND = {
+				NOT = { number_of_states = 3 }
+				NOT = {total_pops = 1000000}
+			}
+		}
 		THIS = {nationalism_n_imperialism = 1}
 	}
 
@@ -493,7 +506,7 @@ acquire_substate_region = {
 	
 	badboy_factor = 1
 	prestige_factor = 2
-	peace_cost_factor = 1
+	peace_cost_factor = 0.006
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -539,6 +552,7 @@ acquire_substate_region = {
 	}
 
 	po_demand_state = yes
+	po_remove_prestige = yes
 	
 	war_name = WAR_TAKE_NAME
 	
@@ -561,7 +575,7 @@ acquire_state = {
 	
 	badboy_factor = 1
 	prestige_factor = 2
-	peace_cost_factor = 1
+	peace_cost_factor = 0.006
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -628,6 +642,7 @@ acquire_state = {
 	}		
 
 	po_demand_state = yes
+	po_remove_prestige = yes
 	
 	war_name = WAR_TAKE_NAME
 	
@@ -646,9 +661,9 @@ place_in_the_sun = {
 	is_triggered_only = yes
 	months = 12
 
-	badboy_factor = .8
+	badboy_factor = 0.8
 	prestige_factor = 2
-	peace_cost_factor = 1.8
+	peace_cost_factor = 0.006
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -695,6 +710,7 @@ place_in_the_sun = {
 	}
 
 	po_demand_state = yes
+	po_remove_prestige = yes
 
 	war_name = WAR_COLONIAL_NAME
 	
@@ -830,7 +846,7 @@ free_peoples = {
 
 	badboy_factor = 1.5
 	prestige_factor = 1
-	peace_cost_factor = 1
+	peace_cost_factor = 0.75
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -1116,9 +1132,9 @@ humiliate = {
 	is_triggered_only = yes
 	months = 12
 
-	badboy_factor = 1.5
+	badboy_factor = 600
 	prestige_factor = 1
-	peace_cost_factor = 15
+	peace_cost_factor = 0.003
 	penalty_factor = 1
 	
 	break_truce_prestige_factor = 1
@@ -1159,7 +1175,7 @@ demand_concession_casus_belli = {
 	
 	badboy_factor = 0.6
 	prestige_factor = 0.1
-	peace_cost_factor = 1.2
+	peace_cost_factor = 0.006
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -1202,6 +1218,7 @@ demand_concession_casus_belli = {
 	}
 	
 	po_demand_state = yes
+	po_remove_prestige = yes
 	
 	war_name = WAR_CONCESSION_NAME
 
@@ -1222,9 +1239,9 @@ establish_protectorate_casus_belli = {
 	construction_speed = 1.2
 	crisis = no
 	
-	badboy_factor = 3
+	badboy_factor = 1000
 	prestige_factor = 1
-	peace_cost_factor = 60
+	peace_cost_factor = 0.012
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 5
@@ -1250,7 +1267,13 @@ establish_protectorate_casus_belli = {
 		
 		civilized = no
 
-		NOT = { number_of_states = 2 }
+		OR = {
+			NOT = { number_of_states = 2 }
+			AND = {
+				NOT = { number_of_states = 3 }
+				NOT = {total_pops = 1000000}
+			}
+		}
 		THIS = {nationalism_n_imperialism = 1}
 		
 	}
@@ -1392,7 +1415,7 @@ unification_casus_belli = {
 	
 	badboy_factor = 0
 	prestige_factor = 1
-	peace_cost_factor = 1
+	peace_cost_factor = 0.006
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -1451,6 +1474,7 @@ unification_casus_belli = {
 	}
 	
 	po_demand_state = yes
+	po_remove_prestige = yes
 	
 	war_name = WAR_UNIFICATION_NAME
 
@@ -1471,8 +1495,8 @@ unification_annex_casus_belli = {
 	crisis = no
 	
 	badboy_factor = 0
-	prestige_factor = 0
-	peace_cost_factor = 75
+	prestige_factor = 1
+	peace_cost_factor = 0.014
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -1539,7 +1563,7 @@ rude_boy = {
 
 	badboy_factor = 0
 	prestige_factor = 0.5
-	peace_cost_factor = 1.5
+	peace_cost_factor = 0.01
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -1754,7 +1778,13 @@ cheap_conquest = {
 		AND = {THIS = {has_country_flag = pseudo_gw} has_country_flag = pseudo_gw}
 		NOT = { is_our_vassal = THIS }
 		# only one state or unciv
-		NOT = { number_of_states = 2 }
+		OR = {
+			NOT = { number_of_states = 2 }
+			AND = {
+				NOT = { number_of_states = 3 }
+				NOT = {total_pops = 1000000}
+			}
+		}
 		THIS = {nationalism_n_imperialism = 1}
 		OR = {
 			AND = {
@@ -1768,9 +1798,9 @@ cheap_conquest = {
 		is_independant = yes
 	}
 
-	badboy_factor = 4.5
+	badboy_factor = 1800
 	prestige_factor = 1
-	peace_cost_factor = 30
+	peace_cost_factor = 0.006
 	penalty_factor = 1
 	
 	break_truce_prestige_factor = 5
@@ -1809,7 +1839,7 @@ cheap_acquire_core_state = {
 	
 	badboy_factor = 0
 	prestige_factor = 5
-	peace_cost_factor = 0.35
+	peace_cost_factor = 0.003
 	penalty_factor = 1
 	always = yes
 
@@ -1847,6 +1877,7 @@ cheap_acquire_core_state = {
 	}
 
 	po_demand_state = yes
+	po_remove_prestige = yes
 	
 	war_name = WAR_TAKE_CORE_NAME
 	
@@ -1866,7 +1897,7 @@ cheap_annex_core_country = {
 
 	badboy_factor = 0
 	prestige_factor = 1
-	peace_cost_factor = 35
+	peace_cost_factor = 0.007
 	penalty_factor = 1
 	always = yes
 
@@ -1892,7 +1923,13 @@ cheap_annex_core_country = {
 				}
 			}
 		}
-		NOT = { number_of_states = 2 }
+		OR = {
+			NOT = { number_of_states = 2 }
+			AND = {
+				NOT = { number_of_states = 3 }
+				NOT = {total_pops = 1000000}
+			}
+		}
 		THIS = {nationalism_n_imperialism = 1}
 	}
 
@@ -1921,7 +1958,7 @@ cheap_acquire_substate_region = {
 	
 	badboy_factor = 1
 	prestige_factor = 2
-	peace_cost_factor = 0.5
+	peace_cost_factor = 0.003
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -1964,6 +2001,7 @@ cheap_acquire_substate_region = {
 	}
 
 	po_demand_state = yes
+	po_remove_prestige = yes
 	
 	war_name = WAR_TAKE_NAME
 	
@@ -1983,7 +2021,7 @@ cheap_acquire_state = {
 	
 	badboy_factor = 1
 	prestige_factor = 2
-	peace_cost_factor = 0.5
+	peace_cost_factor = 0.003
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -2047,6 +2085,7 @@ cheap_acquire_state = {
 	}		
 
 	po_demand_state = yes
+	po_remove_prestige = yes
 	
 	war_name = WAR_TAKE_NAME
 	
@@ -2063,9 +2102,9 @@ cheap_place_in_the_sun = {
 	is_triggered_only = yes
 	months = 12
 
-	badboy_factor = .8
+	badboy_factor = 0.8
 	prestige_factor = 2
-	peace_cost_factor = 0.9
+	peace_cost_factor = 0.003
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -2109,6 +2148,7 @@ cheap_place_in_the_sun = {
 	}
 
 	po_demand_state = yes
+	po_remove_prestige = yes
 
 	war_name = WAR_COLONIAL_NAME
 	
@@ -2177,7 +2217,7 @@ cheap_demand_concession_casus_belli = {
 	
 	badboy_factor = 0.6
 	prestige_factor = 0.1
-	peace_cost_factor = 0.6
+	peace_cost_factor = 0.003
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -2217,6 +2257,7 @@ cheap_demand_concession_casus_belli = {
 	}
 	
 	po_demand_state = yes
+	po_remove_prestige = yes
 	
 	war_name = WAR_CONCESSION_NAME
 
@@ -2235,9 +2276,9 @@ cheap_establish_protectorate_casus_belli = {
 	construction_speed = 1.2
 	crisis = no
 	
-	badboy_factor = 3
+	badboy_factor = 1000
 	prestige_factor = 1
-	peace_cost_factor = 30
+	peace_cost_factor = 0.006
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 5
@@ -2260,7 +2301,13 @@ cheap_establish_protectorate_casus_belli = {
 		
 		civilized = no
 
-		NOT = { number_of_states = 2 }
+		OR = {
+			NOT = { number_of_states = 2 }
+			AND = {
+				NOT = { number_of_states = 3 }
+				NOT = {total_pops = 1000000}
+			}
+		}
 		THIS = {nationalism_n_imperialism = 1}
 		
 	}
@@ -2290,7 +2337,7 @@ cheap_unification_casus_belli = {
 	
 	badboy_factor = 0
 	prestige_factor = 1
-	peace_cost_factor = 0.5
+	peace_cost_factor = 0.003
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -2346,6 +2393,7 @@ cheap_unification_casus_belli = {
 	}
 	
 	po_demand_state = yes
+	po_remove_prestige = yes
 	
 	war_name = WAR_UNIFICATION_NAME
 
@@ -2364,8 +2412,8 @@ cheap_unification_annex_casus_belli = {
 	crisis = no
 	
 	badboy_factor = 0
-	prestige_factor = 0
-	peace_cost_factor = 35
+	prestige_factor = 1
+	peace_cost_factor = 0.007
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
