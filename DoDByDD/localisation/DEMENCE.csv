@@ -141,10 +141,12 @@ koullan_to_celian_desc;The Dotante Union at one point unified all Koullan, Glada
 gladan_to_celian_desc;Northwestern Dotante had long been our staunch subject and supporter in the past conflicts over control of the entire Dotante region. Now that our position has been solidified in the south we can turn our entire attention towards the northwest.;x
 celian_west_desc;We need more living room for our people!;x
 ard_unification_title;Unify Ard;x
-ciric_to_palish_title;Integrate the Pale;x
+#ciric_to_palish_title;Integrate the Pale;x
+ciric_to_palish_title;Integrate North Ard;x
 ard_to_ciric_title;Statify western Ard;x
 ard_unification_desc;The former Kingdom of Ard, which was split following a lengthy period of instability, has formally reunited.;x
-ciric_to_palish_desc;The Pale and it's people have long been marginalized and denied their own self governance. Having thrown of our own yoke in recent years we may find sympathy among the Palish people;x
+#ciric_to_palish_desc;The Pale and it's people have long been marginalized and denied their own self governance. Having thrown of our own yoke in recent years we may find sympathy among the Palish people;x
+ciric_to_palish_desc;Fill;x
 ard_to_ciric_desc;Having reunified the heartland of the Arden Kingdom, we must now look towards reclaiming the western outliers.;x
 darren_to_pasan_title;Integrate Pasan;x
 docen_to_iquan_title;Integrate Iquan;x
@@ -208,3 +210,5 @@ aesthetics_tech4;Impressionism;x
 aesthetics_tech5;Expressionism;x
 aesthetics_tech6;Mass Culture & the Avant-Garde;x
 provinceeventdesc;When taking land you can only take provinces that border you or a sea tile. (This event will also fix stated colonies.)\n§RMORE SPECIFICALLY:§BYou keep any provinces in a state that you neighbour, and if you neighbour no provinces in a state you keep the coastline of that state.;x
+sudirk_to_wif_title;Integrate the Wif;x
+sudirk_to_wif_desc;Fill;x

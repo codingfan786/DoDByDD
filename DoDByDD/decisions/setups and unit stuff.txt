@@ -19,6 +19,8 @@ political_decisions = {
 			any_country = {
 				limit = {
 					NOT = {total_amount_of_divisions = 1}
+					NOT = {tag = REB}
+					exists = yes
 				}
 				capital_scope = {
 					sub_unit = {type = infantry value = current}

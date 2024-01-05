@@ -882,7 +882,7 @@ nationalist_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
-		factor = 3
+		factor = 0 #was 3. this rebel is broken with the province CB system
 		
 		modifier = {
 			factor = 0
@@ -905,7 +905,7 @@ nationalist_rebels = {
 		 	}
 		}
 		modifier = {
-			factor = 3
+			factor = 3 #was 3
 				location = {
 					any_core = {
 						is_primary_culture = THIS

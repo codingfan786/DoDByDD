@@ -40,7 +40,8 @@ political_decisions = {
 		picture = manifest_destiny
 		potential = {
 			tag = C47
-			NOT = {accepted_culture = palish}
+			#NOT = {accepted_culture = palish}
+			NOT = {accepted_culture = north_arden}
 		}
 		allow = {
 			nationalism_n_imperialism = 1
@@ -49,7 +50,8 @@ political_decisions = {
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
-			add_accepted_culture = palish
+			#add_accepted_culture = palish
+			add_accepted_culture = north_arden
 		}
 	}
 

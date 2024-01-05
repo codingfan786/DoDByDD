@@ -4,6 +4,7 @@
 
 capital = 79
 primary_culture = ciric
+culture = palish
 religion = catholic
 government = democracy
 plurality = 30

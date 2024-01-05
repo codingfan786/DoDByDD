@@ -62,7 +62,7 @@ save_the_nation0.5  = {
 	
 	#global_immigrant_attract = -0.15
 	land_organisation = 0.0125
-	mobilisation_size = 0.005
+	#mobilisation_size = 0.005
 	supply_consumption = -0.025
 	icon = 9
 }
@@ -77,7 +77,7 @@ save_the_nation1  = {
 	
 	#global_immigrant_attract = -0.3
 	land_organisation = 0.025
-	mobilisation_size = 0.01
+	#mobilisation_size = 0.01
 	supply_consumption = -0.05
 	icon = 9
 }
@@ -92,7 +92,7 @@ save_the_nation1.5  = {
 	
 	global_immigrant_attract = -0.45
 	land_organisation = 0.05
-	mobilisation_size = 0.015
+	#mobilisation_size = 0.015
 	supply_consumption = -0.1
 	mobilization_impact = 0.125
 	mobilisation_economy_impact = -0.0625
@@ -109,7 +109,7 @@ save_the_nation2  = {
 	
 	global_immigrant_attract = -0.60
 	land_organisation = 0.075
-	mobilisation_size = 0.02
+	#mobilisation_size = 0.02
 	supply_consumption = -0.15
 	mobilization_impact = 0.25
 	mobilisation_economy_impact = -0.125
@@ -126,7 +126,7 @@ save_the_nation2.5  = {
 	
 	global_immigrant_attract = -0.75
 	land_organisation = 0.0875
-	mobilisation_size = 0.025
+	#mobilisation_size = 0.025
 	supply_consumption = -0.175
 	mobilization_impact = 0.375
 	mobilisation_economy_impact = -0.19
@@ -143,7 +143,7 @@ save_the_nation3  = {
 	
 	global_immigrant_attract = -0.9
 	land_organisation = 0.1
-	mobilisation_size = 0.03
+	#mobilisation_size = 0.03
 	supply_consumption = -0.20
 	mobilization_impact = 0.5
 	mobilisation_economy_impact = -0.25
@@ -160,7 +160,7 @@ save_the_nation3.5  = {
 	
 	global_immigrant_attract = -1.05
 	land_organisation = 0.15
-	mobilisation_size = 0.035
+	#mobilisation_size = 0.035
 	supply_consumption = -0.25
 	mobilization_impact = 0.75
 	mobilisation_economy_impact = -0.375
@@ -177,7 +177,7 @@ save_the_nation4  = {
 	
 	global_immigrant_attract = -1.2
 	land_organisation = 0.2
-	mobilisation_size = 0.04
+	#mobilisation_size = 0.04
 	supply_consumption = -0.30
 	mobilization_impact = 1
 	mobilisation_economy_impact = -0.5
@@ -195,7 +195,7 @@ save_the_nation4.5  = {
 	global_immigrant_attract = -1.35
 	land_organisation = 0.225
 	land_unit_start_experience = 2.5
-	mobilisation_size = 0.045
+	#mobilisation_size = 0.045
 	supply_consumption = -0.30
 	mobilization_impact = 1
 	mobilisation_economy_impact = -0.58
@@ -212,7 +212,7 @@ save_the_nation5  = {
 	global_immigrant_attract = -1.5
 	land_organisation = 0.25
 	land_unit_start_experience = 5
-	mobilisation_size = 0.05
+	#mobilisation_size = 0.05
 	supply_consumption = -0.30
 	mobilization_impact = 1
 	mobilisation_economy_impact = -0.66

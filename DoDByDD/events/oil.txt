@@ -1,0 +1,131 @@
+province_event = {
+	id = 9543564
+	title = "Oil Prospecting"
+	desc = "Oil has been found in $PROVINCENAME$!"
+
+	trigger = {
+		NOT = {trade_goods = oil}
+		year = 1870
+		OR = {
+			province_id = 367
+			province_id = 353
+			province_id = 364
+			province_id = 337
+			province_id = 354
+			province_id = 330
+			province_id = 429
+			province_id = 301
+			province_id = 485
+			province_id = 428
+			province_id = 403
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+			year = 1900
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	immediate = {
+		trade_goods = oil
+		any_pop = {
+			limit = {
+				type = farmers
+			}
+			pop_type = labourers
+		}
+		life_rating = 5
+	}
+
+	option = {
+		name = "Fantastic!"
+	}
+}
+
+province_event = {
+	id = 9543565
+	title = "Rubber Expedition"
+	desc = "Rubber has been found in $PROVINCENAME$!"
+
+	trigger = {
+		NOT = {trade_goods = rubber}
+		year = 1870
+		OR = {
+			province_id = 217
+			province_id = 206
+			province_id = 223
+			province_id = 193
+			province_id = 242
+			province_id = 165
+			province_id = 156
+			province_id = 249
+			province_id = 228
+			province_id = 153
+			province_id = 172
+			province_id = 247
+			province_id = 280
+			province_id = 276
+			province_id = 303
+			province_id = 105
+			province_id = 114
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+			year = 1900
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	immediate = {
+		trade_goods = rubber
+		any_pop = {
+			limit = {
+				type = farmers
+			}
+			pop_type = labourers
+		}
+		life_rating = 5
+	}
+
+	option = {
+		name = "Fantastic!"
+	}
+}
