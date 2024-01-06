@@ -434,7 +434,6 @@ liberal_group = {
 	
 	anarcho_liberal = {
 		color = { 150 150 10 }
-		#date = 1836.1.1
 		
 		add_political_reform = {
 			base = 0

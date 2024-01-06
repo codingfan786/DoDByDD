@@ -19,7 +19,7 @@ non_state_culture_literacy = 0.3
 
 #========================= H O U S E - O F - L O R D S =========================
 
-ruling_party = C53_conservative_92
+ruling_party = C53_anarcho_liberal_93
 upper_house = {
 fascist = 0
 reactionary = 0
