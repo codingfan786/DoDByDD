@@ -60,6 +60,31 @@ political_decisions = {
 				activate_technology = flintlock_rifles
 				set_country_flag = get_vozova
 			}
+
+
+			any_country = {
+				limit = {
+					OR = {
+						tag = C13
+						tag = C12
+						tag = C14
+						tag = C20
+						tag = C16
+						tag = C21
+						tag = C17
+						tag = C18
+						tag = C22
+						tag = C24
+						tag = C23
+						tag = C27
+						tag = C25
+					}
+				}
+				any_pop = {
+					reduce_pop = 0.7
+				}
+				#annex_to = C63
+			}
 		}
 	}
 

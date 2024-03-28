@@ -63,17 +63,60 @@ political_decisions = {
 		}
 		allow = {
 			state_n_government = 1
-			C41 = {all_core = {owner = {tag = THIS}}}
+			#C41 = {all_core = {owner = {tag = THIS}}}
+
+			481 = {owner = {tag = THIS}}
+			480 = {owner = {tag = THIS}}
+			483 = {owner = {tag = THIS}}
+			478 = {owner = {tag = THIS}}
+			472 = {owner = {tag = THIS}}
+			468 = {owner = {tag = THIS}}
+			466 = {owner = {tag = THIS}}
+			475 = {owner = {tag = THIS}}
+
 
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}
 		}
 		effect = {
 			set_country_flag = celian_went_west
-			C41 = {
-				all_core = {
-					add_core = THIS
-					add_province_modifier = { name = settling_west duration = 1825 }
-				}
+			#C41 = {
+			#	all_core = {
+			#		add_core = THIS
+			#		add_province_modifier = { name = settling_west duration = 1825 }
+			#	}
+			#}
+
+			481 = {
+				add_core = THIS
+				add_province_modifier = { name = settling_west duration = 1825 }
+			}
+			480 = {
+				add_core = THIS
+				add_province_modifier = { name = settling_west duration = 1825 }
+			}
+			483 = {
+				add_core = THIS
+				add_province_modifier = { name = settling_west duration = 1825 }
+			}
+			478 = {
+				add_core = THIS
+				add_province_modifier = { name = settling_west duration = 1825 }
+			}
+			472 = {
+				add_core = THIS
+				add_province_modifier = { name = settling_west duration = 1825 }
+			}
+			468 = {
+				add_core = THIS
+				add_province_modifier = { name = settling_west duration = 1825 }
+			}
+			466 = {
+				add_core = THIS
+				add_province_modifier = { name = settling_west duration = 1825 }
+			}
+			475 = {
+				add_core = THIS
+				add_province_modifier = { name = settling_west duration = 1825 }
 			}
 		}
 	}

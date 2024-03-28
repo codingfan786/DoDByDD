@@ -4,3 +4,9 @@ add_core = C46
 add_core = C53
 trade_goods = fish
 life_rating = 33
+
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}

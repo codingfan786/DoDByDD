@@ -2,4 +2,4 @@ owner = C27
 controller = C27
 add_core = C27
 trade_goods = cattle
-life_rating = 35
+life_rating = 33

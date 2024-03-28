@@ -49,7 +49,7 @@ school_reforms = no_schools
 
 military_constructions = yes_military_constructions
 land_reform = yes_land_reform
-foreign_officers = yes_foreign_officers
+#foreign_officers = yes_foreign_officers
 
 # Technologies
 post_napoleonic_thought = 1

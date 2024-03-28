@@ -1,5 +1,5 @@
-owner = C40
-controller = C40
-add_core = C40
+owner = C75
+controller = C75
+add_core = C75
 trade_goods = sulphur
 life_rating = 38

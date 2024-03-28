@@ -3,3 +3,8 @@ controller = C51
 add_core = C51
 trade_goods = iron
 life_rating = 33
+state_building = {
+	level = 1
+	building = clipper_shipyard
+	upgrade = yes
+}

@@ -1,189 +1,189 @@
 army = {
 	name = "Army" #done
-	location = 475
+	location = 447
 	regiment = {
 		name= "Infantry"
 		type = infantry
-		home = 475
-	}
-
-	regiment = {
-		name= "Infantry"
-		type = infantry
-		home = 480
+		home = 447
 	}
 
 	regiment = {
 		name= "Infantry"
 		type = infantry
-		home = 480
+		home = 447
 	}
 
 	regiment = {
 		name= "Infantry"
 		type = infantry
-		home = 480
+		home = 447
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 447
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 480
+		home = 452
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 480
+		home = 452
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 481
+		home = 452
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 481
+		home = 452
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 481
+		home = 452
 	}
 
 	regiment = {
 		name= "Hussar"
 		type = hussar
-		home = 481
+		home = 452
 	}
 }
 army = {
 	name = "Army" #done
-	location = 472
+	location = 457
 	regiment = {
 		name= "Infantry"
 		type = infantry
-		home = 472
-	}
-
-	regiment = {
-		name= "Infantry"
-		type = infantry
-		home = 472
+		home = 457
 	}
 
 	regiment = {
 		name= "Infantry"
 		type = infantry
-		home = 472
+		home = 457
 	}
 
 	regiment = {
 		name= "Infantry"
 		type = infantry
-		home = 478
+		home = 457
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 457
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 478
+		home = 462
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 478
+		home = 462
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 478
+		home = 462
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 475
+		home = 462
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 475
+		home = 462
 	}
 
 	regiment = {
 		name= "Hussar"
 		type = hussar
-		home = 475
+		home = 462
 	}
 }
 army = {
 	name = "Army" #done
-	location = 468
+	location = 462
 	regiment = {
 		name= "Infantry"
 		type = infantry
-		home = 468
-	}
-
-	regiment = {
-		name= "Infantry"
-		type = infantry
-		home = 468
+		home = 462
 	}
 
 	regiment = {
 		name= "Infantry"
 		type = infantry
-		home = 468
+		home = 462
 	}
 
 	regiment = {
 		name= "Infantry"
 		type = infantry
-		home = 468
+		home = 462
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 462
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 468
+		home = 456
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 466
+		home = 456
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 466
+		home = 456
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 466
+		home = 456
 	}
 
 	regiment = {
 		name= "Artillery"
 		type = artillery
-		home = 466
+		home = 456
 	}
 
 	regiment = {
 		name= "Hussar"
 		type = hussar
-		home = 466
+		home = 456
 	}
 }

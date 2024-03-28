@@ -190,7 +190,7 @@ C06;Sotanland;x
 C12;Neasia Camanni;x
 C14;Moluvi;x
 C15;TAG RESERVED FOR GHOSTTRICKS;x
-C16;Thuacan Ntecelize;x
+C16;Guammai Land;x
 C17;Taibhu Pamenew;x
 C18;Saintdan;x
 C19;Puzil;x
@@ -220,6 +220,9 @@ C60;Hrainber Cayslands;x
 C61;Kyrcos;x
 C62;Raelaslands;x
 C63;Jislands;x
+C73;Dacia;x
+C74;Tarmargin;x
+C75;Vocroa;x
 C01_ADJ; ;x
 C02_ADJ; ;x
 C03_ADJ; ;x
@@ -229,7 +232,7 @@ C12_ADJ; ;x
 C13_ADJ; ;x
 C14_ADJ; ;x
 C15_ADJ; ;x
-C16_ADJ; ;x
+C16_ADJ;Guammai;x
 C17_ADJ; ;x
 C18_ADJ; ;x
 C19_ADJ; ;x
@@ -260,3 +263,56 @@ C60_ADJ; ;x
 C61_ADJ; ;x
 C62_ADJ; ;x
 C63_ADJ; ;x
+C73_ADJ; ;x
+C74_ADJ; ;x
+C75_ADJ; ;x
+C37;Tawantinsuyu;x
+C37_ADJ;Tawantinsuyu;x
+C49;Guvernorát;x
+C48;Královstvím;x
+C46;Buld;x
+C50;Czervenia;x
+C47;Ciricníá;x
+C42;Stastná Dynastie;x
+C45;Severní Kmen;x
+C43;Celian Filozofický Stát;x
+C29;Kopec Domu;x
+C33;Horský Domov;x
+C30;Iquan Filosofiya;x
+C26;Obchodník;x
+C13;Kaeast;x
+C20;Nairepa;x
+C40;Nemecko;x
+C41;Rakousko;x
+C07;Vinband;x
+C08;Tomeni;x
+C09;Poresband;x
+C10;Fintheand;x
+C05;Dirksan;x
+C11;Menší Lombia;x
+C25;Calypo;x
+C27;Zam;x
+C49_ADJ;Guvernorá;x
+C48_ADJ;Království;x
+C46_ADJ;Buld;x
+C50_ADJ;Czerian;x
+C47_ADJ;Ciric;x
+C42_ADJ;Stastná;x
+C45_ADJ;Kmen;x
+C43_ADJ;Celian;x
+C29_ADJ;Kopec;x
+C33_ADJ;Horský;x
+C30_ADJ;Iquan;x
+C26_ADJ;Obchodní;x
+C13_ADJ;Kae;x
+C20_ADJ;Naire;x
+C40_ADJ;Nemecko;x
+C41_ADJ;Rako;x
+C07_ADJ;Vin;x
+C08_ADJ;Tome;x
+C09_ADJ;Poreso;x
+C10_ADJ;Fint;x
+C05_ADJ;Dirk;x
+C11_ADJ;Lombian;x
+C25_ADJ;Calypo;x
+C27_ADJ;Zamfolk;x

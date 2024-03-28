@@ -51,6 +51,9 @@ C38="countries/C38.txt"
 C39="countries/C39.txt"
 C40="countries/C40.txt"
 C41="countries/C41.txt"
+C73="countries/C73.txt"
+C74="countries/C74.txt"
+C75="countries/C75.txt"
 
 #region 5
 C42="countries/C42.txt"
@@ -89,10 +92,10 @@ C70="countries/C70.txt" #reg 1 outer top right
 C71="countries/C71.txt" #reg 1 deer/C05 replacer
 C72="countries/C72.txt" #reg 1 into reg 2 formable
 
+
+
+
 #extras
-C73="countries/C73.txt"
-C74="countries/C74.txt"
-C75="countries/C75.txt"
 C76="countries/C76.txt"
 C77="countries/C77.txt"
 C78="countries/C78.txt"

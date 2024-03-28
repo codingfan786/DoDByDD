@@ -84,8 +84,8 @@ political_decisions = {
 			}
 		}
 		allow = {
-			state_n_government = 1
-			owns = 289
+			ideological_thought = 1
+			controls = 289
 			NOT = {has_country_modifier = lake_cutoff_cooldown_one}
 		}
 		effect = {
@@ -177,8 +177,8 @@ political_decisions = {
 			}
 		}
 		allow = {
-			state_n_government = 1
-			owns = 320
+			ideological_thought = 1
+			controls = 320
 			NOT = {has_country_modifier = lake_cutoff_cooldown_two}
 		}
 		effect = {
@@ -307,11 +307,11 @@ political_decisions = {
 			}
 		}
 		allow = {
-			state_n_government = 1
+			ideological_thought = 1
 			AND = {
-				owns = 341
-				owns = 346
-				owns = 345
+				controls = 341
+				controls = 346
+				controls = 345
 			}
 
 			NOT = {has_country_modifier = lake_cutoff_cooldown_three}
@@ -408,11 +408,11 @@ political_decisions = {
 			}
 		}
 		allow = {
-			state_n_government = 1
+			ideological_thought = 1
 			AND = {
-				owns = 357
-				owns = 361
-				owns = 366
+				controls = 357
+				controls = 361
+				controls = 366
 			}
 
 			NOT = {has_country_modifier = lake_cutoff_cooldown_four}

@@ -1,5 +1,5 @@
 owner = C36
 controller = C36
-add_core = C36
+add_core = C34
 trade_goods = coal
 life_rating = 38

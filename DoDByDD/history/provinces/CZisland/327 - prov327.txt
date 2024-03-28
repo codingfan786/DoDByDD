@@ -2,4 +2,4 @@ owner = C20
 controller = C20
 add_core = C20
 trade_goods = fish
-life_rating = 35
+life_rating = 33

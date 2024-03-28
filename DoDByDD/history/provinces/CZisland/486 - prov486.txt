@@ -15,3 +15,15 @@ state_building = {
 }
 naval_base = 1
 
+state_building = {
+	level = 1
+	building = clipper_shipyard
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steamer_shipyard
+	upgrade = yes
+}
+
+

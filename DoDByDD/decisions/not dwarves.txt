@@ -74,4 +74,71 @@ political_decisions = {
 			}
 		}
 	}
+
+	integrate_wall = {
+		picture = the_heligoland_question
+		potential = {
+			OR = {
+				tag = C33
+				tag = C29
+				tag = C30
+			}
+			exists = C32
+			NOT = {has_global_flag = wall_integrated}
+		}
+		allow = {
+			state_n_government = 1
+			C32 = {war = no}
+			is_sphere_leader_of = C32
+			OR = {
+				C32 = {is_vassal = no}
+				is_our_vassal = C32
+			}
+			C32 = {NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}}
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					is_capital = yes
+					owner = {tag = C33}
+				}
+				C32 = {
+					any_owned = {
+						remove_core = F32
+						add_core = F33
+						secede_province = THIS
+						add_province_modifier = { name = province_changer duration = -1 }
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					is_capital = yes
+					owner = {tag = C30}
+				}
+				C32 = {
+					any_owned = {
+						remove_core = F32
+						add_core = F30
+						secede_province = THIS
+						add_province_modifier = { name = province_changer duration = -1 }
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					is_capital = yes
+					owner = {tag = C29}
+				}
+				C32 = {
+					any_owned = {
+						remove_core = F32
+						add_core = F29
+						secede_province = THIS
+						add_province_modifier = { name = province_changer duration = -1 }
+					}
+				}
+			}
+		}
+	}
 }

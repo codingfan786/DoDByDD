@@ -3,3 +3,8 @@ controller = C55
 add_core = C55
 trade_goods = grain
 life_rating = 33
+state_building = {
+	level = 1
+	building = clipper_shipyard
+	upgrade = yes
+}
