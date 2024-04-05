@@ -68,15 +68,15 @@ political_decisions = {
 			}
 			any_pop = {
 				scaled_militancy = {
-					ideology = reactionary
+					ideology = centralist
 					factor = 3
 				}
 				scaled_militancy = {
-					ideology = conservative
+					ideology = celian_ideologique
 					factor = 2
 				}
 				scaled_militancy = {
-					ideology = liberal
+					ideology = libertine
 					factor = -2
 				}
 			}
@@ -109,15 +109,15 @@ political_decisions = {
 			}
 			any_pop = {
 				scaled_militancy = {
-					ideology = reactionary
+					ideology = centralist
 					factor = 3
 				}
 				scaled_militancy = {
-					ideology = conservative
+					ideology = celian_ideologique
 					factor = 2
 				}
 				scaled_militancy = {
-					ideology = liberal
+					ideology = libertine
 					factor = -2
 				}
 			}
@@ -150,15 +150,15 @@ political_decisions = {
 			}
 			any_pop = {
 				scaled_militancy = {
-					ideology = reactionary
+					ideology = centralist
 					factor = 3
 				}
 				scaled_militancy = {
-					ideology = conservative
+					ideology = celian_ideologique
 					factor = 2
 				}
 				scaled_militancy = {
-					ideology = liberal
+					ideology = libertine
 					factor = -2
 				}
 			}
@@ -190,15 +190,15 @@ political_decisions = {
 			}
 			any_pop = {
 				scaled_militancy = {
-					ideology = reactionary
+					ideology = centralist
 					factor = 3
 				}
 				scaled_militancy = {
-					ideology = conservative
+					ideology = celian_ideologique
 					factor = 2
 				}
 				scaled_militancy = {
-					ideology = liberal
+					ideology = libertine
 					factor = -2
 				}
 			}
@@ -231,15 +231,15 @@ political_decisions = {
 			}
 			any_pop = {
 				scaled_militancy = {
-					ideology = reactionary
+					ideology = centralist
 					factor = 3
 				}
 				scaled_militancy = {
-					ideology = conservative
+					ideology = celian_ideologique
 					factor = 2
 				}
 				scaled_militancy = {
-					ideology = liberal
+					ideology = libertine
 					factor = -2
 				}
 			}

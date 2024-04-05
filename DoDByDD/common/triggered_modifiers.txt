@@ -3,6 +3,22 @@
 #
 # Effects are fully scriptable here.
 
+tribal_voting = {
+	trigger = {
+		government = tribal_state
+	}
+	poor_vote = 1
+}
+
+ideologique_labor = {
+	trigger = {
+		government = ideologique_state
+	}
+	non_accepted_pop_consciousness_modifier = 0.02
+	non_accepted_pop_militancy_modifier = 0.02
+	rgo_output = 0.10
+}
+
 ai_boost = {
 	trigger = { 
 		ai = yes

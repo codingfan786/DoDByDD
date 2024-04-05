@@ -5,7 +5,7 @@
 capital = 79
 primary_culture = aelin
 religion = catholic
-government = prussian_constitutionalism
+government = mercantile_republic
 plurality = 10
 nationalvalue = nv_mercantilism
 
@@ -19,25 +19,24 @@ non_state_culture_literacy = 0.3
 
 #========================= H O U S E - O F - L O R D S =========================
 
-ruling_party = C50_conservative_92
+ruling_party = PARTY_mercantile
 upper_house = {
-fascist = 0
-reactionary = 0
-conservative = 34
-socialist = 33
-communist = 0
-liberal = 33
-anarcho_liberal = 0
+	centralist = 0
+	celian_ideologique = 0
+	libertine = 0
+	tribalist = 0
+	mercantile = 80
+	commissariat = 20
 }
-# Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = wealth_voting
-public_meetings = yes_meeting
-press_rights = censored_press
-trade_unions = non_socialist
-voting_system = first_past_the_post
-political_parties = non_secret_ballots
+public_meetings = no_meeting
+press_rights = state_press
+trade_unions = no_trade_unions
+voting_system = jefferson_method
+political_parties = underground_parties
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit

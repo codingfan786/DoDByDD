@@ -22,3 +22,29 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = 36894584
+	title = "ai event"
+	desc = "nothing to see here :)"
+	picture = "Opiumwar"
+	#major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = C50
+		ai = yes
+		war = no
+		C56 = {is_vassal = no}
+		C56 = {is_greater_power = no}
+		C56 = {NOT = {rank = 8}}
+	}
+	option = {
+		name = "yay!"
+		war = {
+			target = C56
+			attacker_goal = { casus_belli = make_puppet }
+			call_ally = yes
+		}
+		
+	}
+}

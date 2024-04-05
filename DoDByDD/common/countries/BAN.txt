@@ -6,7 +6,7 @@ party = {
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
-	ideology = liberal
+	ideology = libertine
 
 	economic_policy = world_bank_economics
 	trade_policy = world_bank

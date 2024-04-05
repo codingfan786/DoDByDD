@@ -24,7 +24,7 @@ country_event = {
 		NOT = {
 			OR = {
 				government = democracy
-				government = hms_government
+				government = constitutional_monarchy
 			}
 		}
 	}
@@ -160,8 +160,8 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			OR = {
-				government = proletarian_dictatorship
-				government = fascist_dictatorship
+				government = ideologique_state
+				government = absolute_monarchy
 			}
 		}
 
@@ -245,7 +245,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 10
-				government = hms_government
+				government = constitutional_monarchy
 			}
 		}
 		random_country = {
@@ -288,8 +288,8 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			OR = {
-				government = proletarian_dictatorship
-				government = fascist_dictatorship
+				government = absolute_monarchy
+				government = ideologique_state
 			}
 		}
 		modifier = {
@@ -399,8 +399,8 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			OR = {
-				government = democracy
-				government = hms_government
+				government = mercantile_republic
+				government = commissary_state
 			}
 		}
 		modifier = {
@@ -492,8 +492,8 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			OR = {
-				government = proletarian_dictatorship
-				government = fascist_dictatorship
+				government = absolute_monarchy
+				government = ideologique_state
 			}
 		}
 		modifier = {

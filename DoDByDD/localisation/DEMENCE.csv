@@ -214,3 +214,68 @@ sudirk_to_wif_title;Integrate the Wif;x
 sudirk_to_wif_desc;Fill;x
 integrate_wall_title;Bulwark against the east;x
 integrate_wall_desc;The Rea Neaan have stood as the ultimate line of defense against the marauders of the eastern plains. Now it is time for us to take up that watch as the premier power in Stredohorí.;x
+PARTY_centralist;Centralist Clique;x
+PARTY_celian;Ideologique Clique;x
+PARTY_libertine;Libertine Clique;x
+PARTY_tribalist;Tribalist Clique;x
+PARTY_mercantile;Mercantile Clique;x
+PARTY_commissary;Commissariat Clique;x
+centralist;Centralist;x
+celian_ideologique;Celian Ideologique;x
+libertine;Libertine;x
+tribalist;Tribalist;x
+mercantile;Mercantile;x
+commissariat;Commissariat;x
+democracy;Democratic Republic;x
+constitutional_monarchy;Limited Monarchy;x
+absolute_monarchy;Absolute Monarchy;x
+mercantile_republic;Mercantile Republic;x
+commissary_state;Commissary State;x
+ideologique_state;Ideologique State;x
+tribal_state;Tribe;x
+democracy_ruler;President;x
+constitutional_monarchy_ruler;Minister;x
+absolute_monarchy_ruler;King;x
+mercantile_republic_ruler;Boardsmen;x
+commissary_state_ruler;Councilmen;x
+ideologique_state_ruler;Vedoucí;x
+tribal_state_ruler;Chief;x
+centralist_uh;Centralist;x
+celian_ideologique_uh;Ideologique;x
+libertine_uh;Libertine;x
+tribalist_uh;Tribalist;x
+mercantile_uh;Mercantile;x
+commissariat_uh;Commissariat;x
+strong_arm_group;Centralists and Ideologiques;x
+anarchist_group;Libertines and Tribalists;x
+money_group;Mercantiles and Commissariats;x
+tribal_voting;Tribal Communalism;x
+ideologique_labor;Ideologique Labor Practices;x
+monarchist_rebels_name;Monarchist Rebels;x
+monarchist_rebels_desc; ;x
+monarchist_rebels_army;Monarchist Army;x
+democracy_rebels_name;Democracy Rebels;x
+democracy_rebels_desc; ;x
+democracy_rebels_army;Democratic Militia;x
+mercantile_rebels_name;Mercantile Rebels;x
+mercantile_rebels_desc; ;x
+mercantile_rebels_army;Mercantile Militia;x
+commissary_rebels_name;Commissariat Rebels;x
+commissary_rebels_desc; ;x
+commissary_rebels_army;Commissioned Militia;x
+tribalist_rebels_name;Tribalist Rebels;x
+tribalist_rebels_desc; ;x
+tribalist_rebels_army;Tribal Mob;x
+ideologique_rebels_name;Ideologique Rebels;x
+ideologique_rebels_desc; ;x
+ideologique_rebels_army;Ideologique Army;x
+unciv_tribalist_rebels_name;Tribalist Rebels;x
+unciv_tribalist_rebels_desc; ;x
+unciv_tribalist_rebels_army;Tribal Mob;x
+centralist_focus;Encourage Centralists;x
+celian_ideologique_focus;Encourage Ideologiques;x
+libertine_focus;Encourage Libertines;x
+tribalist_focus;Encourage Tribalists;x
+mercantile_focus;Encourage Mercantiles;x
+commissariat_focus;Encourage Commissariats;x
+AGRESSION_WAR_PUPPET_NAME;$ORDER$War of $FIRST$ Control Over $SECOND_COUNTRY$;x

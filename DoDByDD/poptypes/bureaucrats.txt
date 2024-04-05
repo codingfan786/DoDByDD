@@ -955,12 +955,106 @@ promote_to =
 
 
 ideologies = {
-	
-	fascist = {
+	centralist = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			militancy = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { militancy = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { militancy = 3 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { militancy = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { militancy = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { consciousness = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { consciousness = 3 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { consciousness = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { consciousness = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			AND = {
+				country = {NOT = {government = mercantile_republic}}
+				country = {NOT = {government = commissary_state}}
+				luxury_needs = 1
+			}
+		}		
+		modifier = {
+			factor = 1.1
+			AND = {
+				country = {NOT = {government = mercantile_republic}}
+				country = {NOT = {government = commissary_state}}
+				luxury_needs = 0.1
+			}
+		}	
+		modifier = {
+			factor = 2
+			AND = {
+				country = {NOT = {government = mercantile_republic}}
+				country = {NOT = {government = commissary_state}}
+				state_scope = { poor_strata_everyday_needs = 1 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			AND = {
+				country = {NOT = {government = mercantile_republic}}
+				country = {NOT = {government = commissary_state}}
+				state_scope = { middle_strata_everyday_needs = 1 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_statism
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 6
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 7
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 8
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 9
+		}
+	}
+	celian_ideologique = {
 		factor = 1
 		modifier = {
 			factor = 0.5
-			not = { militancy = 6 }
+			not = { militancy = 5 }
 		}
 		modifier = {
 			factor = 1.1
@@ -1007,8 +1101,8 @@ ideologies = {
 			NOT = { political_reform_want = 0.10 }
 		}	
 		modifier = {
-			factor = 2
-			ruling_party_ideology = fascist
+			factor = 3
+			ruling_party_ideology = celian_ideologique
 		}
 		modifier = {
 			factor = 1.1
@@ -1026,361 +1120,100 @@ ideologies = {
 			factor = 1.1
 			poor_strata_militancy = 8
 		}
-	}
-	
-	reactionary = {
-		factor = 1
 		modifier = {
-			factor = 0.5
-			not = { militancy = 6 }
-		}
-		modifier = {
-			factor = 1.2
-			ruling_party_ideology = reactionary
-		}
-		modifier = {
-			factor = 1.2
-			NOT = { literacy = 0.30 }
-		}
-		modifier = {
-			factor = 1.2
+			factor = 1.1
 			country = {
-				NOT = { plurality = 0.20 }
+				war = no
+				is_greater_power = yes
+				any_neighbor_country = {
+					is_greater_power = yes
+					military_score = THIS
+				}
+			}	
+		}
+		modifier = {
+			factor = 1.1
+			country = {
+				war = no
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				any_neighbor_country = {
+					civilized = yes
+					NOT = { is_greater_power = yes }
+					military_score = THIS
+				}
 			}
 		}
 		modifier = {
-			factor = 0.5
-			consciousness = 6
-		}		
-		modifier = {
 			factor = 1.1
-			NOT = { political_reform_want = 0.15}
+			country = {
+				war = no
+				NOT = { civilized = yes }
+				any_neighbor_country = {
+					NOT = { civilized = yes }
+					military_score = THIS
+				}
+			}
 		}
 		modifier = {
-			factor = 1.1
-			NOT = { political_reform_want = 0.05 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { political_reform_want = 0.10 }
-		}		
-		modifier = {
-			factor = 1.1
-			militancy = 6
-			NOT = { consciousness = 4 }
-		}
-		modifier = {
-			factor = 1.1
-			militancy = 7
-			NOT = { consciousness = 4 }
-		}
-		modifier = {
-			factor = 1.1
-			militancy = 8
-			NOT = { consciousness = 4 }
-		}
-		modifier = {
-			factor = 1.1
-			militancy = 9
-			NOT = { consciousness = 4 }
-		}
-		modifier = {
-			factor = 1.1
-			poor_strata_militancy = 5
-		}
-		modifier = {
-			factor = 1.1
-			poor_strata_militancy = 6
-		}
-		modifier = {
-			factor = 1.1
-			poor_strata_militancy = 7
-		}
-		modifier = {
-			factor = 1.1
-			poor_strata_militancy = 8
-		}
-	}
-
-	conservative = {
-		factor = 1
-		modifier = {
-			factor = 0.5
-			militancy = 6
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { militancy = 4 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { militancy = 3 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { militancy = 2 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { militancy = 1 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { consciousness = 4 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { consciousness = 3 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { consciousness = 2 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { consciousness = 1 }
-		}
-		modifier = {
-			factor = 1.5
-			luxury_needs = 1
-		}		
-		modifier = {
-			factor = 1.1
-			luxury_needs = 0.1
+			factor = 0 
+			AND = {
+				NOT = { is_primary_culture = yes }
+				NOT = { is_accepted_culture = yes }
+			}
 		}	
 		modifier = {
-			factor = 2
-			state_scope = {
-				poor_strata_everyday_needs = 1
-			}
-		}
-		modifier = {
-			factor = 1.25
-			state_scope = {
-				middle_strata_everyday_needs = 1
-			}
-		}
-		modifier = {
-			factor = 1.1
-			nationalvalue = nv_statism
-		}
-		modifier = {
-			factor = 0.9
-			poor_strata_militancy = 5
-		}
-		modifier = {
-			factor = 0.9
-			poor_strata_militancy = 6
-		}
-		modifier = {
-			factor = 0.9
-			poor_strata_militancy = 7
-		}
-		modifier = {
-			factor = 0.9
-			poor_strata_militancy = 8
-		}
-		modifier = {
-			factor = 0.9
-			poor_strata_militancy = 9
-		}
-	}
-
-	socialist = {
-		factor = 1
-		modifier = {
-			factor = 1.1
-			nationalvalue = nv_tribalism
-			NOT = { ruling_party_ideology = communist }
-		}
-		modifier = {
-			factor = 0.5
-			militancy = 6
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.02
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.04
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.06
-		}
-		modifier = {
-			factor = 1.1	
-			social_reform_want = 0.08
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.1
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.12
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.14
-		}
-		modifier = {
-			factor = 1.1	
-			social_reform_want = 0.16
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.18
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.2
-		}
-		modifier = {
-			factor = 2
-			state_scope = {
-				not = { poor_strata_everyday_needs = 0.25 }
-			}
-		}
-		modifier = {
-			factor = 1.25
-			state_scope = {
-				NOT = { middle_strata_everyday_needs = 0.25 }
-			}
-		}
-		modifier = {
-			factor = 1.1
-			OR = { 
-			poor_strata_militancy = 5
-			middle_strata_militancy = 5
-			}
-		}
-		modifier = {
-			factor = 1.1
-			OR = {
-			poor_strata_militancy = 6
-			middle_strata_militancy = 6
-			}
-		}
-		modifier = {
-			factor = 1.1
-			OR = {
-			poor_strata_militancy = 7
-			middle_strata_militancy = 7
-			}
-		}
-		modifier = {
-			factor = 1.1
-			OR = {
-			poor_strata_militancy = 8
-			middle_strata_militancy = 8
-			}
-		}
-		modifier = {
-			factor = 1.05
-			consciousness = 9 
-		}
-		modifier = {
-			factor = 1.05
-			consciousness = 8
-		}
-		modifier = {
-			factor = 1.05
-			consciousness = 7
-		}
-	}
-
-	communist = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			NOT = { militancy = 6 }
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = communist 
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.1
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.2
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.3
-		}
-		modifier = {
-			factor = 1.1	
-			social_reform_want = 0.4
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.5
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.6
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.7
-		}
-		modifier = {
-			factor = 1.1	
-			social_reform_want = 0.8
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.9
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 1
-		}
-	}
-	liberal = {
-		factor = 1.1
-		modifier = {
 			factor = 1.2
-			consciousness = 9 
-		}
-		modifier = {
-			factor = 0.5
-			militancy = 6
-		}
-		modifier = {
-			factor = 1.2
-			consciousness = 8
-		}
-		modifier = {
-			factor = 1.2
-			consciousness = 7
-		}
-		modifier = {
-			factor = 1.2
-			consciousness = 6
+			nationalvalue = nv_fanatacism
 		}
 		modifier = {
 			factor = 1.2
 			consciousness = 5
+		}	
+		modifier = {
+			factor = 1.2
+			consciousness = 6
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 7
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 8
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 9
+		}
+	}
+	libertine = {
+		factor = 1
+		modifier = {
+			factor = 1.1
+			consciousness = 9 
+		}
+		modifier = {
+			factor = 2.5
+			is_primary_culture = no
+			is_accepted_culture = no
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { is_ideology_enabled = socialist }
+			consciousness = 8
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { is_ideology_enabled = communist }
+			consciousness = 7
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { is_ideology_enabled = anarcho_liberal }
+			consciousness = 6
 		}
-		
+		modifier = {
+			factor = 1.1
+			consciousness = 5
+		}
 		modifier = {
 			factor = 1.1
 			political_reform_want = 0.02
@@ -1398,27 +1231,27 @@ ideologies = {
 			political_reform_want = 0.08
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			political_reform_want = 0.10
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			political_reform_want = 0.12
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			political_reform_want = 0.14
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			political_reform_want = 0.16
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.4
 			political_reform_want = 0.18
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.4
 			political_reform_want = 0.20
 		}
 		modifier = {
@@ -1450,55 +1283,260 @@ ideologies = {
 			}
 		}
 	}
-	anarcho_liberal = {
+	tribalist = {
 		factor = 1
+
 		modifier = {
 			factor = 2
-			ruling_party_ideology = anarcho_liberal
+			country = { civilized = no }
 		}
 		modifier = {
-			factor = 0.1
-			NOT = { militancy = 6 }
-		}
-		modifier = {
-			factor = 1.1
-			political_reform_want = 0.10
+			factor = 1.3
+			nationalvalue = nv_tribalism
 		}
 		modifier = {
 			factor = 1.1
-			political_reform_want = 0.20
+			OR = { 
+			poor_strata_militancy = 5
+			middle_strata_militancy = 5
+			}
 		}
 		modifier = {
 			factor = 1.1
-			political_reform_want = 0.30
+			OR = {
+			poor_strata_militancy = 6
+			middle_strata_militancy = 6
+			}
 		}
 		modifier = {
 			factor = 1.1
-			political_reform_want = 0.40
+			OR = {
+			poor_strata_militancy = 7
+			middle_strata_militancy = 7
+			}
 		}
 		modifier = {
 			factor = 1.1
-			political_reform_want = 0.50
+			OR = {
+			poor_strata_militancy = 8
+			middle_strata_militancy = 8
+			}
 		}
 		modifier = {
 			factor = 1.1
-			political_reform_want = 0.60
+			country = {
+				war_exhaustion = 10
+			}
 		}
 		modifier = {
 			factor = 1.1
-			political_reform_want = 0.70
+			country = {
+				war_exhaustion = 20
+			}
 		}
 		modifier = {
 			factor = 1.1
-			political_reform_want = 0.80
+			country = {
+				war_exhaustion = 30
+			}
 		}
 		modifier = {
 			factor = 1.1
-			political_reform_want = 0.90
+			country = {
+				war_exhaustion = 40
+			}
 		}
 		modifier = {
 			factor = 1.1
-			political_reform_want = 1
+			OR = {
+				NOT = {state_scope = { poor_strata_everyday_needs = 0.5 }}
+				NOT = {state_scope = { middle_strata_everyday_needs = 0.5 }}
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+				NOT = {state_scope = { poor_strata_life_needs = 0.5 }}
+				NOT = {state_scope = { middle_strata_life_needs = 0.5 }}
+			}
+		}
+	}
+	mercantile = {
+		factor = 1
+		modifier = {
+			factor = 1.3
+			nationalvalue = nv_mercantilism
+		}
+		modifier = {
+			factor = 1.5
+			AND = {
+				OR = {
+					country = {government = mercantile_republic}
+					country = {government = commissary_state}
+				}
+				luxury_needs = 1
+			}
+		}		
+		modifier = {
+			factor = 1.1
+			AND = {
+				OR = {
+					country = {government = mercantile_republic}
+					country = {government = commissary_state}
+				}
+				luxury_needs = 0.1
+			}
+		}	
+		modifier = {
+			factor = 2
+			AND = {
+				OR = {
+					country = {government = mercantile_republic}
+					country = {government = commissary_state}
+				}
+				state_scope = { poor_strata_everyday_needs = 1 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			AND = {
+				OR = {
+					country = {government = mercantile_republic}
+					country = {government = commissary_state}
+				}
+				state_scope = { middle_strata_everyday_needs = 1 }
+			}
+		}
+		modifier = {
+			factor = 1.3
+			state_scope = { NOT = {poor_strata_everyday_needs = 1 }}
+		}
+		modifier = {
+			factor = 1.15
+			state_scope = { NOT = {middle_strata_everyday_needs = 1 }}
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 5
+		}	
+		modifier = {
+			factor = 1.2
+			consciousness = 6
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 7
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 8
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 9
+		}
+	}
+	commissariat = {
+		factor = 0.5
+		modifier = {
+			factor = 1.3
+			nationalvalue = nv_mercantilism
+		}
+		modifier = {
+			factor = 1.5
+			AND = {
+				OR = {
+					country = {government = mercantile_republic}
+					country = {government = commissary_state}
+				}
+				luxury_needs = 1
+			}
+		}		
+		modifier = {
+			factor = 1.1
+			AND = {
+				OR = {
+					country = {government = mercantile_republic}
+					country = {government = commissary_state}
+				}
+				luxury_needs = 0.1
+			}
+		}	
+		modifier = {
+			factor = 2
+			AND = {
+				OR = {
+					country = {government = mercantile_republic}
+					country = {government = commissary_state}
+				}
+				state_scope = { poor_strata_everyday_needs = 1 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			AND = {
+				OR = {
+					country = {government = mercantile_republic}
+					country = {government = commissary_state}
+				}
+				state_scope = { middle_strata_everyday_needs = 1 }
+			}
+		}
+		modifier = {
+			factor = 1.3
+			state_scope = { NOT = {poor_strata_everyday_needs = 1 }}
+		}
+		modifier = {
+			factor = 1.15
+			state_scope = { NOT = {middle_strata_everyday_needs = 1 }}
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 5
+		}	
+		modifier = {
+			factor = 1.2
+			consciousness = 6
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 7
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 8
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 9
+		}
+		modifier = {
+			factor = 1.1
+			country = {
+				war_exhaustion = 10
+				war = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			country = {
+				war_exhaustion = 20
+				war = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			country = {
+				war_exhaustion = 30
+				war = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			country = {
+				war_exhaustion = 40
+				war = yes
+			}
 		}
 	}
 }
@@ -3318,7 +3356,7 @@ issues =
 				NOT = {
 					is_next_reform = trinket_wage
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -3414,7 +3452,7 @@ issues =
 				NOT = {
 					is_next_reform = low_minimum_wage
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -3510,7 +3548,7 @@ issues =
 				NOT = {
 					is_next_reform = acceptable_minimum_wage
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -3606,7 +3644,7 @@ issues =
 				NOT = {
 					is_next_reform = good_minimum_wage
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -3703,7 +3741,7 @@ issues =
 				NOT = {
 					is_next_reform = trinket_safety
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -3771,7 +3809,7 @@ issues =
 				NOT = {
 					is_next_reform = low_safety
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -3839,7 +3877,7 @@ issues =
 				NOT = {
 					is_next_reform = acceptable_safety
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -3908,7 +3946,7 @@ issues =
 				NOT = {
 					is_next_reform = good_safety 
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 			modifier = {
@@ -3979,7 +4017,7 @@ issues =
 				NOT = {
 					is_next_reform = trinket_subsidies
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {	
@@ -4068,7 +4106,7 @@ issues =
 				NOT = {
 					is_next_reform = low_subsidies
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {	
@@ -4157,7 +4195,7 @@ issues =
 				NOT = {
 					is_next_reform = acceptable_subsidies
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {	
@@ -4246,7 +4284,7 @@ issues =
 				NOT = {
 					is_next_reform = good_subsidies
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {	
@@ -4331,7 +4369,7 @@ issues =
 				NOT = {
 					is_next_reform = trinket_pensions
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -4410,7 +4448,7 @@ issues =
 				NOT = {
 					is_next_reform = low_pensions
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -4489,7 +4527,7 @@ issues =
 				NOT = {
 					is_next_reform = acceptable_pensions
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -4568,7 +4606,7 @@ issues =
 				NOT = {
 					is_next_reform = good_pensions
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -4647,7 +4685,7 @@ issues =
 				NOT = {
 					is_next_reform = trinket_health_care
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -4719,7 +4757,7 @@ issues =
 				NOT = {
 					is_next_reform = low_health_care
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 			modifier = {
@@ -4791,7 +4829,7 @@ issues =
 				NOT = {
 					is_next_reform = acceptable_health_care
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 	modifier = {
@@ -4863,7 +4901,7 @@ issues =
 				NOT = {
 					is_next_reform = good_health_care
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 	modifier = {
@@ -4935,7 +4973,7 @@ issues =
 				NOT = {
 					is_next_reform = fourteen_hours
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -5019,7 +5057,7 @@ issues =
 				NOT = {
 					is_next_reform = twelve_hours
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -5103,7 +5141,7 @@ issues =
 				NOT = {
 					is_next_reform = ten_hours
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -5189,7 +5227,7 @@ issues =
 				NOT = {
 					is_next_reform = eight_hours
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -5273,7 +5311,7 @@ issues =
 				NOT = {
 					is_next_reform = low_schools
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -5328,7 +5366,7 @@ issues =
 				NOT = {
 					is_next_reform = acceptable_schools
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {
@@ -5383,7 +5421,7 @@ issues =
 				NOT = {
 					is_next_reform = good_schools
 				}
-				NOT = { is_ideology_enabled = socialist }
+				 
 			}	
 		}
 		modifier = {

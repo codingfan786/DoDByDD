@@ -80,7 +80,10 @@ direct_current = {
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = liberal
+			OR = { 
+				ruling_party_ideology = mercantile
+				ruling_party_ideology = commissariat
+			}
 		}
 	}
 	effect = {

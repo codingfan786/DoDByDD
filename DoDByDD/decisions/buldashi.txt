@@ -11,28 +11,19 @@ political_decisions = {
 			C45 = {
 				OR = {
 					exists = no
-					government = proletarian_dictatorship
-					government = presidential_dictatorship
-					government = bourgeois_dictatorship
-					government = fascist_dictatorship
+					government = ideologique_state
 				}
 			}
 			C44 = {
 				OR = {
 					exists = no
-					government = proletarian_dictatorship
-					government = presidential_dictatorship
-					government = bourgeois_dictatorship
-					government = fascist_dictatorship
+					government = ideologique_state
 				}
 			}
 			C43 = {
 				OR = {
 					exists = no
-					government = proletarian_dictatorship
-					government = presidential_dictatorship
-					government = bourgeois_dictatorship
-					government = fascist_dictatorship
+					government = ideologique_state
 				}
 			}
 			NOT = {any_owned_province = {NOT = {has_province_modifier = province_changer}}}

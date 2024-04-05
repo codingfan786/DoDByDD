@@ -19,15 +19,14 @@ non_state_culture_literacy = 0.35
 
 #========================= H O U S E - O F - L O R D S =========================
 
-ruling_party = C18_conservative_92
+ruling_party = PARTY_centralist
 upper_house = {
-fascist = 0
-reactionary = 0
-conservative = 34
-socialist = 33
-communist = 0
-liberal = 33
-anarcho_liberal = 0
+	centralist = 40
+	celian_ideologique = 10
+	libertine = 25
+	tribalist = 10
+	mercantile = 10
+	commissariat = 5
 }
 # Political reforms
 slavery = no_slavery
@@ -36,8 +35,9 @@ vote_franschise = universal_weighted_voting
 public_meetings = yes_meeting
 press_rights = free_press
 trade_unions = all_trade_unions
-voting_system = first_past_the_post
+voting_system = proportional_representation
 political_parties = gerrymandering
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit

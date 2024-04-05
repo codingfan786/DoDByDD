@@ -5,7 +5,7 @@
 capital = 79
 primary_culture = sudsan
 religion = catholic
-government = absolute_monarchy
+government = constitutional_monarchy
 plurality = 10
 nationalvalue = nv_fanatacism
 
@@ -19,25 +19,25 @@ non_state_culture_literacy = 0.3
 
 #========================= H O U S E - O F - L O R D S =========================
 
-ruling_party = C57_conservative_92
+ruling_party = PARTY_centralist
 upper_house = {
-fascist = 0
-reactionary = 0
-conservative = 34
-socialist = 33
-communist = 0
-liberal = 33
-anarcho_liberal = 0
+	centralist = 50
+	celian_ideologique = 0
+	libertine = 35
+	tribalist = 0
+	mercantile = 15
+	commissariat = 0
 }
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
-vote_franschise = none_voting
+vote_franschise = wealth_weighted_voting
 public_meetings = yes_meeting
 press_rights = state_press
-trade_unions = no_trade_unions
-voting_system = first_past_the_post
+trade_unions = state_controlled
+voting_system = jefferson_method
 political_parties = underground_parties
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit

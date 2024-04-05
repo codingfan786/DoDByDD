@@ -400,11 +400,11 @@ socialist_realism = {
 		base = 2
 		modifier = {
 			factor = 2
-			government = proletarian_dictatorship
+			government = tribal_state
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = socialist
+			ruling_party_ideology = tribalist
 		}
 		modifier = {
 			factor = 2
@@ -866,7 +866,7 @@ constitutionalism = {
 		base = 3
 		modifier = {
 			factor = 2
-			government = hms_government
+			government = constitutional_monarchy
 		}
 		modifier = {
 			factor = 1
@@ -891,7 +891,7 @@ atheism = {
 		}
 		modifier = {
 			factor = 1
-			ruling_party_ideology = socialist
+			ruling_party_ideology = libertine
 		}
 		modifier = {
 			factor = 2
@@ -918,8 +918,8 @@ egalitarianism = {
 		modifier = {
 			factor = 1
 			NOT = {
-				ruling_party_ideology = reactionary
-				ruling_party_ideology = conservative
+				ruling_party_ideology = centralist
+				ruling_party_ideology = libertine
 			}
 		}		
 	}
@@ -954,10 +954,10 @@ authoritarianism = {
 		modifier = {
 			factor = 5
 			OR = {
-				ruling_party_ideology = reactionary
+				ruling_party_ideology = centralist
 				AND = {
-					government = absolute_monarchy
-					ruling_party_ideology = conservative
+					government = ideologique_state
+					ruling_party_ideology = celian_ideologique
 					}
 				}
 		}
@@ -969,20 +969,20 @@ hierarchical_order = {
 	limit = { 
 			ideological_thought = 1 
 			OR = { 
-			government = hms_government
-			government = prussian_constitutionalism
+			government = constitutional_monarchy
 			government = absolute_monarchy
+			government = ideologique_state
 			}			
 	}
 	chance = {
 		base = 1
 		modifier = {
 			factor = 3
-			government = absolute_monarchy
+			government = ideologique_state
 		}
 		modifier = {
 			factor = 2
-			government = prussian_constitutionalism
+			government = absolute_monarchy
 		}
 	}
 	core_pop_militancy_modifier = -0.01
@@ -995,11 +995,11 @@ traditionalism = {
 		base = 0
 		modifier = {
 			factor = 3
-			ruling_party_ideology = reactionary
+			ruling_party_ideology = centralist
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = conservative
+			ruling_party_ideology = celian_ideologique
 		}
 		modifier = {
 			factor = 2
@@ -1007,7 +1007,7 @@ traditionalism = {
 		}
 		modifier = {
 			factor = 1
-			government = prussian_constitutionalism
+			government = constitutional_monarchy
 		}
 	}
 	core_pop_consciousness_modifier = -0.01
@@ -1062,10 +1062,8 @@ secularization = {
 		}
 		modifier = {
 			factor = 1
-			OR = {
-				ruling_party_ideology = socialist
-				ruling_party_ideology = liberal
-			}
+			ruling_party_ideology = libertine
+			
 		}
 	}
 	effect = {
@@ -1102,7 +1100,7 @@ collectivism = {
 		}
 		modifier = {
 			factor = 1
-			ruling_party_ideology = socialist
+			ruling_party_ideology = tribalist
 		}
 	}
 	effect = {
@@ -1116,7 +1114,7 @@ determinism = {
 		base = 2
 		modifier = {
 			factor = 1
-			ruling_party_ideology = socialist
+			ruling_party_ideology = libertine
 		}
 		modifier = {
 			factor = 1
@@ -1143,10 +1141,9 @@ social_justice = {
 		}
 		modifier = {
 			factor = 1
-			OR = {
-				ruling_party_ideology = liberal
-				ruling_party_ideology = socialist
-			}
+			
+			ruling_party_ideology = libertine
+			
 		}
 	}
 	effect = {
@@ -1251,17 +1248,14 @@ biased_multiculturalism = {
 	news = no
 	chance = {
 		base = 2
-		modifier = {
-			factor = 1
-			ruling_party_ideology = reactionary
-		}
+
 		modifier = {
 			factor = 2
-			ruling_party_ideology = conservative
+			ruling_party_ideology = celian_ideologique
 		}
 		modifier = {
 			factor = 1
-			nationalvalue = nv_regionalism
+			nationalvalue = nv_fanatacism
 		}
 	}
 	effect = {
@@ -1283,7 +1277,7 @@ manifest_destiny = {
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = liberal
+			ruling_party_ideology = celian_ideologique
 		}
 	}
 	effect = {
@@ -1360,10 +1354,10 @@ separatism = {
 	}
 	effect = {
 		seperatism = 0.5
-		rebel_org_gain = {
-			faction = nationalist_rebels 
-			value = 0.33
-		}
+		#rebel_org_gain = {
+		#	faction = nationalist_rebels 
+		#	value = 0.33
+		#}
 	}
 }
 
@@ -1397,12 +1391,12 @@ dogma_of_mass_action = {
 		}
 		modifier = {
 			factor = 3
-			ruling_party_ideology = socialist
+			ruling_party_ideology = celian_ideologique
 		}
 	}
 	effect = {
 		rebel_org_gain = {
-			faction = communist_rebels
+			faction = ideologique_rebels
 			value = 0.25
 		}
 	}
@@ -1413,16 +1407,10 @@ terrorism = {
 	chance = {
 		base = 2
 		modifier = {
-			factor = 2
-			ruling_party_ideology = socialist
+			factor = 6
+			ruling_party_ideology = celian_ideologique
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				ruling_party_ideology = fascist
-				ruling_party_ideology = communist
-			}
-		}
+
 		modifier = {
 			factor = -1
 			nationalvalue = nv_tribalism
@@ -1449,8 +1437,8 @@ secret_police = {
 		modifier = {
 			factor = 3
 			OR = {
-				ruling_party_ideology = fascist
-				ruling_party_ideology = communist
+				ruling_party_ideology = celian_ideologique
+				ruling_party_ideology = centralist
 			}
 		}
 		modifier = {
@@ -1481,7 +1469,7 @@ womens_suffrage_movement = {
 		}
 		modifier = {
 			factor = 3
-			ruling_party_ideology = liberal
+			ruling_party_ideology = libertine
 		}
 	}
 	effect = {
@@ -1499,10 +1487,8 @@ rhetoric_of_hate = {
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				ruling_party_ideology = fascist
-				ruling_party_ideology = communist
-			}
+			ruling_party_ideology = celian_ideologique
+			
 		}
 		modifier = {
 			factor = 5
@@ -1531,7 +1517,7 @@ nostalgic_romanticism = {
 	effect = {
 		war_exhaustion = -0.05
 		rebel_org_gain = {
-			faction = reactionary_rebels
+			faction = monarchist_rebels
 			value = 0.50
 		}
 	}
@@ -1547,7 +1533,7 @@ anti_egalitarianism = {
 		}
 		modifier = {
 			factor = 3
-			ruling_party_ideology = reactionary
+			ruling_party_ideology = celian_ideologique
 		}
 	}
 	effect = {
@@ -1562,16 +1548,20 @@ vangaurd_party = {
 		base = 2
 		modifier = {
 			factor = 1
-			ruling_party_ideology = socialist
+			ruling_party_ideology = mercantile
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = communist
+			ruling_party_ideology = commissariat
 		}
 	}
 	effect = {
 		rebel_org_gain = {
-			faction = communist_rebels
+			faction = mercantile_rebels
+			value = 0.75
+		}
+		rebel_org_gain = {
+			faction = commissary_rebels
 			value = 0.75
 		}
 	}
@@ -1584,7 +1574,7 @@ the_doctrine_of_fascism = {
 		base = 2
 		modifier = {
 			factor = 2
-			ruling_party_ideology = fascist
+			ruling_party_ideology = celian_ideologique
 		}
 		modifier = {
 			factor = 1
@@ -1597,7 +1587,7 @@ the_doctrine_of_fascism = {
 	}
 	effect = {
 		rebel_org_gain = {
-			faction = fascist_rebels
+			faction = ideologique_rebels
 			value = 0.75
 		}
 	}
@@ -1618,7 +1608,7 @@ paramilitary_groups = {
 	}
 	effect = {
 		rebel_org_gain = {
-			faction = fascist_rebels
+			faction = ideologique_rebels
 			value = 0.25
 		} 
 	}
@@ -1631,8 +1621,8 @@ the_police_state = {
 		modifier = {
 			factor = 3
 			OR = {
-				ruling_party_ideology = fascist
-				ruling_party_ideology = communist
+				ruling_party_ideology = celian_ideologique
+				ruling_party_ideology = centralist
 			}
 		}
 		modifier = {
@@ -1665,7 +1655,7 @@ mass_advertising = {
 		}
 		modifier = {
 			factor = 1
-			government = hms_government
+			government = constitutional_monarchy
 		}
 	}
 	effect = {

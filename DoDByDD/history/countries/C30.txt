@@ -5,7 +5,7 @@
 capital = 79
 primary_culture = iquan
 religion = catholic
-government = presidential_dictatorship
+government = ideologique_state
 plurality = 10
 nationalvalue = nv_fanatacism
 
@@ -19,25 +19,24 @@ non_state_culture_literacy = 0.5
 
 #========================= H O U S E - O F - L O R D S =========================
 
-ruling_party = C30_conservative_92
+ruling_party = PARTY_celian
 upper_house = {
-fascist = 0
-reactionary = 0
-conservative = 34
-socialist = 33
-communist = 0
-liberal = 33
-anarcho_liberal = 0
+	centralist = 0
+	celian_ideologique = 100
+	libertine = 0
+	tribalist = 0
+	mercantile = 0
+	commissariat = 0
 }
-# Political reforms
 slavery = no_slavery
-upper_house_composition = appointed
+upper_house_composition = party_appointed
 vote_franschise = none_voting
 public_meetings = no_meeting
-press_rights = free_press
-trade_unions = non_socialist
+press_rights = state_press
+trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = underground_parties
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
