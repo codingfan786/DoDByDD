@@ -6,6 +6,13 @@ political_decisions = {
 		}
 		allow = {}
 		effect = {
+			any_country = {
+				limit = {
+					ai = no
+				}
+				country_event = 275346234
+			}
+
 			#enable_ideology = anarcho_liberal
 			C56 = {civilized = yes} #unrelated
 			C07 = {add_country_modifier = { name = migration_bugfix duration = 1825 }}

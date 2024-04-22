@@ -240,12 +240,12 @@ mercantile_republic_ruler;Boardsmen;x
 commissary_state_ruler;Councilmen;x
 ideologique_state_ruler;Vedoucí;x
 tribal_state_ruler;Chief;x
-centralist_uh;Centralist;x
-celian_ideologique_uh;Ideologique;x
-libertine_uh;Libertine;x
-tribalist_uh;Tribalist;x
-mercantile_uh;Mercantile;x
-commissariat_uh;Commissariat;x
+centralist_uh;Centralists support the governance of a central figurehead and are generally displeased with the dictatorship of the masses.\n\nThis ideology is encouraged by:\nLow militancy and consciousness.\nFilled needs when not a Mercantile or Commissary State.\nStatism as a national value.\n\nAristocrats, Bureaucrats, and Artisans are more likely to support this ideology.;x
+celian_ideologique_uh;Ideologiques support the exploitation of minority groups for the betterment of the ethnic state, and are usually lead by an inflamatory ideologue.\n\nThis ideology is encouraged by:\nRevanchism.\nHigh militancy and consciousness.\nLow political reform desire.\nStronger neighbours.\nFanatacism as a national value.\n\nUnaccepted pops hate this ideology and will rapidly drift to having none of it.\n\nSoldiers and Officers are more likely to support this ideology.;x
+libertine_uh;Libertines support Democratic Republicism wholeheartedly and wish to expand the ideals of democracy and republic as much as possible.\n\nThis ideology is encouraged by:\nHigh militancy and consciousness.\nHigh political reform desire.\nBeing an unaccepted culture.;x
+tribalist_uh;Tribalists hate a centralized government and will oppose it at any cost.\n\nThis ideology is encouraged by:\nHigh militancy.\nWar exhaustion.\nLack of filled needs.\nBeing uncivilized.\nTribalism as a national value.;x
+mercantile_uh;Mercantilists believe that trade is a sacred essential to civilized society and wish to expand its volume and reach irregardless of profit.\n\nThis ideology is encouraged by:\nFilled needs in a Mercantile or Commissary State.\nNot having filled needs.\nHigh consciousness.\nMercantile ruling party.\nMercantilism as a national value.\n\nCapitalists and Craftsmen are more likely to support this ideology.;x
+commissariat_uh;Commissariats believe that the state has a unique responsibility to plan the needs of the people and to supply them, essentially molding the government and state into the role of a commissary.\n\nThis ideology is encouraged by:\nFilled needs in a Mercantile or Commissary State.\nNot having filled needs.\nHigh consciousness.\nCommissariat ruling party.\nMercantilism as a national value.\nHigh war exhaustion.\n\nCapitalists and Craftsmen are more likely to support this ideology.;x
 strong_arm_group;Centralists and Ideologiques;x
 anarchist_group;Libertines and Tribalists;x
 money_group;Mercantiles and Commissariats;x
@@ -279,3 +279,12 @@ tribalist_focus;Encourage Tribalists;x
 mercantile_focus;Encourage Mercantiles;x
 commissariat_focus;Encourage Commissariats;x
 AGRESSION_WAR_PUPPET_NAME;$ORDER$War of $FIRST$ Control Over $SECOND_COUNTRY$;x
+event60010desc;The power of the merchant class has grown to the extent where it is no longer meaningful to maintain the illusions of a Democratic Republic. Our nation is now a Mercantile Republic, run by the interests of the merchants with the aim to expand the volume and scope of traded products at any costs.;x
+event60020desc;The carefully laid economic plans of the commissariats have receded and come undone. Our nation is now a Mercantile Republic, run by the interests of the merchants with the aim to expand the volume and scope of traded products at any costs.;x
+event60050desc;The principles of the Democratic Republic arise naturally from the nature of people and governance. It is no wonder then that our country has returned to its roots. Our nation is now a Democratic Republic!;x
+event60070desc;The backsliding of political principles as espoused by centralist dogma has won its first victory. Among the government a self styled monarch has risen to power and has been annointed with special priveliges as "first among equals". Our government is now a Limited Constitutional Monarchy!;x
+event60090desc; Recently a special clique has risen in influence among the merchant class, known as the commissariats. Their thoughts on trade go much farther than the mindless expansionism of the mercantile groups and instead they envision the state as a commissary to plan the needs of the people and to supply them. With their rise to power our nation is now a Commissary State!;x
+event60090option;The needs of the people will be carefully chosen and fulfilled!;x
+event60110desc;The neighbours and minorities of $COUNTRY$ are in shock as Ideologique fervor siezes the people and government of $COUNTRY$. Espousing the superiority of $COUNTRYCULTURE$ culture, the masses clamor to support the securing of their ethnic state as masters over the continent. Rumors of widespread atrocities have spread as minority groups are rounded up for exploitation by the Ideologique State and their rights stripped from them.;x
+event60140desc;As a Democratic Republic the people must be able to vote!\n§RIn order to reform out of a Democratic Republic you either need Underground Parties with either a Centralist, Mercantile, or Commissariat ruling party, or you need to outlaw voting with an Ideologique ruling party. As a Democratic Republic you cannot have a Ruling Party Only upperhouse.;x
+event275346234desc;§RREAD THIS NOW!!!!!!!\n§bDoD features a completely new ideology system. To change government types you need:\nDemocracy -> Limited Monarchy (Centralists and Underground Parties)\nLimited Monarchy -> Absolute Monarchy (No Voting and Ruling Party Only)\nDemocracy -> Mercantile State (Mercantilism or Commissariat and Underground Parties)\nMercantile State -> Commissariat State (No Voting)\nDemocracy -> Ideologique State (Ideologique and No Voting)\nTribal State -> Democracy (Allow Voting)\nTo go backwards just undo the reform requirements. You cannot reform into a tribal state.\n\n§BMouse over the ideologies in your upperhouse to see what encourages each ideology!;x

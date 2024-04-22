@@ -1,8 +1,8 @@
 
 country_event = { #democracy to mercantile
 	id = 60010
-	title = "EVTNAME60010"
-	desc = "EVTDESC60010"
+	title = "Mercantilism on the rise!"
+	desc = "event60010desc"
 	picture = "Unite"
 	
 	#major = yes
@@ -22,15 +22,15 @@ country_event = { #democracy to mercantile
 	}
 	
 	option = {
-		name = "EVTOPTA60010"
+		name = "Mercantilism, ho!"
 		government = mercantile_republic
 	}
 }
 
 country_event = { #commissary to mercantile
 	id = 60020
-	title = "EVTNAME60020"
-	desc = "EVTDESC60020"
+	title = "Mercantilism on the rise!"
+	desc = "event60020desc"
 	picture = "Unite"
 	
 	#major = yes
@@ -46,15 +46,15 @@ country_event = { #commissary to mercantile
 	}
 	
 	option = {
-		name = "EVTOPTA60020"
+		name = "Mercantilism, ho!"
 		government = mercantile_republic
 	}
 }
 
 country_event = { #any back to democracy
 	id = 60050
-	title = "EVTNAME60050"
-	desc = "EVTDESC60050"
+	title = "The Model Government."
+	desc = "event60050desc"
 	picture = "Unite"
 	
 	#major = yes
@@ -85,7 +85,7 @@ country_event = { #any back to democracy
 	}
 	
 	option = {
-		name = "EVTOPTA60050"
+		name = "Democratic republicism restored!"
 		government = democracy
 		any_owned = {
 			limit = {
@@ -116,7 +116,7 @@ country_event = { #any back to democracy
 country_event = { #absolute monarchy to limited monarchy
 	id = 60060
 	title = "EVTNAME60060"
-	desc = "EVTDESC60060"
+	desc = "EVTDESC60070"
 	picture = "Monarchy"
 	
 	#major = yes
@@ -133,15 +133,15 @@ country_event = { #absolute monarchy to limited monarchy
 	}
 	
 	option = {
-		name = "EVTNAME60060"
+		name = "EVTOPTA60070"
 		government = constitutional_monarchy
 	}
 }
 
 country_event = { #democracy to limited monarchy
 	id = 60070
-	title = "EVTNAME60070"
-	desc = "EVTDESC60070"
+	title = "EVTNAME60060"
+	desc = "event60070desc"
 	picture = "Monarchy"
 	
 	#major = yes
@@ -194,8 +194,8 @@ country_event = { #limited monarchy to absolute monarchy
 
 country_event = { #mercantile to commissary
 	id = 60090
-	title = "EVTNAME60080"
-	desc = "EVTDESC60080"
+	title = "The Economic State"
+	desc = "event60090desc"
 	picture = "Administration"
 	
 	#major = yes
@@ -211,7 +211,7 @@ country_event = { #mercantile to commissary
 	}
 	
 	option = {
-		name = "EVTOPTA60080"
+		name = "event60090option"
 		government = commissary_state
 		ruling_party_ideology = commissariat
 	}
@@ -219,8 +219,8 @@ country_event = { #mercantile to commissary
 
 country_event = { #democracy to ideologique
 	id = 60110
-	title = "EVTNAME60080"
-	desc = "EVTDESC60080"
+	title = "The Ideologique State."
+	desc = "event60110desc"
 	picture = "Administration"
 	
 	#major = yes
@@ -237,7 +237,7 @@ country_event = { #democracy to ideologique
 	}
 	
 	option = {
-		name = "EVTOPTA60080"
+		name = "Ideologiquism holds racialism as a resource."
 		government = ideologique_state
 	}
 }
@@ -250,8 +250,8 @@ country_event = { #democracy to ideologique
 
 country_event = { #democracy limitations
 	id = 60140
-	title = "EVTNAME60140"
-	desc = "EVTDESC60140"
+	title = "Democratic Republic Principles"
+	desc = "event60140desc"
 	picture = "Administration"
 	
 	#major = yes
@@ -284,7 +284,7 @@ country_event = { #democracy limitations
 	}
 	
 	option = {
-		name = "EVTOPTA60140"
+		name = "For democracy and republic!"
 		any_owned = {
 			limit = {
 				is_capital = yes
@@ -324,3 +324,15 @@ country_event = { #democracy limitations
 	}
 }
 
+country_event = {
+	id = 275346234
+	title = "The Ideologies of DoD."
+	desc = "event275346234desc"
+	picture = "Opiumwar"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "I am the most literate Victoria 2 player!"
+	}
+}
