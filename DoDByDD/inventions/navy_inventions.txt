@@ -403,19 +403,25 @@ steamer_transports = {
 	chance = {
 		base = 0
 		modifier = {
-			factor = 1
-			year = 1845
+			factor = 2
+			year = 1840
 		}
 		modifier = {
 			factor = 10
-			steam_turbine = 1
+			any_owned_province = {
+				continent = region5
+			}
 		}
 		modifier = {
 			factor = 20
+			steam_turbine = 1
+		}
+		modifier = {
+			factor = 40
 			nationalism_n_imperialism = 1
 		}
 		modifier = {
-			factor = 30
+			factor = 60
 			raider_group_doctrine = 1
 		}
 	}

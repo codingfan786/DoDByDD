@@ -8,6 +8,23 @@ political_decisions = {
 		effect = {
 			any_country = {
 				limit = {
+					OR = {
+						tag = C51
+						tag = C52
+						tag = C53
+						tag = C54
+						tag = C55
+						tag = C56
+					}
+				}
+				set_variable = {
+					which = czervenia_integration
+					value = 0
+				}
+			}
+
+			any_country = {
+				limit = {
 					ai = no
 				}
 				country_event = 275346234

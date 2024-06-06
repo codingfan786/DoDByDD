@@ -7,7 +7,7 @@ political_decisions = {
 			NOT = {has_country_flag = greater_ael}
 		}
 		allow = {
-			nationalism_n_imperialism = 1
+			state_n_government = 1
 			OR = {
 				is_our_vassal = C51
 				is_our_vassal = C52
@@ -27,56 +27,140 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = greater_ael
-			any_country = {
+
+			random_owned = {
 				limit = {
-					tag = C51
-					vassal_of = THIS
+					C51 = {
+						OR = {
+							check_variable = {
+								which = czervenia_integration
+								value = 9
+							}
+							year = 1850
+						}
+					}
+					C51 = {
+						vassal_of = THIS
+					}
 				}
-				any_owned = {remove_core = F51 add_core = F50 add_province_modifier = { name = province_changer duration = -1 } }
-				THIS = {inherit = C51 add_accepted_culture = ollin}
+				C51 = {
+					country_event = 65875634
+					THIS = {add_accepted_culture = ollin}
+				}
 			}
-			any_country = {
+
+			random_owned = {
 				limit = {
-					tag = C52
-					vassal_of = THIS
+					C52 = {
+						OR = {
+							check_variable = {
+								which = czervenia_integration
+								value = 9
+							}
+							year = 1850
+						}
+					}
+					C52 = {
+						vassal_of = THIS
+					}
 				}
-				any_owned = {remove_core = F52 add_core = F50 add_province_modifier = { name = province_changer duration = -1 } }
-				THIS = {inherit = C52 add_accepted_culture = ollin}
+				C52 = {
+					country_event = 65875634
+					THIS = {add_accepted_culture = ollin}
+				}
 			}
-			any_country = {
+
+			random_owned = {
 				limit = {
-					tag = C53
-					vassal_of = THIS
+					C53 = {
+						OR = {
+							check_variable = {
+								which = czervenia_integration
+								value = 9
+							}
+							year = 1850
+						}
+					}
+					C53 = {
+						vassal_of = THIS
+					}
 				}
-				any_owned = {remove_core = F53 add_core = F50 add_province_modifier = { name = province_changer duration = -1 } }
-				THIS = {inherit = C53 add_accepted_culture = sillesian}
+				C53 = {
+					country_event = 65875634
+					THIS = {add_accepted_culture = sillesian}
+				}
 			}
-			any_country = {
+
+			random_owned = {
 				limit = {
-					tag = C54
-					vassal_of = THIS
+					C54 = {
+						OR = {
+							check_variable = {
+								which = czervenia_integration
+								value = 9
+							}
+							year = 1850
+						}
+					}
+					C54 = {
+						vassal_of = THIS
+					}
 				}
-				any_owned = {remove_core = F54 add_core = F50 add_province_modifier = { name = province_changer duration = -1 } }
-				THIS = {inherit = C54 add_accepted_culture = futn}
+				C54 = {
+					country_event = 65875634
+					THIS = {add_accepted_culture = futn}
+				}
 			}
-			any_country = {
+
+			random_owned = {
 				limit = {
-					tag = C55
-					vassal_of = THIS
+					C55 = {
+						OR = {
+							check_variable = {
+								which = czervenia_integration
+								value = 9
+							}
+							year = 1850
+						}
+					}
+					C55 = {
+						vassal_of = THIS
+					}
 				}
-				any_owned = {remove_core = F55 add_core = F50 add_province_modifier = { name = province_changer duration = -1 } }
-				THIS = {inherit = C55 add_accepted_culture = futn}
+				C55 = {
+					country_event = 65875634
+					THIS = {add_accepted_culture = futn}
+				}
 			}
-			any_country = {
+
+			random_owned = {
 				limit = {
-					tag = C56
-					vassal_of = THIS
+					C56 = {
+						OR = {
+							check_variable = {
+								which = czervenia_integration
+								value = 9
+							}
+							year = 1850
+						}
+					}
+					C56 = {
+						vassal_of = THIS
+					}
 				}
-				any_owned = {remove_core = F56 add_core = F50 add_province_modifier = { name = province_changer duration = -1 } }
-				THIS = {inherit = C56 add_accepted_culture = filn}
+				C56 = {
+					country_event = 65875634
+					THIS = {add_accepted_culture = filn}
+				}
 			}
 		}
-
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {year = 1848}
+			}
+		}
 	}
 
 }

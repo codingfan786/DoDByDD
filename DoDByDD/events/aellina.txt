@@ -48,3 +48,119 @@ country_event = {
 		
 	}
 }
+
+####################### Czervenia Integration events #############################
+
+country_event = {
+	id = 154373477
+	title = "Czervenia Primacy"
+	desc = "The increasing influence of Czervenia over our trade and foreign politics has lead us one step closer to being fully integrated by them!"
+	trigger = {
+		war = no
+		OR = {
+			tag = C51
+			tag = C52
+			tag = C53
+			tag = C54
+			tag = C55
+			tag = C56
+		}
+		vassal_of = C50
+		NOT = {
+			check_variable = {
+				which = czervenia_integration
+				value = 9
+			}
+		}
+		
+	}
+	mean_time_to_happen = {
+		months = 8
+		modifier = {
+			factor = 0.8
+			year = 1840
+		}
+		modifier = {
+			factor = 0.8
+			overlord = {government = commissary_state}
+		}
+	}
+	immediate = {
+		change_variable = {
+			which = czervenia_integration
+			value = 1
+		}
+	}
+	option = {
+		name = "I see..."
+	}
+}
+
+country_event = {
+	id = 154373478
+	title = "$COUNTRY$ Primacy"
+	desc = "Due to the political unrest of wartime we have been able to restore our autonomy to a certain degree and purged some of Czervenia's influence!"
+	trigger = {
+		war = yes
+		OR = {
+			tag = C51
+			tag = C52
+			tag = C53
+			tag = C54
+			tag = C55
+			tag = C56
+		}
+		vassal_of = C50
+		NOT = {
+			check_variable = {
+				which = czervenia_integration
+				value = 9
+			}
+		}
+		check_variable = {
+			which = czervenia_integration
+			value = 1
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		#modifier = {
+		#	factor = 0.8
+		#	press_rights = state_press
+		#}
+	}
+	immediate = {
+		change_variable = {
+			which = czervenia_integration
+			value = -1
+		}
+	}
+	option = {
+		name = "I see..."
+	}
+}
+
+country_event = {
+	id = 65875634
+	title = "Unification of the Aellina Shorestates!"
+	desc = "Goodbye!"
+	is_triggered_only = yes
+
+	immediate = {
+		any_owned = {
+			remove_core = F51 
+			remove_core = F52 
+			remove_core = F53 
+			remove_core = F54 
+			remove_core = F55
+			remove_core = F56 
+			add_core = F50 
+			secede_province = FROM
+			add_province_modifier = { name = province_changer duration = -1 } 
+		}
+		annex_to = FROM
+	}
+	option = {
+		name  = "Shit!"
+	}
+}

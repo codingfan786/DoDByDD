@@ -129,7 +129,7 @@ tribe_settle_seven_desc;Settle into Hull. §GThis will let you colonize earlier.;
 tribe_settle_eight_desc;Expand into Dirksan. §GThis will let you colonize earlier.;x
 tribe_settle_nine_desc;Expand into Dereka. §GThis will let you colonize earlier.;x
 integrate_greater_ael_title;Unify the Aellina Shorestates;x
-integrate_greater_ael_desc;This will annex any of the six states between your core territory and the coastline that you have puppeted and give you their accepted cultures.;x
+integrate_greater_ael_desc;This is a one time decision to annex any of the states you have puppeted between you and the coastline that also have complete integration progress. Integration progress ticks up over time while at peace and down during war time. If you are a Commissary State this progress will tick up faster. Integration progress is guaranteed to finish for all countries by 1850. You can see which countries will be integrated by hovering over the select button.;x
 koullan_compromise_title;Koullan Compromise;x
 koullan_compromise_desc;The absence of a free Koullan state has lead many of these people to view us as the best possible alternative. We should strike upon this immediately and cement this sentiment in our society.;x
 koullan_to_gladan_title;Reintegrate southern Dotante;x
