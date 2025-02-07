@@ -33,7 +33,7 @@ romanticism = {
 		factor = 1.05
 		modifier = {
 			factor = 1000
-			continent = north_america
+			#continent = north_america
 			is_greater_power = yes
 		}
 		modifier = {

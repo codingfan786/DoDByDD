@@ -93,6 +93,6 @@ country_event = {
 	}
 
 	option = {
-		name = "I see."}
+		name = "I see."
 	}
 }

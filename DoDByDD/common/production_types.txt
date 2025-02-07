@@ -96,6 +96,13 @@ machine_part_user_template = {
 	workforce = 20000 #10000
 }
 
+will_never_be_unlocked = {
+	template = factory_template
+	input_goods = { }
+	output_goods = stone
+	value = 0.1
+}
+
 world_bank_template = {
 	owner =
 	{
